@@ -3,6 +3,11 @@
 
 /* BASE */
 @import './base/_reset.css';
+@import './base/_typography.css';
+@import './base/_base.css';
+
 
 /* LAYOUT */
 @import './layout/_nosotros.css';
+@import './layout/_blog.css';
+@import './layout/_delivery.css';

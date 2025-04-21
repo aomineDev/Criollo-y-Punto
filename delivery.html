@@ -4,35 +4,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Disfruta lo mejor de la cocina criolla gourmet en casa con el servicio de delivery de Criollo y Punto. Rápido, seguro y con el auténtico sabor peruano.">
   <title>Criollo & Punto | Delivery</title>
-  <meta name="description"
-    content="Disfruta lo mejor de la cocina criolla gourmet en casa con el servicio de delivery de Criollo y Punto. Rápido, seguro y con el auténtico sabor peruano.">
+    <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/e47c5641ca.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <h1 class="title-1">Delivery</h1>
+  <section class="delivery container">
+  <h1 class="delivery__title title-1">Delivery</h1>
 
-  <form action="#">
-    <label for="search">Buscar</label>
-    <input type="search" name="search" id="search" placeholder="Buscar...">
-    <label for="categories">Categorias</label>
-    <select name="categories" id="categories">
-      <option value="entradas" selected>Entradas</option>
-      <option value="entradas" selected>Entradas</option>
-      <option value="entradas" selected>Entradas</option>
-      <option value="entradas" selected>Entradas</option>
-    </select>
-    <label for="price">Rango de precios</label>
-    <input type="range" name="price" id="price">
-  </form>
-  <main>
-    <div>
-      <img src="" alt="Imagen de un platillo">
-      <h3>Nombre de plato</h3>
-      <p>S/. 00.00</p>
-      <button>Añadir</button>
-    </div>
-  </main>
+  <div class="delivery__wrapper">
+    <form action="#" class="delivery__form">
+      <div class="input-wrapper">
+        <label for="search" class="input-label search__label">Buscar</label>
+        <input type="search" name="search" id="search" placeholder="Nombre del plato..." class="search__input">
+      </div>
+     <div class="input-wrapper">
+      <label for="categories">Categorias</label>
+      <select name="categories" id="categories">
+        <option value="entradas" selected>Entradas</option>
+        <option value="entradas" selected>Entradas</option>
+        <option value="entradas" selected>Entradas</option>
+        <option value="entradas" selected>Entradas</option>
+      </select>
+     </div>
+     <div class="input-wrapper">
+      <label for="price">Rango de precios</label>
+      <input type="range" name="price" id="price">
+     </div>
+    </form>
+    <main class="delivery__menu">
+      <div class="delivery__card">
+       <div class="delivery__img-container">
+        <img src="img/Delivery/Entradas/BoliyucasDeQueso.png" alt="Imagen de un platillo" class="delivery__img">
+       </div>
+        <h3 class="delivery__name">Boliyucas de Queso</h3>
+        <p class="delivery__price">S/. 32.00</p>
+        <button type="button" class="delivery__btn">Añadir</button>
+      </div>
+    </main>
+  </div>
+</section>
+
 </body>
 
 </html>
