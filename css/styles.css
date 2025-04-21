@@ -6,3 +6,5 @@
 
 /* LAYOUT */
 @import './layout/_nosotros.css';
+@import './layout/_testimonios.css';
+@import './layout/_reservaciones.css';
