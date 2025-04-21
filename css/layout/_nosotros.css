@@ -1,5 +1,63 @@
 /* NOSOTROS */
 
 .nosotros {
-  font-size: var(--large-text);
+<<<<<<< HEAD
+  font-size: large;
+=======
+ text-align: center;
+ margin-top: 60px;
+ padding-bottom: 200px;
+}
+
+.nosotros__text {
+  margin-top: 30px;
+}
+
+.nosotros__img {
+  position: relative;
+  margin-top: 30px;
+}
+
+.nosotros__img-1 {
+  width: 70%;
+}
+
+.nosotros__img-2 {
+  position: absolute;
+  bottom: -30%;
+  right: 0;
+  width: 60%;
+}
+
+.mision, .vision {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  margin-top: 50px;
+}
+
+.mision__img, .vision__img {
+  min-width:50%;
+  height: 300px;
+}
+
+.chefs {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.chefs__title {
+  margin-top: 40px;
+}
+.chefs__container {
+  margin-top: 30px;
+  display: flex;
+  column-gap: 50px;
+  text-align: center;
+}
+.chefs__name {
+  margin-top: 10px;
+}
+.chefs__role {
+  color: rgba(33, 33, 33, .5);
+>>>>>>> 8b19f1038558d682491d0aca0fe9c569da16acd4
 }

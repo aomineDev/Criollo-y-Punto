@@ -5,6 +5,8 @@
   --small-text: 14px;
   --x-small-text: 12px;
 
+  
   /* Colores */
-  --primary: rgb(83, 124, 212);
+  --primary: #C59D5F;
+  --text-color: #212121;
 }
