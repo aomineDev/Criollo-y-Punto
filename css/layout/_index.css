@@ -102,7 +102,7 @@
 
 .section__content {
     margin-top: 60px;
-    height: 80vh;
+    height: 55vh;
     position: relative;
 }
 
@@ -148,6 +148,7 @@
 .section {
     position: relative;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 
 .section__title {
@@ -166,8 +167,8 @@
 
 .section__img1 {
     position: absolute;
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     bottom: 0;
     margin-bottom: 150px;
     margin-left: -100px;
@@ -219,16 +220,19 @@
 }
 
 .section__btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn__1 {
     margin: 0px 20px;
     color: black;
     border: 2px solid black;
     border-radius: 25px;
     padding: 7px 25px;
-
-    text-align: center;
 }
 
-.section__btn:hover {
+.btn__1:hover {
     background-color: black;
     color: aliceblue;
     transition: all 0.5s ease;
