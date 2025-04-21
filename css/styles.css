@@ -3,8 +3,16 @@
 
 /* BASE */
 @import './base/_reset.css';
+@import './base/_typography.css';
+@import './base/_base.css';
+
 
 /* LAYOUT */
 @import './layout/_nosotros.css';
+<<<<<<< HEAD
 @import './layout/_testimonios.css';
 @import './layout/_reservaciones.css';
+=======
+@import './layout/_blog.css';
+@import './layout/_delivery.css';
+>>>>>>> 8b19f1038558d682491d0aca0fe9c569da16acd4

@@ -1,0 +1,43 @@
+/* BLOG */
+
+.blog {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.blog__text {
+  margin-top: 20px;
+}
+
+.articles {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.article {
+  display: flex;
+  gap: 80px;
+  margin-top: 80px;
+  align-items: center;
+}
+
+.article__img {
+  height: 400px;
+}
+
+.article__date {
+  font-size: var(--small-text);
+  opacity: .8;
+}
+.article__content {
+  margin-top: 8px;
+}
+.article__read-more {
+  text-align: right;
+  text-decoration: underline;
+  color: inherit;
+  display: block;
+  text-align: right;
+  margin-top: 16px;
+  color: var(--primary);
+}
