@@ -9,6 +9,7 @@
 
 /* LAYOUT */
 @import './layout/_index.css';
+@import './layout/_conocenos.css';
 @import './layout/_nosotros.css';
 @import './layout/_nosotros.css';
 @import './layout/_testimonios.css';

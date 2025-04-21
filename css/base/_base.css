@@ -3,10 +3,11 @@
 body {
   font-family: 'Inter', sans-serif;
   color: var(--text-color);
-  background-color: #F4F1EA;
+  background-color: #FAF6F3;
+  /* background-color: #F4F1EA; */
 }
 
-p {
+.text {
   font-size: var(--x-medium-text);
   line-height: 24px;
 }
