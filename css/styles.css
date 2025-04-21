@@ -5,4 +5,5 @@
 @import './base/_reset.css';
 
 /* LAYOUT */
+@import './layout/_index.css';
 @import './layout/_nosotros.css';

@@ -12,89 +12,261 @@
 
 <body>
 
-  <header>
+  <header class="header">
 
     <!-- Contenedor de la barra de menu-->
-    <div>
+    <div class="header__menu container">
 
       <!-- Logo-->
-      <a href="#"><img src="img/logo/logo.png" alt=""></a>
+      <a href="#" class="header__logo"><img src="img/logo/logo-blanco.png" alt="Punto & Criollo"></a>
 
       <!-- Barra de menu-->
-      <nav>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Delivery</a></li>
-          <li><a href="#">Contactanos</a></li>
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item"><a href="#">Inicio</a></li>
+          <li class="navbar__item"><a href="#">Menu</a></li>
+          <li class="navbar__item"><a href="#">Blog</a></li>
+          <li class="navbar__item"><a href="#">Delivery</a></li>
+          <li class="navbar__item"><a href="#">Contactanos</a></li>
         </ul>
       </nav>
 
       <!-- Boton reserva-->
-      <a href="#">Reservaciones</a>
+      <a href="#" class="header__btn">Reservaciones</a>
 
     </div>
 
     <!-- Contenedor del inicio-header -->
-    <div>
+    <div class="header__info container">
 
-      <!-- Texto(Frase) -->
-      <div>
-        <h1>Donde la <br> <span>tradición criolla</span> <br> cobra vida</h1>
-        <!-- Boton explorar -->
-        <a href="#">Explorar</a>
-      </div>
+      <h1 class="header__title header__title--primary">Donde la <br> <span>tradición criolla</span> <br> cobra vida</h1>
+      <!-- Boton explorar -->
+      <a href="#" class="header__btn">Explorar</a>
 
     </div>
 
   </header>
 
   <!-- Seccion del Menu/Platos -->
-  <section>
+  <section class="section">
     <!-- Titulo de la Seccion -->
-    <h2>Nuestro Menú</h2>
+    <h2 class="section__title container">Nuestro Menú</h2>
 
-    <!-- Menu de las secciones -->
-    <div>
-      <ul>
-        <li><a href="#">Entradas</a></li>
-        <li><a href="#">Sopas</a></li>
-        <li><a href="#">Criollo</a></li>
-        <li><a href="#">Postres</a></li>
-      </ul>
-    </div>
+    <!-- Contenedor combinado -->
+    <div class="section__menubar container">
 
-    <!-- Contenedor Entradas -->
-    <div>
-      <article>
-        <img src="img/Delivery/Entradas/BoliyucasDeQueso.png" alt="">
-        <h3>Boliyucas de Queso</h3>
-        <p>Masa de yuca y quesos, acompañadas de salsas huancaína y ocopa.</p>
-        <p>S/. 32.00</p>
-      </article>
-      <article>
-        <img src="img/Delivery/Entradas/CausaLimeñaPollo.png" alt="">
-        <h3>La causa limeña de pollo</h3>
-        <p>Con abundante relleno, palta y huevo.</p>
-        <p>S/. 43.00</p>
-      </article>
-      <article>
-        <img src="img/Delivery/Entradas/ChichharronDePollo.png" alt="">
-        <h3>Chicharrón de pollo</h3>
-        <p>En su jugo al ajo.</p>
-        <p>S/. 43.00</p>
-      </article>
-      <article>
-        <img src="img/Delivery/Entradas/PapaHuancainaClasica.png" alt="">
-        <h3>Papa a la huancaína clásica</h3>
-        <p>Con su huevo y aceituna.</p>
-        <p>S/. 32.00</p>
-      </article>
+      <!-- Radios -->
+      <label for="menubar__radio1" class="menubar__label">Entradas</label>
+      <input type="radio" name="menu" id="menubar__radio1" class="menubar__radio1 menu-radio" checked>
+      <label for="menubar__radio2" class="menubar__label">Sopas</label>
+      <input type="radio" name="menu" id="menubar__radio2" class="menubar__radio2 menu-radio">
+      <label for="menubar__radio3" class="menubar__label">Criollos</label>
+      <input type="radio" name="menu" id="menubar__radio3" class="menubar__radio3 menu-radio">
+      <label for="menubar__radio4" class="menubar__label">Postres</label>
+      <input type="radio" name="menu" id="menubar__radio4" class="menubar__radio4 menu-radio">
+      <label for="menubar__radio5" class="menubar__label">Bebidas</label>
+      <input type="radio" name="menu" id="menubar__radio5" class="menubar__radio5 menu-radio">
+
+
+      <!-- Contenedor de los 4 divs -->
+      <div class="section__content container">
+
+        <!-- Entradas -->
+        <div id="content__entrada" class="menu content__entrada">
+          <div class="menu__inner">
+            <article class="content__box">
+              <img class="box__img" src="img/Delivery/Entradas/BoliyucasDeQueso.png" alt="">
+              <div class="box__text">
+                <h3>Boliyucas de Queso</h3>
+                <p>Masa de yuca y quesos, acompañadas de salsas huancaína y ocopa.</p>
+              </div>
+              <p class="box__p">S/32.00</p>
+            </article>
+            <article class="content__box">
+              <img class="box__img" src="img/Delivery/Entradas/CausaLimeñaPollo.png" alt="">
+              <div class="box__text">
+                <h3>La causa limeña de pollo</h3>
+                <p>Con abundante relleno, palta y huevo.</p>
+              </div>
+              <p class="box__p">S/43.00</p>
+            </article>
+            <article class="content__box">
+              <img class="box__img" src="img/Delivery/Entradas/ChichharronDePollo.png" alt="">
+              <div class="box__text">
+                <h3>Chicharrón de pollo</h3>
+                <p>En su jugo al ajo.</p>
+              </div>
+              <p class="box__p">S/43.00</p>
+            </article>
+            <article class="content__box">
+              <img class="box__img" src="img/Delivery/Entradas/PapaHuancainaClasica.png" alt="">
+              <div class="box__text">
+                <h3>Papa a la huancaína clásica</h3>
+                <p>Con su huevo y aceituna.</p>
+              </div>
+              <p class="box__p">S/32.00</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Sopas -->
+        <div id="content__sopa" class="menu content__sopa">
+          <div class="menu__inner">
+            <article class="content__box">
+              <img class="box__img" src="img/Delivery/Sopas/Aguadito.png" alt="">
+              <div class="box__text">
+                <h3>Aguadito</h3>
+                <p>En punto espeso de pollo y gallina, arroz, papa amarilla, ají y culantro.</p>
+              </div>
+              <p class="box__p">S/43.00</p>
+            </article>
+            <article class="content__box">
+              <img class="box__img" src="img/Delivery/Sopas/LevantateCriollo.png" alt="">
+              <div class="box__text">
+                <h3>Levántate Criollito</h3>
+                <p>Caldo de gallina Panchita, con ravioles rellenos de gallina, papa, fideos y rocotito.</p>
+              </div>
+              <p class="box__p">S/48.00</p>
+            </article>
+            <article class="content__box">
+              <img class="box__img" src="img/Delivery/Sopas/SopaCriolla.png" alt="">
+              <div class="box__text">
+                <h3>Sopa criolla</h3>
+                <p>Con carne picada, fideos, ají, huevo y pan frito.</p>
+              </div>
+              <p class="box__p">S/43.00</p>
+            </article>
+            <article class="content__box">
+              <img class="box__img" src="img/Delivery/Sopas/SopaCriollaClasica.png" alt="">
+              <div class="box__text">
+                <h3>Super aguadito</h3>
+                <p>Con su huevo y aceituna.</p>
+              </div>
+              <p class="box__p">S/34.00</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Criollo -->
+        <div id="content__criollo" class="menu content__criollo">
+          <div class="menu__inner">
+            <article class="content__box">
+              <img class="box__img" src="img/Delivery/Menu/AjiDeGallina.png" alt="">
+              <div class="box__text">
+                <h3>Ají de gallina</h3>
+                <p>El plato favorito de los limeños.</p>
+              </div>
+              <p class="box__p">S/49.00</p>
+            </article>
+            <article class="content__box">
+              <img class="box__img" src="img/Delivery/Menu/ArrozConChancho.png" alt="">
+              <div class="box__text">
+                <h3>Arroz con chanchito</h3>
+                <p>Con costillitas de chancho según receta antigua limeña.</p>
+              </div>
+              <p class="box__p">S/78.00</p>
+            </article>
+            <article class="content__box">
+              <img class="box__img" src="img/Delivery/Menu/CauCauMondongo.png" alt="">
+              <div class="box__text">
+                <h3>Cau cau de mondongo</h3>
+                <p>Nuestros precios están expresados en soles e incluyen impuestos de ley y recargo al consumo.</p>
+              </div>
+              <p class="box__p">S/49.00</p>
+            </article>
+            <article class="content__box">
+              <img class="box__img" src="img/Delivery/Menu/CevicheClasico.png" alt="">
+              <div class="box__text">
+                <h3>Ceviche clásico</h3>
+                <p>De pesca del dia marinado en leche de tigre, con choclo, camote y ese saborcito antiguo</p>
+              </div>
+              <p class="box__p">S/49.00</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Postres -->
+        <div id="content__postre" class="menu content__postre">
+          <div class="menu__inner">
+            <article class="content__box">
+              <img class="box__img" src="img/Delivery/Postres/ArrozConLeche.png" alt="">
+              <div class="box__text">
+                <h3>Arroz con leche</h3>
+                <p>Tradicional postre con arroz, leche y canela.</p>
+              </div>
+              <p class="box__p">S/23.00</p>
+            </article>
+            <article class="content__box">
+              <img class="box__img" src="img/Delivery/Postres/Budin.png" alt="">
+              <div class="box__text">
+                <h3>Budín</h3>
+                <p>Amelcochado con plátano, manzana, toque de ron y bañado en crema inglesa.</p>
+              </div>
+              <p class="box__p">S/23.00</p>
+            </article>
+            <article class="content__box">
+              <img class="box__img" src="img/Delivery/Postres/MazamorraCombinada.png" alt="">
+              <div class="box__text">
+                <h3>Mazamorra Combinada</h3>
+                <p>El arroz con leche y la mazamorra morada juntos y en su punto.</p>
+              </div>
+              <p class="box__p">S/23.00</p>
+            </article>
+            <article class="content__box">
+              <img class="box__img" src="img/Delivery/Postres/MazamorraMorada.png" alt="">
+              <div class="box__text">
+                <h3>Mazamorra morada</h3>
+                <p>Típico en nuestra repostería limeña con piña, durazno y guindones.</p>
+              </div>
+              <p class="box__p">S/23.00</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Bebida -->
+        <div id="content__bebida" class="menu content__bebida">
+          <div class="menu__inner">
+            <article class="content__box">
+              <img class="box__img" src="img/Delivery/Bebidas/ChichaMorada.png" alt="">
+              <div class="box__text">
+                <h3>Chicha morada</h3>
+                <p>1000 ml</p>
+              </div>
+              <p class="box__p">S/32.00</p>
+            </article>
+            <article class="content__box">
+              <img class="box__img" src="img/Delivery/Bebidas/MangoHuarango.png" alt="">
+              <div class="box__text">
+                <h3>Mango huarango</h3>
+                <p>Mango, naranja y plátano (500ml)</p>
+              </div>
+              <p class="box__p">S/16.00</p>
+            </article>
+            <article class="content__box">
+              <img class="box__img" src="img/Delivery/Bebidas/LaPintona.png" alt="">
+              <div class="box__text">
+                <h3>La Pintona</h3>
+                <p>Tumbo, mandarina y naranja</p>
+              </div>
+              <p class="box__p">S/16.00</p>
+            </article>
+            <article class="content__box">
+              <img class="box__img" src="img/Delivery/Bebidas/LimonadaClasica.png" alt="">
+              <div class="box__text">
+                <h3>Limonada</h3>
+                <p>236 ml</p>
+              </div>
+              <p class="box__p">S/11.00</p>
+            </article>
+          </div>
+        </div>
+
+      </div>
+
     </div>
 
     <!-- Boton Explorar Menu -->
-    <a href="#">Explorar Menu</a>
+    <a href="#" class="section__btn">Explorar Menu</a>
 
   </section>
 
