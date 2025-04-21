@@ -21,6 +21,7 @@
     right: 0;
     background-color: black;
     z-index: 1000;
+    padding: 0px 30px;
 
     /*Flexbox*/
     display: flex;
@@ -144,6 +145,42 @@
 }
 
 /* MENU: DISEÑO DE CARTAS*/
+.section {
+    position: relative;
+    overflow: hidden;
+}
+
+.section__title {
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+.section__decoration {
+    font-weight: bold;
+    font-size: 160px;
+    text-align: center;
+    color: rgb(225, 225, 225);
+    margin-top: 20px;
+}
+
+.section__img1 {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    bottom: 0;
+    margin-bottom: 150px;
+    margin-left: -100px;
+}
+
+.section__img2 {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    right: 0%;
+    margin-right: -100px;
+}
+
 .box__img {
     height: 150px;
     width: 150px;
@@ -161,7 +198,6 @@
 
 .box__p {
     padding: 0px 15px;
-    margin-bottom: 85px;
 }
 
 .menu__inner {
@@ -171,7 +207,6 @@
 }
 
 .content__box {
-    width: 48%;
     height: 190px;
     border: 2px dashed black;
     margin: 15px;
