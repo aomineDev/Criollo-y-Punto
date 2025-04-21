@@ -1,23 +1,29 @@
 .reservations {
     text-align: center;
-    font-size: 25px;
-    margin: 10px;
+    margin-top: 40px;
 }
 
 .person {
     font-size: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+
 }
 
 .people-selector {
     text-align: center;
+    margin-top: 50px;
+
 }
 
 .people-selector__option {
-    color: rgb(13, 15, 15);
     display: inline;
     margin-right: 70px;
+    
 }
-
+.people-selector__input{
+    transform: scale(1.5);
+}
 .people-selector__label {
     border: 1px solid #ccc;
     padding: 8px 12px;
@@ -28,41 +34,75 @@
 
 .date {
     font-size: 20px;
+    font-weight: bold;
+    margin-top: 70px;
+
 }
 
 .date-selector {
     text-align: center;
+    margin-top: 50px;
+    
+}
+.date-selector__input{
+    transform: scale(1.5);
+
 }
 
 .schedules {
     font-size: 20px;
+    font-weight: bold;
+    margin-top: 70px;
+
 }
 
 .schedules-selector {
     text-align: center;
+    margin-top: 50px;
 }
 
-.schedules-selector__option {
+.schedules-selector-option {
     display: inline;
-    margin-right: 70px;
-
+    margin-right: 80px;
+}
+.schedules-selector-option__input{
+    transform: scale(1.7);
 }
 
 .personal-information {
     font-size: 20px;
+    font-weight: bold;
+    margin-top: 70px;
+
+
 }
 
 .personal-information-form {
     text-align: center;
-    display: grid; /* Usamos CSS Grid para la disposición de los campos */
-    grid-template-columns: 1fr 1fr; /* Crea dos columnas de igual ancho */
-    gap: 10px; /* Espacio entre las columnas y las filas */
-    margin-bottom: 20px; /* Espacio debajo del formulario */
+    display: grid;
+    /* Usamos CSS Grid para la disposición de los campos */
+    grid-template-columns: 1fr 1fr;
+    /* Crea dos columnas de igual ancho */
+    gap: 20px;
+    /* Espacio entre las columnas y las filas */
+    margin-bottom: 50px;
+    /* Espacio debajo del formulario */
+margin-top: 50px;
+font-size: 20px;
 }
 
-.botonenviar {
- 
-  /* Estilos para el contenedor del botón enviar */
-  grid-column: 1 / 3; /* Ocupa ambas columnas */
-  margin-top: 20px; /* Espacio encima del botón */
+.send-button {
+    grid-column: 1 / 3;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.send-button__input {
+    padding: 10px 250px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    
 }

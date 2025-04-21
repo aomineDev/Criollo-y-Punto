@@ -11,41 +11,50 @@
 
 <body>
     <header>
-        <h2>Contactanos</h2>
+        <h2 class="contact">Contactanos</h2>
     </header>
-    <section>
-        <form class=formulario name="form" action="" method="post">
-
-            <fieldset>
-                <legend></legend>
+    <div>
+        <form name="form" action="" method="post">
+            <div class="contact-form">
                 <label for="nombrec">Nombre</label>
-                <input type="text" name="nombrec" id="nombrec" required="" placeholder="Ingrese su nombre">
+                <input type="text" name="nombrec" id="nombrec" required="" placeholder="Ingrese su nombre"
+                    class="contact-form__input">
                 <p></p>
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" required="" placeholder="example@gmail.com">
+                <input type="email" name="email" id="email" required="" placeholder="example@gmail.com"
+                    class="contact-form__input">
                 <p></p>
                 <label for="mensaje">Mensaje</label>
-                <input type="mensaje" name="mensaje" id="mensaje" required="" placeholder="Ingrese su mensaje">
+                <input type="mensaje" name="mensaje" id="mensaje" required="" placeholder="Ingrese su mensaje"
+                    class="conctact-form__input">
                 <p></p>
-                <input type="submit" name="botonenvio" id="botonenvio">
-
-
-            </fieldset>
+                <div class="send-button">
+                    <input type="submit" name="botonenvio" id="botonenvio" class="send-button__input">
+                </div>
+            </div>
         </form>
-        <p></p>
-        <h3>Nuestros locales</h3>
+    </div>
+
+    <h3>Nuestros locales</h3>
+    <div>
         <h4>Miraflores</h4>
         <p>Av. Las manzanas 23</p>
         <p>8968-8585</p>
         <img src="Imagenes/LOCAL1.PNG" alt="Local1">
+    </div>
+    <div>
         <h4>San Isidro</h4>
         <p>Av. Gira</p>
         <p>1223-1212</p>
+
+    </div>
+    <div>
         <h4>Surco</h4>
         <p>Av. Palmeras</p>
         <p>1234-3134</p>
 
-    </section>
+    </div>
+
 
 </body>
 
