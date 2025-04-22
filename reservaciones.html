@@ -11,6 +11,32 @@
 </head>
 
 <body>
+
+    <header class="headerBar">
+
+        <!-- Contenedor de la barra de menu-->
+        <div class="header__menu">
+
+            <!-- Logo-->
+            <a href="index.html" class="header__logo"><img src="img/logo/logo-blanco.png" alt="Punto & Criollo"></a>
+
+            <!-- Barra de menu-->
+            <nav class="navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__item"><a href="index.html">Inicio</a></li>
+                    <li class="navbar__item"><a href="menu.html">Menu</a></li>
+                    <li class="navbar__item"><a href="blog.html">Blog</a></li>
+                    <li class="navbar__item"><a href="delivery.html">Delivery</a></li>
+                    <li class="navbar__item"><a href="contactanos.html">Contactanos</a></li>
+                </ul>
+            </nav>
+
+            <!-- Boton reserva-->
+            <a href="reservaciones.html" class="header__btn">Reservaciones</a>
+
+        </div>
+
+    </header>
     <header>
         <h2 class="title-1 reservations">Reservaciones</h2>
     </header>
@@ -78,19 +104,19 @@
                 <div class="personal-information-form">
                     <div>
                         <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" required="" placeholder="Ingrese sus nombres">
+                        <input type="text" id="nombre" required="" placeholder="Ingrese sus nombres" class="personal-information__input">
                     </div>
                     <div>
                         <label for="apellido">Apellidos</label>
-                        <input type="text" id="apellido" required="" placeholder="Ingrese su apellido">
+                        <input type="text" id="apellido" required="" placeholder="Ingrese su apellido" class="personal-information__input">
                     </div>
                     <div>
                         <label for="email">Email</label>
-                        <input type="email" id="email" required="" placeholder="example@gmail.com">
+                        <input type="email" id="email" required="" placeholder="example@gmail.com" class="personal-information__input">
                     </div>
                     <div>
                         <label for="telefono">Telefono</label>
-                        <input type="tel" id="telefono" required="" placeholder="478-555-555">
+                        <input type="tel" id="telefono" required="" placeholder="478-555-555" class="personal-information__input">
                     </div>
                     <div class="send-button">
                         <input type="submit" name="botonenviar" id="" value="Enviar" class="send-button__input">
