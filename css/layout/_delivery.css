@@ -24,6 +24,11 @@
   background-color: transparent;
   border-bottom: 1px solid #212121;
 }
+
+.delivery__form-select {
+  padding: 8px;
+}
+
 .delivery__menu {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
