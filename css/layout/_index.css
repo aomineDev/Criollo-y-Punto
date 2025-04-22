@@ -209,7 +209,7 @@
     height: 190px;
     border: 2px dashed black;
     margin: 15px;
-    text-align: center;
+    text-align: left;
     overflow: hidden;
 
     /*Flexbox*/
@@ -244,5 +244,41 @@
 
 .kitchen {
     margin: 0 auto;
+}
+
+.content__redes img {
+    height: 200px;
+    width: 200px;
+}
+
+.footer__content {
+    /*Flexbox*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    color: aliceblue;
+}
+
+.box {
+    margin: 50px 100px;
+}
+
+.box img {
+    margin-top: -40px;
+}
+
+.box .title-4, p {
+    margin-bottom: 19px;
+}
+
+.social-media {
+    text-align: center;
+    font-size: 30px;
+}
+
+.social-media a {
+    color: aliceblue;
+    margin: 0px 7px;
 }
 
