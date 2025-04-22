@@ -25,7 +25,7 @@
       <!-- Barra de menu-->
       <nav class="navbar">
         <ul class="navbar__list">
-          <li class="navbar__item"><a href="index.html">Inicio</a></li>
+          <li class="navbar__item navbar__item--active"><a href="index.html">Inicio</a></li>
           <li class="navbar__item"><a href="menu.html">Menu</a></li>
           <li class="navbar__item"><a href="blog.html">Blog</a></li>
           <li class="navbar__item"><a href="delivery.html">Delivery</a></li>
@@ -43,14 +43,14 @@
 
       <h1 class="header__title header__title--primary">Donde la <br> <span>tradición criolla</span> <br> cobra vida</h1>
       <!-- Boton explorar -->
-      <a href="nosotros.html" class="header__btn">Explorar</a>
+      <a href="#conocenos" class="header__btn">Explorar</a>
 
     </div>
 
   </header>
 
   <!-- Nosotros -->
-  <section class="conocenos">
+  <section class="conocenos" id="conocenos">
     <div class="conocenos__decoration">
       <p>TRADICION</p>
     </div>
@@ -72,7 +72,9 @@
   <!-- Seccion del Menu/Platos -->
   <section class="section">
     <!-- Titulo de la Seccion -->
-    <p class="section__decoration container ">SABOR CRIOLLO</p>
+    <div class="section__decoration">
+      <p>SABOR CRIOLLO</p>
+    </div>
 
     <!-- Titulo de la Seccion -->
     <h2 class="section__title title-1">Nuestro Menú</h2>
@@ -97,7 +99,7 @@
 
 
       <!-- Contenedor de los 4 divs -->
-      <div class="section__content container">
+      <div class="section__content">
 
         <!-- Entradas -->
         <div id="content__entrada" class="menu content__entrada">
@@ -294,21 +296,21 @@
     </div>
 
     <!-- Boton Explorar Menu -->
-    <di class="section__btn container">
+    <div class="section__btn container">
       <a href="menu.html" class="btn__1">Explorar Menu</a>
-    </di>
+    </div>
 
 
   </section>
 
   <!-- Testimonios -->
-  <h2 class="testimonial__title title-1">Testimonios</h2>
+  <section class="testimonial">
+    <h2 class="testimonial__title title-1">Testimonios</h2>
 
-  <section class="testimonial container">
-
+    <div class="container">
     <div class="testimonial__item">
       <article class="testimonial__content">
-        <p class="testimonial__text">
+        <p class="testimonial__text text">
           Desde el primer bocado, quedé impresionado con la autenticidad de los sabores criollos en Criollo y Punto.
           El lomo saltado era jugoso y lleno de sabor, tal como lo recordaba de mi infancia. Mi familia disfrutó
           muchísimo,
@@ -327,7 +329,7 @@
 
     <div class="testimonial__item">
       <article class="testimonial__content">
-        <p class="testimonial__text">
+        <p class="testimonial__text text">
           Desde el primer bocado, quedé impresionado con la autenticidad de los sabores criollos en Criollo y Punto.
           El lomo saltado era jugoso y lleno de sabor, tal como lo recordaba de mi infancia. Mi familia disfrutó
           muchísimo,
@@ -346,7 +348,7 @@
 
     <div class="testimonial__item">
       <article class="testimonial__content">
-        <p class="testimonial__text">
+        <p class="testimonial__text text">
           Buscaba un lugar que realmente ofreciera comida criolla auténtica y ¡lo encontré! Criollo y Punto superó mis
           expectativas. Pedí la carapulcra y me transportó directamente a la cocina de mi abuela. Los ingredientes
           frescos
@@ -361,6 +363,7 @@
         <div class="testimonial__stars">⭐⭐⭐⭐</div>
       </div>
     </div>
+  </div>
 
   </section>
 

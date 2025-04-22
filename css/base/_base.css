@@ -8,7 +8,7 @@ body {
 }
 
 .text {
-  font-size: var(--x-medium-text);
+  font-size: var(--medium-text);
   line-height: 24px;
 }
 

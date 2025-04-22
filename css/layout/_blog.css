@@ -6,7 +6,7 @@
 }
 
 .blog__text {
-  margin-top: 20px;
+  font-size: var(--large-text);
 }
 
 .articles {
