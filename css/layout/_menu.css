@@ -12,7 +12,7 @@
 
 .sectionMenu .title-1 {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 200px;
 }
 
 .info__1 .title-2 {
@@ -50,9 +50,4 @@
 
 .table__row td{
     padding: 30px 10px;
-}
-
-.w1, .w2 {
-    height: 100px;
-    width: 100px;
 }

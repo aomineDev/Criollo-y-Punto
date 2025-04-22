@@ -4,16 +4,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Descubre historias, curiosidades y secretos de la cocina criolla peruana en el blog de Criollo y Punto. Sabores que inspiran y conectan con nuestras raíces.">
+  <meta name="description"
+    content="Descubre historias, curiosidades y secretos de la cocina criolla peruana en el blog de Criollo y Punto. Sabores que inspiran y conectan con nuestras raíces.">
   <title>Criollo & Punto | Blog</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/logo/logo-blanco.png" type="image/png">
   <script src="https://kit.fontawesome.com/e47c5641ca.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+  <header class="headerBar">
+
+    <!-- Contenedor de la barra de menu-->
+    <div class="header__menu">
+
+      <!-- Logo-->
+      <a href="index.html" class="header__logo"><img src="img/logo/logo-blanco.png" alt="Punto & Criollo"></a>
+
+      <!-- Barra de menu-->
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item"><a href="index.html">Inicio</a></li>
+          <li class="navbar__item"><a href="menu.html">Menu</a></li>
+          <li class="navbar__item"><a href="blog.html">Blog</a></li>
+          <li class="navbar__item"><a href="delivery.html">Delivery</a></li>
+          <li class="navbar__item"><a href="contactanos.html">Contactanos</a></li>
+        </ul>
+      </nav>
+
+      <!-- Boton reserva-->
+      <a href="reservaciones.html" class="header__btn">Reservaciones</a>
+
+    </div>
+
+  </header>
+
   <section class="blog container">
     <h1 class="title-1">blog</h1>
-  <p class="blog__text">En Criollo y Punto, la cocina no solo se disfruta, también se cuenta. En este espacio compartimos historias, secretos, curiosidades y reflexiones sobre la riqueza de la gastronomía peruana. Porque cada plato tiene un origen, una tradición y un motivo para ser celebrado.<br><br>Descubre más sobre nuestra cultura culinaria y acompáñanos en este viaje de sabores, memorias y pasión por lo criollo.</p>
+    <p class="blog__text">En Criollo y Punto, la cocina no solo se disfruta, también se cuenta. En este espacio
+      compartimos historias, secretos, curiosidades y reflexiones sobre la riqueza de la gastronomía peruana. Porque
+      cada plato tiene un origen, una tradición y un motivo para ser celebrado.<br><br>Descubre más sobre nuestra
+      cultura culinaria y acompáñanos en este viaje de sabores, memorias y pasión por lo criollo.</p>
   </section>
 
   <section class="articles container">
@@ -21,7 +53,8 @@
       <div class="article__container">
         <time datetime="2025-03-24" class="article__date">Marzo 24, 2025</time>
         <h3 class="article__title title-3">El arte de un buen seco: más que un plato, una herencia</h3>
-        <p class="article__content">El seco de res es uno de los platos más emblemáticos de la cocina criolla. Su preparación, aparentemente
+        <p class="article__content">El seco de res es uno de los platos más emblemáticos de la cocina criolla. Su
+          preparación, aparentemente
           sencilla, encierra siglos de historia, fusión cultural y saber popular. En Criollo y Punto, respetamos cada
           paso del proceso: desde la maceración con chicha de jora hasta ese toque final de culantro fresco que lo eleva
           a otro nivel.
@@ -36,7 +69,8 @@
       <div class="article__container">
         <time datetime="2025-02-12" class="article__date">Febrero 12, 2025</time>
         <h3 class="article__title title-3">¿Por qué el ají amarillo es el corazón de la cocina peruana?</h3>
-        <p class="article__content">Ni muy picante ni muy suave: el ají amarillo es el equilibrio perfecto que define gran parte de nuestra
+        <p class="article__content">Ni muy picante ni muy suave: el ají amarillo es el equilibrio perfecto que define
+          gran parte de nuestra
           gastronomía. Su color vibrante y sabor inconfundible lo convierten en la base de innumerables recetas
           criollas, desde una clásica papa a la huancaína hasta un refinado ají de gallina.
           En nuestro restaurante, seleccionamos los mejores ajíes de temporada y los tratamos con cuidado artesanal para
@@ -47,6 +81,53 @@
 
     </article>
   </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <!-- Imagen principal -->
+    <div class="footer__kitchen">
+      <img class="kitchen" src="img/Banners/footer3.png" alt="">
+    </div>
+
+    <!-- Contenedor de la informacion -->
+    <div class="footer__content">
+
+      <!-- Logo y redes -->
+      <div class="content__redes box">
+        <a href=""><img src="img/logo/logo-blanco.png" alt=""></a>
+        <div class="social-media">
+          <a href="https://facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <!-- Contactanos -->
+      <div class="content__contact box">
+        <h4 class="title-4">Contactanos</h4>
+        <p>+51 923745971</p>
+        <p>restauranteCriollo&Punto@gmail.com</p>
+      </div>
+
+      <!-- Direccion -->
+      <div class="content__redes box">
+        <h4 class="title-4">Direccion</h4>
+        <p>Av. Los manzanos 123</p>
+      </div>
+
+      <!-- Horarios de Atención -->
+      <div class="content__atention box">
+        <h4 class="title-4">Horario de Atención</h4>
+        <p>Lunes - Sábado: <br> 3 PM - 10 PM</p>
+        <p>Domingo: <br> Cerrado</p>
+      </div>
+
+    </div>
+
+  </footer>
+
 </body>
 
 </html>
