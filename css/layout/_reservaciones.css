@@ -19,11 +19,13 @@
 .people-selector__option {
     display: inline;
     margin-right: 70px;
-    
+
 }
-.people-selector__input{
+
+.people-selector__input {
     transform: scale(1.5);
 }
+
 .people-selector__label {
     border: 1px solid #ccc;
     padding: 8px 12px;
@@ -42,9 +44,10 @@
 .date-selector {
     text-align: center;
     margin-top: 50px;
-    
+
 }
-.date-selector__input{
+
+.date-selector__input {
     transform: scale(1.5);
 
 }
@@ -65,7 +68,8 @@
     display: inline;
     margin-right: 80px;
 }
-.schedules-selector-option__input{
+
+.schedules-selector-option__input {
     transform: scale(1.7);
 }
 
@@ -77,18 +81,17 @@
 
 }
 
-.personal-information-form {
+.personal-information-form{
     text-align: center;
     display: grid;
     /* Usamos CSS Grid para la disposición de los campos */
     grid-template-columns: 1fr 1fr;
     /* Crea dos columnas de igual ancho */
     gap: 20px;
-    /* Espacio entre las columnas y las filas */
-    margin-bottom: 50px;
+   
     /* Espacio debajo del formulario */
-margin-top: 50px;
-font-size: 20px;
+    margin-top: 50px;
+    font-size: 20px;
 }
 
 .send-button {
@@ -104,5 +107,5 @@ font-size: 20px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    
+    margin-bottom: 50px;
 }

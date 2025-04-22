@@ -8,12 +8,16 @@
 
 
 /* LAYOUT */
+<<<<<<< HEAD
 @import './layout/_index.css';
 @import './layout/_conocenos.css';
 @import './layout/_nosotros.css';
+=======
+>>>>>>> eb1c8f9 (localiones)
 @import './layout/_nosotros.css';
 @import './layout/_testimonios.css';
 @import './layout/_reservaciones.css';
 @import './layout/_blog.css';
 @import './layout/_delivery.css';
+@import './layout/_contactanos.css';
 

@@ -5,57 +5,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Aqui podra ver como conctactarnos y nuestros locales.">
-
+    <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <h2 class="contact">Contactanos</h2>
+        <h2 class=" title-1 contact">Contactanos</h2>
     </header>
-    <div>
-        <form name="form" action="" method="post">
+    <div class="container">
+        <div>
+
             <div class="contact-form">
-                <label for="nombrec">Nombre</label>
-                <input type="text" name="nombrec" id="nombrec" required="" placeholder="Ingrese su nombre"
-                    class="contact-form__input">
-                <p></p>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required="" placeholder="example@gmail.com"
-                    class="contact-form__input">
-                <p></p>
-                <label for="mensaje">Mensaje</label>
-                <input type="mensaje" name="mensaje" id="mensaje" required="" placeholder="Ingrese su mensaje"
-                    class="conctact-form__input">
-                <p></p>
-                <div class="send-button">
-                    <input type="submit" name="botonenvio" id="botonenvio" class="send-button__input">
+                <form name="form" action="" method="post"></form>
+                <div>
+                    <label class="contact-form__label" for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" required="" placeholder="Ingrese su nombre"
+                        class="contact-form__input">
                 </div>
+                <div>
+                    <label class="contact-form__label" for="email">Email</label>
+                    <input type="email" name="email" id="email" required="" placeholder="example@gmail.com"
+                        class="contact-form__input">
+                </div>
+                <div>
+                    <label class="contact-form__label" for="mensaje">Mensaje</label>
+                    <input type="mensaje" name="mensaje" id="mensaje" required="" placeholder="Ingrese su mensaje"
+                        class="contact-form__input">
+                </div>
+
+                <div class="send-buttoon">
+                    <input type="submit" name="botonenvio" id="botonenvio" class="send-buttoon__input">
+                </div>
+                </form>
             </div>
-        </form>
+
+        </div>
+
+         <div class="map">
+            <img src="img/locales/ChatGPT Image 21 abr 2025, 06_56_56 p.m..png" alt="">
+        
+
+         </div>
+            
+        <h3 class=" title-2 premises">Nuestros locales</h3>
+        <div class="premises-option">
+            <div>
+                <div class="premises__locals">
+                    <img src="img/locales/locales1pre.jpg" alt="Local1">
+
+                </div>
+                <div class="premises-option__text">
+                    <h4>Miraflores</h4>
+                    <p>Av. Las manzanas 23</p>
+                    <p>8968-8585</p>
+                </div>
+
+            </div>
+            <div>
+                <div class="premises__locals">
+                    <img src="img/locales/pexels-igor-starkov-233202-1237070.jpg" alt="local2">
+                </div>
+                <div class="premises-option__text">
+                    <h4>San Isidro</h4>
+                    <p>Av. Gira</p>
+                    <p>1223-1212</p>
+                </div>
+
+
+
+            </div>
+            <div>
+                <div class="premises__locals">
+                    <img src="img/locales/pexels-mitrofan-pictures-9248323.jpg" alt="local3">
+                </div>
+                <div class="premises-option__text">
+                    <h4>Surco</h4>
+                    <p>Av. Palmeras</p>
+                    <p>1234-3134</p>
+                </div>
+
+
+
+            </div>
+
+        </div>
     </div>
-
-    <h3>Nuestros locales</h3>
-    <div>
-        <h4>Miraflores</h4>
-        <p>Av. Las manzanas 23</p>
-        <p>8968-8585</p>
-        <img src="Imagenes/LOCAL1.PNG" alt="Local1">
-    </div>
-    <div>
-        <h4>San Isidro</h4>
-        <p>Av. Gira</p>
-        <p>1223-1212</p>
-
-    </div>
-    <div>
-        <h4>Surco</h4>
-        <p>Av. Palmeras</p>
-        <p>1234-3134</p>
-
-    </div>
-
-
 </body>
 
 </html>
