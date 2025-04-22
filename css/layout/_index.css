@@ -263,21 +263,17 @@
 }
 
 .content__redes img {
-    height: 200px;
     width: 200px;
 }
 
 .footer__content {
     /*Flexbox*/
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
 
-    color: aliceblue;
-}
 
-.box {
-    margin: 50px 100px;
+    color: aliceblue;
 }
 
 .box img {
