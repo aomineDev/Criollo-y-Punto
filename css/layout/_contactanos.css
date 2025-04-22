@@ -1,12 +1,34 @@
+.container .title-1 {
+  margin-top: 200px;
+  margin-bottom: 40px;
+}
+
+.contact__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 70px;
+}
+
+.contact__info .map {
+  width: 500px;
+  height: 500px;
+
+  margin: 40px;
+}
+
+.premises .title-2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .contact {
     text-align: center;
     margin-top: 40px;
 }
 
 .contact-form {
-
-    margin-top: 10%;
-    margin-left: 700px;
     background-color: rgb(255, 248, 248);
     padding: 50px;
     border-radius: 10px;
@@ -98,4 +120,5 @@
     font-size: 14px;
     color: #555;
   }
+
 

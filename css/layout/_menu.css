@@ -1,0 +1,53 @@
+.sectionMenu__content .section__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.section__info img {
+    width: 500px;
+    height: 500px;
+}
+
+.sectionMenu .title-1 {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.info__1 .title-2 {
+    margin-bottom: 20px;
+}
+
+.info__1 {
+    padding: 30px 100px;
+}
+
+.info__1 p {
+    text-align: justify;
+}
+
+.info__1 span {
+    font-weight: normal;
+}
+
+.table {
+    text-align: center;
+    margin: 0 auto;
+
+    margin-top: 60px;
+    border-collapse: collapse;
+}
+
+.table__row img {
+    width: 100px;
+    height: 100px;
+}
+
+.table__row {
+    border-bottom: 1px solid black;
+}
+
+.table__row td{
+    padding: 30px 10px;
+}

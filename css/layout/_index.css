@@ -61,8 +61,6 @@
 .header__title {
     color: aliceblue;
     margin-bottom: 40px;
-
-    /*POR MIENTRAS*/
     font-size: 75px;
     text-transform: uppercase;
     font-weight: 0;
@@ -151,7 +149,7 @@
 
 .section__title {
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 10px;
     margin-bottom: 70px;
 }
 
@@ -159,25 +157,25 @@
     font-weight: bold;
     font-size: 160px;
     text-align: center;
-    color: rgb(225, 225, 225);
-    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    margin-top: -60px;
 }
 
 .section__img1 {
     position: absolute;
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     bottom: 0;
-    margin-bottom: 150px;
     margin-left: -100px;
 }
 
 .section__img2 {
     position: absolute;
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
     right: 0%;
     margin-right: -100px;
+    margin-top: -180px;
 }
 
 .box__img {
@@ -209,7 +207,7 @@
     height: 190px;
     border: 2px dashed black;
     margin: 15px;
-    text-align: center;
+    text-align: left;
     overflow: hidden;
 
     /*Flexbox*/
@@ -244,5 +242,41 @@
 
 .kitchen {
     margin: 0 auto;
+}
+
+.content__redes img {
+    height: 200px;
+    width: 200px;
+}
+
+.footer__content {
+    /*Flexbox*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    color: aliceblue;
+}
+
+.box {
+    margin: 50px 100px;
+}
+
+.box img {
+    margin-top: -40px;
+}
+
+.box .title-4, p {
+    margin-bottom: 19px;
+}
+
+.social-media {
+    text-align: center;
+    font-size: 30px;
+}
+
+.social-media a {
+    color: aliceblue;
+    margin: 0px 7px;
 }
 
