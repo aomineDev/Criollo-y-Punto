@@ -11,10 +11,12 @@
 @import './layout/_index.css';
 @import './layout/_conocenos.css';
 @import './layout/_nosotros.css';
+
 @import './layout/_nosotros.css';
 @import './layout/_testimonios.css';
 @import './layout/_reservaciones.css';
 @import './layout/_blog.css';
 @import './layout/_delivery.css';
 @import './layout/_menu.css';
+@import './layout/_contactanos.css';
 

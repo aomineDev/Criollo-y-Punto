@@ -1,11 +1,27 @@
-.testimonial_tittle{
+.testimonial__title{
     text-align: center;
-    font-size: 30px;
+    margin-top: 50px;
+}
+
+
+
+.testimonial__text{
+    margin-top: 40px;
+    font-family: Georgia; /* Prueba con Georgia primero, si no está disponible usa Times New Roman, sino usa cualquier fuente serif */
+  font-size: 20px; /* Ajusta el tamaño según necesites */
+  line-height: 30px; /* Ajusta el interlineado para mejorar la legibilidad */
+  color: #333; /* Un gris oscuro. Puedes usar otro color si lo prefieres */
+  letter-spacing: 0.02em; /* Un ligero ajuste para mejorar el espaciado si es necesario */
+  text-align: center;
+}
+.testimonial__name{
+font-size: 30px;
+}
+.testimonial__author{
+    text-align: center;
+    font-family: Georgia;
+    font-size: 15;
+    margin-top: 30px;
 
 }
-.testimonial{
-    color: rgb(2, 2, 2);
-}
-.testimonial-author{
-    text-align: center;
-}
+
