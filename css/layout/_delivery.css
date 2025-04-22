@@ -14,12 +14,12 @@
   flex-direction: column;
   gap: 30px;
 }
-.input-wrapper {
+.delivery__form-group {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.search__input {
+.delivery__form-search {
   padding: 5px 0;
   background-color: transparent;
   border-bottom: 1px solid #212121;
@@ -28,6 +28,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 50px;
+  row-gap: 40px;
 }
 .delivery__card {
   background-color: #ffffff;
@@ -37,26 +38,28 @@
   margin-top: 60px;
   border-radius: 20px;
 }
-.delivery__name {
-  font-size: 18px;
+.delivery__card-title {
   font-weight: 600;
   margin-top: 60px;
 }
 
-.delivery__price {
+.delivery__card-price {
   color: var(--primary);
-  margin-top: 10px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
 }
 
-.delivery__btn {
+.delivery__card-button {
   margin-top: 30px;
   padding: 10px 30px;
   border-radius: 100px;
   background-color: var(--primary);
   color: #ffffff;
+  font-size: 14px;
 }
 
-.delivery__img-container {
+.delivery__card-image {
   position: absolute;
   left: 50%;
   top: 0;
@@ -64,10 +67,12 @@
   width: 120px;
   height: 120px;
 }
-.delivery__img {
+
+.delivery__card-image img {
   border-radius: 50%;
 }
-.delivery__img-container::before {
+
+.delivery__card-image::before {
   content: '';
   position: absolute;
   left: 50%;

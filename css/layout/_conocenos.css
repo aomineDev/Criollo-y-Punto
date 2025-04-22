@@ -1,0 +1,67 @@
+/* CONOCENOS */
+
+.conocenos {
+  position: relative;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.conocenos__decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: .03;
+  font-size: 180px;
+  font-weight: 900;
+  transform: translateY(-70px);
+}
+
+.conocenos__wrapper {
+  margin-top: 100px;
+  margin-bottom: 60px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.conocenos__image-box {
+  position: relative;
+  height: 350px;
+  width: 60%;
+}
+
+.conocenos__content {
+  width: 40%;
+}
+
+.conocenos__image-1 {
+  width: 90%;
+}
+
+.conocenos__image-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+}
+.conocenos__text {
+  margin-top: 10px;
+}
+.conocenos__link {
+  margin-top: 10px;
+  display: block;
+  text-align: right;
+  color: var(--primary);
+  transition: all .3s ease-in-out;
+  text-decoration: underline;
+  font-weight: 500;
+}
+.conocenos__link i {
+  transition: .3s ease;
+}
+.conocenos__link:hover i {
+  transform: translateX(10px);
+
+}
