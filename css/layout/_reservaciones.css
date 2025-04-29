@@ -117,3 +117,17 @@
     border-radius: 12px;
     margin-bottom: 5px;
 }
+.people{
+    margin-top: 50px;
+    
+}
+.people__name{
+    text-align: left;
+    color: red;
+    font-size: 25px;
+}
+.people__box{
+    display: flex;
+justify-content: center;
+justify-content: space-around;
+}

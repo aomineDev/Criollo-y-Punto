@@ -39,95 +39,150 @@
 
         <h2 class="title-1 reservations">Reservaciones</h2>
     </header>
-    <div class="section">
-        <div class="section__cotented container">
-            <h4 class="person">Personas</h4>
+    <!-- 
+    <section>
+        <div class="section">
+            <div class="section__cotented container">
+                <h4 class="person">Personas</h4>
 
-            <div class="people-selector">
-                <div class="people-selector__option">
-                    <input type="radio" name="cantidad-personas" id="person-1" value="1" class="people-selector__input">
-                    <label for="person-1" class="people-selector__label">1</label>
+                <div class="people-selector">
+                    <div class="people-selector__option">
+                        <input type="radio" name="cantidad-personas" id="person-1" value="1"
+                            class="people-selector__input">
+                        <label for="person-1" class="people-selector__label">1</label>
+                    </div>
+                    <div class="people-selector__option">
+                        <input type="radio" name="cantidad-personas" id="person-2" value="2"
+                            class="people-selector__input">
+                        <label for="person-2" class="people-selector__label">2</label>
+                    </div>
+                    <div class="people-selector__option">
+                        <input type="radio" name="cantidad-personas" id="person-3" value="3"
+                            class="people-selector__input">
+                        <label for="person-3" class="people-selector__label">3</label>
+                    </div>
+                    <div class="people-selector__option">
+                        <input type="radio" name="cantidad-personas" id="person-4" value="4"
+                            class="people-selector__input">
+                        <label for="person-4" class="people-selector__label">4</label>
+                    </div>
+                    <div class="people-selector__option">
+                        <input type="radio" name="cantidad-personas" id="person-5" value="5"
+                            class="people-selector__input">
+                        <label for="person-5" class="people-selector__label">5</label>
+                    </div>
+                    <div class="people-selector__option">
+                        <input type="radio" name="cantidad-personas" id="person-6" value="6"
+                            class="people-selector__input">
+                        <label for="person-6" class="people-selector__label">6</label>
+                    </div>
                 </div>
-                <div class="people-selector__option">
-                    <input type="radio" name="cantidad-personas" id="person-2" value="2" class="people-selector__input">
-                    <label for="person-2" class="people-selector__label">2</label>
-                </div>
-                <div class="people-selector__option">
-                    <input type="radio" name="cantidad-personas" id="person-3" value="3" class="people-selector__input">
-                    <label for="person-3" class="people-selector__label">3</label>
-                </div>
-                <div class="people-selector__option">
-                    <input type="radio" name="cantidad-personas" id="person-4" value="4" class="people-selector__input">
-                    <label for="person-4" class="people-selector__label">4</label>
-                </div>
-                <div class="people-selector__option">
-                    <input type="radio" name="cantidad-personas" id="person-5" value="5" class="people-selector__input">
-                    <label for="person-5" class="people-selector__label">5</label>
-                </div>
-                <div class="people-selector__option">
-                    <input type="radio" name="cantidad-personas" id="person-6" value="6" class="people-selector__input">
-                    <label for="person-6" class="people-selector__label">6</label>
-                </div>
-            </div>
 
-            <h4 class="date">Fecha</h4>
+                <h4 class="date">Fecha</h4>
 
-            <div class="date-selector">
-                <input type="date" id="fecha-evento" name="fecha-evento" class="date-selector__input">
+                <div class="date-selector">
+                    <input type="date" id="fecha-evento" name="fecha-evento" class="date-selector__input">
+                </div>
+                <h4 class="schedules">Horas disponibles</h4>
+                <div class="schedules-selector">
+                    <div class="schedules-selector-option">
+                        <input type="radio" name="horarios" id="10:20" class="schedules-selector-option__input">
+                        <label for="10:20">10:20</label>
+                    </div>
+                    <div class="schedules-selector-option">
+                        <input type="radio" name="horarios" id="11:30" class="schedules-selector-option__input">
+                        <label for="11:30">11:30</label>
+                    </div>
+                    <div class="schedules-selector-option">
+                        <input type="radio" name="horarios" id="12:30" class="schedules-selector-option__input">
+                        <label for="12:30">12:30</label>
+                    </div>
+                    <div class="schedules-selector-option">
+                        <input type="radio" name="horarios" id="1:30" class="schedules-selector-option__input">
+                        <label for="1:30">1:30</label>
+                    </div>
+                    <div class="schedules-selector-option">
+                        <input type="radio" name="horarios" id="2:30" class="schedules-selector-option__input">
+                        <label for="2:30">2:30</label>
+                    </div>
+                </div>
+                <h4 class="personal-information">Informacion personal</h4>
+                <form action="formulario" method="post">
+                    <div class="personal-information-form">
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" required="" placeholder="Ingrese sus nombres"
+                                class="personal-information__input">
+                        </div>
+                        <div>
+                            <label for="apellido">Apellidos</label>
+                            <input type="text" id="apellido" required="" placeholder="Ingrese su apellido"
+                                class="personal-information__input">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required="" placeholder="example@gmail.com"
+                                class="personal-information__input">
+                        </div>
+                        <div>
+                            <label for="telefono">Telefono</label>
+                            <input type="tel" id="telefono" required="" placeholder="478-555-555"
+                                class="personal-information__input">
+                        </div>
+                        <div class="send-button">
+                            <input type="submit" name="botonenviar" id="" value="Enviar" class="send-button__input">
+                        </div>
+                    </div>
+                </form>
             </div>
-            <h4 class="schedules">Horas disponibles</h4>
-            <div class="schedules-selector">
-                <div class="schedules-selector-option">
-                    <input type="radio" name="horarios" id="10:20" class="schedules-selector-option__input">
-                    <label for="10:20">10:20</label>
-                </div>
-                <div class="schedules-selector-option">
-                    <input type="radio" name="horarios" id="11:30" class="schedules-selector-option__input">
-                    <label for="11:30">11:30</label>
-                </div>
-                <div class="schedules-selector-option">
-                    <input type="radio" name="horarios" id="12:30" class="schedules-selector-option__input">
-                    <label for="12:30">12:30</label>
-                </div>
-                <div class="schedules-selector-option">
-                    <input type="radio" name="horarios" id="1:30" class="schedules-selector-option__input">
-                    <label for="1:30">1:30</label>
-                </div>
-                <div class="schedules-selector-option">
-                    <input type="radio" name="horarios" id="2:30" class="schedules-selector-option__input">
-                    <label for="2:30">2:30</label>
-                </div>
-            </div>
-            <h4 class="personal-information">Informacion personal</h4>
-            <form action="formulario" method="post">
-                <div class="personal-information-form">
-                    <div>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" required="" placeholder="Ingrese sus nombres"
-                            class="personal-information__input">
-                    </div>
-                    <div>
-                        <label for="apellido">Apellidos</label>
-                        <input type="text" id="apellido" required="" placeholder="Ingrese su apellido"
-                            class="personal-information__input">
-                    </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" id="email" required="" placeholder="example@gmail.com"
-                            class="personal-information__input">
-                    </div>
-                    <div>
-                        <label for="telefono">Telefono</label>
-                        <input type="tel" id="telefono" required="" placeholder="478-555-555"
-                            class="personal-information__input">
-                    </div>
-                    <div class="send-button">
-                        <input type="submit" name="botonenviar" id="" value="Enviar" class="send-button__input">
-                    </div>
-                </div>
-            </form>
         </div>
-    </div>
+    </section>               
+    -->
+
+    <section class="container">
+
+        <h1 class="title-1">Reservaciones</h1>
+
+        <div class="people">
+
+            <div class="people__name">
+                <h4>Personas</h4>
+            </div>
+
+            <div class="people__box">
+
+                <div>
+                    <input class="people__box-option" type="radio"> 1
+                </div>
+                <div>
+                    <input class="people__box-option" type="radio"> 2
+                </div>
+                <div>
+                    <input class="people__box-option" type="radio"> 3
+                </div>
+                <div>
+                    <input class="people__box-option" type="radio"> 4
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="date">
+
+            <div class="date__name">Fecha</div>
+
+            <div class="date__imput">
+                <input type="date">
+            </div>
+
+        </div>
+
+
+
+
+    </section>
 
 </body>
 

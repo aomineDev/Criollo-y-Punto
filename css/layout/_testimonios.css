@@ -1,6 +1,6 @@
 .testimonial {
     background-color: #ffffff;
-<<<<<<< HEAD
+
     padding-bottom: 40px;
     padding-top: 60px;
     position: relative;
@@ -17,10 +17,8 @@
     font-size: 180px;
     font-weight: 900;
     transform: translateY(-70px);
-=======
 
     padding-top: 50px;
->>>>>>> 48316be (d)
 }
 .testimonial__title{
     text-align: center;
