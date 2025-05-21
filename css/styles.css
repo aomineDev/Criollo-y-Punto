@@ -9,6 +9,8 @@
 
 /* LAYOUT */
 @import './layout/_index.css';
+@import './layout/_navbar.css';
+@import './layout/_footer.css';
 @import './layout/_conocenos.css';
 @import './layout/_nosotros.css';
 

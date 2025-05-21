@@ -1,0 +1,57 @@
+
+.footer {
+    margin-top: 30px;
+    background-color: black;
+    position: relative;
+}
+
+.kitchen {
+    margin: 0 auto;
+}
+
+.content__redes img {
+    width: 200px;
+}
+
+.footer__content {
+    /*Flexbox*/
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+
+    color: aliceblue;
+}
+
+.box img {
+    margin-top: -40px;
+}
+
+.box .title-4, p {
+    margin-bottom: 19px;
+}
+
+.social-media {
+    text-align: center;
+    font-size: 30px;
+}
+
+.social-media a {
+    color: aliceblue;
+    margin: 0px 7px;
+}
+
+@media (max-width: 1000px) {
+
+    .footer__content {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .box {
+        text-align: center;
+        margin: 50px;
+    }
+
+}
