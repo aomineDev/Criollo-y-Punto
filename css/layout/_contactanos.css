@@ -117,7 +117,7 @@ iframe {
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
-  border: black solid;
+ 
 
   transition: transform 0.3s ease;
 }

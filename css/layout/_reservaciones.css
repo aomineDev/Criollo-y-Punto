@@ -2,6 +2,7 @@
     text-align: center;
     margin-top: 9rem;
 }
+
 /*darte estilo al nombre personas*/
 .person {
     font-size: 1.3rem;
@@ -10,6 +11,7 @@
     text-align: center;
 
 }
+
 /* darle estilo ala caja que contiene todos los botones */
 .people-selector {
     margin-top: 3rem;
@@ -58,7 +60,7 @@
 .schedules {
     font-size: 1.3rem;
     font-weight: bold;
-    margin-top:3rem;
+    margin-top: 3rem;
     text-align: center;
 }
 
@@ -94,188 +96,191 @@
 .personal-information-form {
 
 
-      background-color: rgb(255, 248, 248);
-  padding: 2rem;
-  /* 50px */
-  border-radius: 0.625rem;
-  /* 10px */
-  border: solid black;
-  max-width: 31.25rem;
-  /* 500px */
-  width: 100%;
-  margin-top: 3rem;
+    background-color: rgb(255, 248, 248);
+    padding: 2rem;
+    /* 50px */
+    border-radius: 0.625rem;
+    /* 10px */
+    border: solid black;
+    max-width: 31.25rem;
+    /* 500px */
+    width: 100%;
+    margin-top: 3rem;
 
 }
 
 .personal-information__input {
-    
-      display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 0.625rem;
-  border-radius: 0.75rem;
-  margin-bottom: 1.875rem;
-  border: 0.125rem solid;
-  font-size: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.625rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1.875rem;
+    border: 0.125rem solid;
+    font-size: 1rem;
 
 }
 
 .send-button {
-  
-      margin-top: 2.5rem;
-  text-align: center;
+
+    margin-top: 2.5rem;
+    text-align: center;
 }
 
 .send-button__input {
 
-padding: 0.4rem 2rem;
+    padding: 0.4rem 2rem;
 
-  background-color: black;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 0.3125rem;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.3125rem;
 
 }
-@media (min-width:720px){
+
+@media (min-width:720px) {
 
     .person {
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-top: 3rem;
-    margin-right: 12px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-top: 3rem;
+        margin-right: 12px;
 
+
+    }
+
+    /* darle estilo ala caja que contiene todos los botones */
+    .people-selector {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .people-selector__option {
+        display: inline-block;
+
+    }
+
+
+    .people-selector__input {
+        transform: scale(1.5);
+    }
+
+    .people-selector__label {
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+        transition: 0.2s;
+
+    }
+
+    .date {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-top: 3rem;
+        text-align: center;
+
+    }
+
+    .date-selector {
+
+        margin-top: 3rem;
+
+    }
+
+    .date-selector__input {
+        transform: scale(1.5);
+
+    }
+
+    .schedules {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .schedules-selector {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .shedules_selection__label {
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+        transition: 0.2s
+    }
+
+    .schedules-selector-option {
+        display: inline-block;
+    }
+
+
+    .schedules-selector-option__input {
+        transform: scale(1.7);
+    }
+
+    .personal-information {
+        font-size: 1.3rem;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 3rem;
+
+    }
+
+    .form-{
+        display: flex;
+        justify-content: center;
+    }
+
+    .personal-information-form {
+        
+        background-color: rgb(255, 248, 248);
+        padding: 2rem;
+       
+        border-radius: 0.625rem;
+        border: solid black;
+        max-width: 31.25rem;
+        width: 100%;
+        margin-top: 3rem;
+        margin-right: 4rem;
+      
+
+    }
+
+    .personal-information__input {
+
+        display: flex; /**/
+        flex-direction: column; /**/
+        width: 100%;
+        padding: 0.625rem;
+        border-radius: 0.75rem;
+        margin-bottom: 1.875rem;
+        border: 0.125rem solid;
+        font-size: 1rem;
+
+    }
+
+    .send-button {
+
+        margin-top: 2.5rem;
+        text-align: center;
+    }
+
+    .send-button__input {
+
+        padding: 0.5rem 5rem; /**/
+        
+        background-color: black;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 0.3125rem;
+
+    }
 
 }
-/* darle estilo ala caja que contiene todos los botones */
-.people-selector {
-    margin-top: 3rem;
-    display: flex;
-    justify-content: center;
-}
-
-.people-selector__option {
- display: inline-block;  
-
-}
-    
-
-.people-selector__input {
-    transform: scale(1.5);
-}
-
-.people-selector__label {
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-    transition: 0.2s;
-
-}
-
-.date {
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-top: 3rem;
-    text-align: center;
-
-}
-
-.date-selector {
-    
-    margin-top: 3rem;
-
-}
-
-.date-selector__input {
-    transform: scale(1.5);
-
-}
-
-.schedules {
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-top:3rem;
-    text-align: center;
-}
-
-.schedules-selector {
-    margin-top: 3rem;
-    display: flex;
-    justify-content: center;    
-}
-
-.shedules_selection__label {
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-    transition: 0.2s
-}
-
-.schedules-selector-option {
- display: inline-block;  
-}
-   
-
-.schedules-selector-option__input {
-    transform: scale(1.7);
-}
-
-.personal-information {
-    font-size: 1.3rem;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 3rem;
-    display: flex;
-justify-content: center;
-}
-
-.personal-information-form {
-
-
-      background-color: rgb(255, 248, 248);
-  padding: 2rem;
-  /* 50px */
-  border-radius: 0.625rem;
-  /* 10px */
-  border: solid black;
-  max-width: 31.25rem;
-  /* 500px */
-  width: 100%;
-  margin-top: 3rem;
-
-}
-
-.personal-information__input {
-    
-      display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 0.625rem;
-  border-radius: 0.75rem;
-  margin-bottom: 1.875rem;
-  border: 0.125rem solid;
-  font-size: 1rem;
-
-}
-
-.send-button {
-  
-      margin-top: 2.5rem;
-  text-align: center;
-}
-
-.send-button__input {
-
-padding: 0.4rem 2rem;
-
-  background-color: black;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 0.3125rem;
-
-}
-
-}
-
-
