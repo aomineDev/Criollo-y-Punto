@@ -6,6 +6,61 @@
     position: relative;
     overflow: hidden;
 }
+.titulo_testimonio{
+
+}
+.testimonio_padre{
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+
+}
+.testimonio_box{
+
+   padding: 40px;
+   margin: 20px;
+   position: relative;
+   box-shadow: 0 0 7px black;
+}
+.nombre_testimonio{
+    text-align: center;
+    margin-bottom: 25px;
+      font-weight: bold;
+
+}
+.contendido_testimonio{
+text-align: center;
+  font-family: sans-serif;
+
+
+}
+.puntuacion{
+    display: flex;
+    gap: 25px;
+    font-size: 30px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+
+.imagen img{
+    width: 60px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 38%;
+    margin-top:  -70px;
+    border: solid white;
+    
+
+}
+.testimonio_box:hover{
+    transform: scale(1.2 , 1.2);
+    cursor: pointer;
+}
 .testimonial__decoration {
     position: absolute;
     top: 0;
@@ -13,30 +68,10 @@
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-    opacity: .03;
+   
     font-size: 180px;
     font-weight: 900;
     transform: translateY(-70px);
-
+color: red;
     padding-top: 50px;
 }
-.testimonial__title{
-    text-align: center;
-}
-
-.testimonial__text{
-    margin-top: 50px;
-    text-align: center
-    ;
-}
-.testimonial__name{
-    font-size: 24px;
-}
-.testimonial__author{
-    text-align: center;
-    font-family: Georgia;
-    font-size: 15px;
-    margin-top: 30px;
-
-}
-
