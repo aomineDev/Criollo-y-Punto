@@ -8,6 +8,11 @@
 .section__info img {
     width: 40%;
     height: 40%;
+    transition: all 2s ease;
+}
+
+.section__info img:hover {
+    transform: rotate(360deg);
 }
 
 .sectionMenu .title-1 {
@@ -57,10 +62,14 @@
     width: 100%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
 
     .section__info {
         flex-direction: column;
+    }
+
+    .info__1 {
+        padding: 30px 10px;
     }
 
     .section__info img {

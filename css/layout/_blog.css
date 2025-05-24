@@ -41,3 +41,9 @@
   margin-top: 16px;
   color: var(--primary);
 }
+
+@media (max-width: 1024px) {  
+  .article {
+      flex-direction: column;
+  }
+}
