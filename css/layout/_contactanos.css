@@ -1,23 +1,20 @@
 .title-1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   margin-top: 9rem;
   margin-bottom: 3rem;
+  text-align: center;
 }
 
-/* contiende las dos columnas de imagen y formulario */
 .container_columna {
   display: flex;
   flex-direction: column;
   gap: 3.5rem;
-
 }
-
-
 
 iframe {
   width: 100%;
+  max-width: 100%;
   height: 25rem;
-  /* 400px */
   border: solid black;
 }
 
@@ -26,23 +23,17 @@ iframe {
   padding: 2.5rem;
   border-radius: 0.625rem;
   border: solid black;
-  max-width: 31.25rem; /*borrar */
-  margin: 0 auto; /*borrar */
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .contact-form__input {
-  /* display: flex;
-  flex-direction: column; */
   width: 100%;
   padding: 0.625rem;
-
   border-radius: 0.75rem;
   margin-bottom: 2rem;
-    /* 30px */
   border: 0.125rem solid;
-  /* 2px */
   font-size: 1rem;
-
 }
 
 .send-buttoon {
@@ -51,54 +42,51 @@ iframe {
 }
 
 .send-buttoon__input {
-   padding: 0.4rem 4rem; /*largo y ancho de la caja boton */
+  padding: 0.4rem 4rem;
   background-color: black;
   color: white;
   font-size: 1rem;
   cursor: pointer;
   border-radius: 0.3125rem;
-  /* 5px */
 }
 
-
-/* contenedor padre de la caja de locales */
 .premises {
-   margin-top: 4rem;
-   margin-bottom: 6rem;  /*para que no este peago al foote*/
+  margin-top: 8rem;
+  margin-bottom: 6rem;
 }
 
 .premises .title-2 {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
+  font-size: 2.5rem;
 }
 
-/* caja padre que tiene las imagenes y los nombres  */
 .premises-option {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-
 }
 
-.premises-option>div {
-  background-color: black;
+.premises-option > div {
+  background-color: #fff;
+  width: 100%;
   max-width: 350px;
-
-  margin: 0 auto; /*borrar*/
+  margin: 0 auto;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  overflow: hidden;
   text-align: center;
-
-
   transition: transform 0.3s ease;
 }
 
-.premises-option>div:hover {
+.premises-option > div:hover {
   transform: translateY(-40px);
 }
 
 .premises__locals img {
-
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
 
@@ -118,106 +106,78 @@ iframe {
   color: #555;
 }
 
-@media (min-width:720px) {
-  .title-1{
-    text-align: center;
-  }
-  .container .title-1 {
-    margin-top: 8rem;
-    margin-bottom: 3rem;
-    font-size: 3rem;
-  }
+/* === MEDIA QUERIES === */
 
-  .container_columna {
-    display: flex;
-    flex-direction: row;
-    gap: 5rem;
-  }
-
-  .columna {
-    flex: 1;
-  }
-
-  iframe {
-    width: 100%;
-    height: 340px;
+@media (max-width: 374px) {
+  .title-1 {
+    font-size: 1.5rem;
   }
 
   .contact-form {
-    padding: 31px;
-    max-width: 100%
-
-  }
-
-  .contact-form__input {
-    font-size: 14px;
-    padding: 8px;
-    margin-bottom: 20px;
+    padding: 1.5rem;
   }
 
   .send-buttoon__input {
-    padding: 10px 68px;
-    font-size: 14px;
+    padding: 0.5rem 2rem;
+  }
+}
+
+@media (min-width: 720px) {
+  .container_columna {
+    gap: 5rem;
   }
 
-  .title-2 {
-    font-size: 40px
+  .contact-form {
+    padding: 3rem;
   }
 
-  .premises {
-    margin-top: 3.125rem;
-    margin-bottom: 3.125rem;
+  .contact-form__input {
+    font-size: 1rem;
+    padding: 0.75rem;
   }
 
-  .premises .title-2 {
-    text-align: center;
-    margin-bottom: 40px;
+  .send-buttoon__input {
+    padding: 0.6rem 5rem;
+    font-size: 1.1rem;
   }
+}
 
-
-  .premises-option {
-    display: flex;
+@media (min-width: 1024px) {
+  .container_columna {
     flex-direction: row;
     justify-content: space-around;
-    gap: 7rem;
+    align-items: flex-start;
+    gap: 5rem;
   }
+iframe {
+  width: 500px;
+  
+  height: 25rem;
+  border: solid black;
+}
 
-  .premises-option>div {
-    background-color: #fff;
-    width: 90%;
-    max-width: 250px;
-    margin: 0 auto;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
+.contact-form {
+  background-color: rgb(255, 248, 248);
+  padding: 2.5rem;
+  border-radius: 0.625rem;
+  border: solid black;
+  width: 500px;
+  margin: 0 auto;
+  height: 25rem;
+}
 
-  .premises-option>div:hover {
-    transform: translateY(-40px);
-  }
-
-  .premises__locals img {
-    width: 100%;
-    height: 30%;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-  }
-
-  .premises-option__text {
-    padding: 10px;
-  }
-
-  .premises-option__text h4 {
-    margin: 10px 0 5px;
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
-
-  .premises-option__text p {
-    margin: 5px 0;
-    font-size: 1rem;
-    color: #555;
+.contact-form__input {
+  width: 100%;
+  padding: 0.625rem;
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+  border: 0.125rem solid;
+  font-size: 1rem;
+}
+  .premises-option {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 4rem;
+    margin-bottom: 20px;
   }
 }
