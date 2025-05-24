@@ -64,6 +64,10 @@
 
 @media (max-width: 768px) {
 
+    .section__info img {
+        transition: none;
+    }
+
     .section__info {
         flex-direction: column;
     }
