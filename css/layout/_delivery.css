@@ -49,6 +49,7 @@
   margin-top: 60px;
   border-radius: 20px;
 }
+
 .delivery__card-title {
   font-weight: 600;
   margin-top: 60px;
@@ -68,6 +69,11 @@
   background-color: var(--primary);
   color: #ffffff;
   font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+.delivery__card-button:hover {
+  background-color:  var(--primary-darken)
 }
 
 .delivery__card-image {
@@ -93,6 +99,17 @@
   border: 2px dashed var(--primary);
   transform: translate(-50%, -50%);
   border-radius: 50%;
+}
+
+.delivery__card:hover .delivery__card-image::before {
+  animation: spin 10s linear infinite;
+
+}
+
+@keyframes spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
 @media(max-width: 768px) {

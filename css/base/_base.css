@@ -22,7 +22,7 @@ body {
 .title-2 {
   font-size: 40px;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .title-3 {
@@ -48,7 +48,8 @@ body {
 }
 
 .container {
-  max-width: 70%;
+  width: 70%;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -64,4 +65,42 @@ body {
 
 .link:hover .link-arrow {
   transform: translateX(8px);
+}
+
+.section__text-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: .03;
+    font-size: 11em;
+    font-weight: 900;
+    transform: translateY(-70px);
+    white-space: nowrap;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .section__text-decoration {
+    font-size: 8em;
+    transform: translateY(-50px);
+  }
 }

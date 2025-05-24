@@ -131,20 +131,6 @@
     margin-bottom: 70px;
 }
 
-.section__decoration {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    text-transform: uppercase;
-    opacity: .03;
-    font-size: 180px;
-    font-weight: 900;
-    transform: translateY(-70px);
-    white-space: nowrap;
-}
-
 .section__img1 {
     position: absolute;
     height: 20rem;

@@ -5,18 +5,6 @@
   background-color: #ffffff;
   overflow: hidden;
 }
-.conocenos__decoration {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  text-transform: uppercase;
-  opacity: .03;
-  font-size: 180px;
-  font-weight: 900;
-  transform: translateY(-70px);
-}
 
 .conocenos__wrapper {
   margin-top: 100px;
