@@ -27,10 +27,10 @@
       <!-- Barra de menu-->
       <nav class="navbar">
         <ul class="navbar__list">
-          <li class="navbar__item navbar__item--active"><a href="index.html">Inicio</a></li>
+          <li class="navbar__item"><a href="index.html">Inicio</a></li>
           <li class="navbar__item"><a href="menu.html">Menu</a></li>
           <li class="navbar__item"><a href="blog.html">Blog</a></li>
-          <li class="navbar__item"><a href="delivery.html">Delivery</a></li>
+          <li class="navbar__item navbar__item--active"><a href="delivery.html">Delivery</a></li>
           <li class="navbar__item"><a href="contactanos.html">Contactanos</a></li>
           <li class="navbar__item"><a class="header__btn" href="reservaciones.html">Reservaciones</a></li>
         </ul>
@@ -44,24 +44,31 @@
 
     <div class="delivery__wrapper">
       <form action="#" class="delivery__form">
-        <div class="delivery__form-group">
-          <label for="search" class="delivery__form-label">Buscar</label>
-          <input type="search" name="search" id="search" placeholder="Nombre del plato..."
-            class="delivery__form-search">
-        </div>
-        <div class="delivery__form-group">
-          <label for="categories" class="delivery__form-label">Categorias</label>
-          <select name="categories" id="categories" class="delivery__form-select">
-            <option value="entradas" selected>Entradas</option>
-            <option value="sopas" selected>Sopas</option>
-            <option value="criollo" selected>Criollo</option>
-            <option value="postres" selected>Postres</option>
-            <option value="bebidas" selected>Bebidas</option>
-          </select>
-        </div>
-        <div class="delivery__form-group">
-          <label for="price" class="delivery__form-label">Rango de precios</label>
-          <input type="range" name="price" id="price" class="delivery__form-range">
+        <input type="checkbox" name="" id="delivery__filter" class="delivery__filter-checkbox">
+        <label for="delivery__filter" class="delivery__filter-label">
+          Filtros <i class="fa-solid fa-filter"></i>
+        </label>
+        
+        <div class="delivery__form-wrapper">
+          <div class="delivery__form-group">
+            <label for="search" class="delivery__form-label">Buscar</label>
+            <input type="search" name="search" id="search" placeholder="Nombre del plato..."
+              class="delivery__form-search">
+          </div>
+          <div class="delivery__form-group">
+            <label for="categories" class="delivery__form-label">Categorias</label>
+            <select name="categories" id="categories" class="delivery__form-select">
+              <option value="entradas" selected>Entradas</option>
+              <option value="sopas" selected>Sopas</option>
+              <option value="criollo" selected>Criollo</option>
+              <option value="postres" selected>Postres</option>
+              <option value="bebidas" selected>Bebidas</option>
+            </select>
+          </div>
+          <div class="delivery__form-group">
+            <label for="price" class="delivery__form-label">Rango de precios</label>
+            <input type="range" name="price" id="price" class="delivery__form-range">
+          </div>
         </div>
       </form>
 
@@ -261,7 +268,7 @@
     <div class="footer__content">
 
       <!-- Logo y redes -->
-      <div class="content__redes box">
+      <div class="content__redes footer__box">
         <a href=""><img src="img/logo/logo-blanco.png" alt=""></a>
         <div class="social-media">
           <a href="https://facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
@@ -272,20 +279,20 @@
       </div>
 
       <!-- Contactanos -->
-      <div class="content__contact box">
+      <div class="content__contact footer__box">
         <h4 class="title-4">Contactanos</h4>
         <p>+51 923745971</p>
         <p>restauranteCriollo&Punto@gmail.com</p>
       </div>
 
       <!-- Direccion -->
-      <div class="content__redes box">
+      <div class="content__redes footer__box">
         <h4 class="title-4">Direccion</h4>
         <p>Av. Los manzanos 123</p>
       </div>
 
       <!-- Horarios de Atención -->
-      <div class="content__atention box">
+      <div class="content__atention footer__box">
         <h4 class="title-4">Horario de Atención</h4>
         <p>Lunes - Sábado: <br> 3 PM - 10 PM</p>
         <p>Domingo: <br> Cerrado</p>

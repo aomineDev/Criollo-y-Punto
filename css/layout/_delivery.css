@@ -9,10 +9,15 @@
   display: flex;
   column-gap: 40px;
 }
-.delivery__form {
+
+.delivery__form-wrapper {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-top: 20px;
+}
+.delivery__filter-checkbox {
+  display: none;
 }
 .delivery__form-group {
   display: flex;
@@ -31,9 +36,10 @@
 
 .delivery__menu {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   column-gap: 50px;
   row-gap: 40px;
+  width: 100%;
 }
 .delivery__card {
   background-color: #ffffff;
@@ -43,6 +49,7 @@
   margin-top: 60px;
   border-radius: 20px;
 }
+
 .delivery__card-title {
   font-weight: 600;
   margin-top: 60px;
@@ -62,6 +69,11 @@
   background-color: var(--primary);
   color: #ffffff;
   font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+.delivery__card-button:hover {
+  background-color:  var(--primary-darken)
 }
 
 .delivery__card-image {
@@ -87,4 +99,44 @@
   border: 2px dashed var(--primary);
   transform: translate(-50%, -50%);
   border-radius: 50%;
+}
+
+.delivery__card:hover .delivery__card-image::before {
+  animation: spin 10s linear infinite;
+
+}
+
+@keyframes spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@media(max-width: 768px) {
+  .delivery__wrapper {
+    flex-direction: column;
+  }
+  .delivery__form {
+    position: sticky;
+    top: 140px;
+    background-color: #ffffff;
+    z-index: 10;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .delivery__form-wrapper {
+    display: none;
+  }
+  .delivery__filter-label {
+    display: block;
+    text-align: center;
+  }
+  .delivery__menu {
+    margin-top: 40px;
+  }
+  .delivery__filter-checkbox:checked ~ .delivery__form-wrapper {
+    display: flex;
+  }
+  
 }
