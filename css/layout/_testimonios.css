@@ -1,43 +1,44 @@
-.testimonial {
-    background-color: #ffffff;
-
-    padding-bottom: 40px;
-    padding-top: 60px;
-    position: relative;
-    overflow: hidden;
-}
-.titulo_testimonio{
+.testimonio {
+position: relative;
 
 }
-.testimonio_padre{
+
+.testimonio_padre {
 
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+
     gap: 30px;
     width: 100%;
-
+margin-bottom: 60px;
 }
-.testimonio_box{
 
-   padding: 40px;
-   margin: 20px;
-   position: relative;
-   box-shadow: 0 0 7px black;
+.testimonio_box {
+
+    padding: 40px;
+    margin: 20px;
+    position: relative;
+    box-shadow: 0 0 7px black;
+    min-width: 350px;
 }
-.nombre_testimonio{
+
+.nombre_testimonio {
     text-align: center;
+    margin-top: 20px;
     margin-bottom: 25px;
-      font-weight: bold;
+    font-weight: bold;
 
 }
-.contendido_testimonio{
-text-align: center;
-  font-family: sans-serif;
+
+.contendido_testimonio {
+    text-align: center;
+    font-family: sans-serif;
 
 
 }
-.puntuacion{
+
+.puntuacion {
     display: flex;
     gap: 25px;
     font-size: 30px;
@@ -46,21 +47,21 @@ text-align: center;
 }
 
 
-.imagen img{
+.imagen img {
     width: 60px;
     height: 70px;
     border-radius: 50%;
     position: absolute;
-    margin-left: 38%;
-    margin-top:  -70px;
-    border: solid white;
-    
+    margin-left: 34%;
+    margin-top: -70px;
 
 }
-.testimonio_box:hover{
-    transform: scale(1.2 , 1.2);
+
+.testimonio_box:hover {
+    transform: scale(1.1, 1.2);
     cursor: pointer;
 }
+
 .testimonial__decoration {
     position: absolute;
     top: 0;
@@ -68,10 +69,21 @@ text-align: center;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-   
+    opacity: .04;
     font-size: 180px;
     font-weight: 900;
     transform: translateY(-70px);
-color: red;
-    padding-top: 50px;
+        margin-top: -120px;
 }
+
+@media (max-width:1106px)  {
+    .testimonio_padre {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        width:100%;
+
+    }
+}
+
