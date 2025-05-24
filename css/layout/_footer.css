@@ -21,11 +21,11 @@
     color: aliceblue;
 }
 
-.box img {
+.footer__box img {
     margin-top: -40px;
 }
 
-.box .title-4, p {
+.footer__box .title-4, p {
     margin-bottom: 19px;
 }
 
@@ -39,7 +39,7 @@
     margin: 0px 7px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
 
     .footer__content {
         flex-direction: column;
@@ -47,7 +47,7 @@
         align-items: center;
     }
 
-    .box {
+    .footer__box {
         text-align: center;
         margin: 50px;
     }
