@@ -47,9 +47,21 @@ body {
   font-weight: 600;
 }
 
-
 .container {
   max-width: 70%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.link {
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: 500;
+}
+.link-arrow {
+  transition: all .3s ease-in-out;
+}
+
+.link:hover .link-arrow {
+  transform: translateX(8px);
 }

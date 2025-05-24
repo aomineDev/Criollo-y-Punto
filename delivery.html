@@ -44,24 +44,31 @@
 
     <div class="delivery__wrapper">
       <form action="#" class="delivery__form">
-        <div class="delivery__form-group">
-          <label for="search" class="delivery__form-label">Buscar</label>
-          <input type="search" name="search" id="search" placeholder="Nombre del plato..."
-            class="delivery__form-search">
-        </div>
-        <div class="delivery__form-group">
-          <label for="categories" class="delivery__form-label">Categorias</label>
-          <select name="categories" id="categories" class="delivery__form-select">
-            <option value="entradas" selected>Entradas</option>
-            <option value="sopas" selected>Sopas</option>
-            <option value="criollo" selected>Criollo</option>
-            <option value="postres" selected>Postres</option>
-            <option value="bebidas" selected>Bebidas</option>
-          </select>
-        </div>
-        <div class="delivery__form-group">
-          <label for="price" class="delivery__form-label">Rango de precios</label>
-          <input type="range" name="price" id="price" class="delivery__form-range">
+        <input type="checkbox" name="" id="delivery__filter" class="delivery__filter-checkbox">
+        <label for="delivery__filter" class="delivery__filter-label">
+          Filtros <i class="fa-solid fa-filter"></i>
+        </label>
+        
+        <div class="delivery__form-wrapper">
+          <div class="delivery__form-group">
+            <label for="search" class="delivery__form-label">Buscar</label>
+            <input type="search" name="search" id="search" placeholder="Nombre del plato..."
+              class="delivery__form-search">
+          </div>
+          <div class="delivery__form-group">
+            <label for="categories" class="delivery__form-label">Categorias</label>
+            <select name="categories" id="categories" class="delivery__form-select">
+              <option value="entradas" selected>Entradas</option>
+              <option value="sopas" selected>Sopas</option>
+              <option value="criollo" selected>Criollo</option>
+              <option value="postres" selected>Postres</option>
+              <option value="bebidas" selected>Bebidas</option>
+            </select>
+          </div>
+          <div class="delivery__form-group">
+            <label for="price" class="delivery__form-label">Rango de precios</label>
+            <input type="range" name="price" id="price" class="delivery__form-range">
+          </div>
         </div>
       </form>
 

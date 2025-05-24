@@ -45,5 +45,10 @@
 @media (max-width: 1024px) {  
   .article {
       flex-direction: column;
+      gap: 40px;
+  }
+  .article:nth-child(even) {
+      flex-direction: column-reverse;
+
   }
 }
