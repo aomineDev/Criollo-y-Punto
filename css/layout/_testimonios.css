@@ -19,6 +19,8 @@
     position: relative;
     box-shadow: 0 0 3px black;
     min-width: 350px;
+    transition: transform 0.5s ease-in-out;
+
 
 }
 
@@ -62,9 +64,8 @@
 }
 
 .testimonio_box:hover {
-    transform: scale(1.1, 1.2);
+    transform: scale(1.05);
     cursor: pointer;
-    transition: transform 0.5s ease-in-out;
 }
 
 .testimonial__decoration {
