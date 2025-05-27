@@ -1,6 +1,6 @@
 .testimonio {
-position: relative;
-overflow: hidden;
+    position: relative;
+    overflow: hidden;
 
 }
 
@@ -19,7 +19,7 @@ overflow: hidden;
     position: relative;
     box-shadow: 0 0 3px black;
     min-width: 350px;
-    
+
 }
 
 .nombre_testimonio {
@@ -39,13 +39,12 @@ overflow: hidden;
 
 .puntuacion {
     display: flex;
-    
+
     gap: 25px;
     font-size: 30px;
     margin-top: 20px;
-    justify-content: center
-    ;
-    
+    justify-content: center;
+
 
 
 
@@ -79,30 +78,33 @@ overflow: hidden;
     font-size: 180px;
     font-weight: 900;
     transform: translateY(-70px);
-        margin-top: -120px;
+    margin-top: -120px;
 }
-@media (max-width:1233px){
-    .testimonio_padre{
+
+@media (max-width:1233px) {
+    .testimonio_padre {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
     }
-    .testimonio_box{
+
+    .testimonio_box {
         width: 50%;
     }
 }
-@media (max-width:754px)  {
+
+@media (max-width:754px) {
     .testimonio_padre {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 30px;
-        width:100%;
+        width: 100%;
 
     }
-    .testimonial__decoration{
-       opacity: 3;
-       width: 50%;
+
+    .testimonial__decoration {
+        opacity: 3;
+        width: 50%;
     }
 }
-
