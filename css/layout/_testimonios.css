@@ -101,9 +101,8 @@ overflow: hidden;
 
     }
     .testimonial__decoration{
-       color: red;
        opacity: 3;
-       width: 100%;
+       width: 50%;
     }
 }
 
