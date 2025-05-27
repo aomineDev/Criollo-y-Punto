@@ -19,8 +19,7 @@
 
 .people-selector__option {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    
     justify-content: center;
     gap: 1.5rem;
     padding: 1rem;
@@ -140,7 +139,7 @@
 
 }
 
-@media (min-width:720px) {
+@media (min-width:600px) {
 
     .person {
         font-size: 1.3rem;
