@@ -43,7 +43,7 @@
     <h1 class="delivery__title title-1">Delivery</h1>
 
     <div class="delivery__wrapper">
-      <form action="#" class="delivery__form">
+      <form action="#" class="delivery__form" id="delivery-form">
         <input type="checkbox" name="" id="delivery__filter" class="delivery__filter-checkbox">
         <label for="delivery__filter" class="delivery__filter-label">
           Filtros <i class="fa-solid fa-filter"></i>
@@ -72,187 +72,7 @@
         </div>
       </form>
 
-      <main class="delivery__menu">
-        <div class="delivery__card">
-          <div class="delivery__card-image">
-            <img src="./img/Delivery/Entradas/BoliyucasDeQueso.png" alt="Imagen de un platillo">
-          </div>
-          <h3 class="delivery__card-title">Boliyucas de Queso</h3>
-          <p class="delivery__card-price">S/. 32.00</p>
-          <button type="button" class="delivery__card-button">Añadir</button>
-        </div>
-
-        <div class="delivery__card">
-          <div class="delivery__card-image">
-            <img src="./img/Delivery/Entradas/CausaLimeñaPollo.png" alt="Imagen de un platillo">
-          </div>
-          <h3 class="delivery__card-title">La causa limeña de pollo</h3>
-          <p class="delivery__card-price">S/. 43.00</p>
-          <button type="button" class="delivery__card-button">Añadir</button>
-        </div>
-
-        <div class="delivery__card">
-          <div class="delivery__card-image">
-            <img src="./img/Delivery/Entradas/ChichharronDePollo.png" alt="Imagen de un platillo">
-          </div>
-          <h3 class="delivery__card-title">Chicharrón de pollo</h3>
-          <p class="delivery__card-price">S/. 43.00</p>
-          <button type="button" class="delivery__card-button">Añadir</button>
-        </div>
-
-        <div class="delivery__card">
-          <div class="delivery__card-image">
-            <img src="./img/Delivery/Entradas/PapaHuancainaClasica.png" alt="Imagen de un platillo">
-          </div>
-          <h3 class="delivery__card-title">Papa a la huancaína clásica</h3>
-          <p class="delivery__card-price">S/. 32.00</p>
-          <button type="button" class="delivery__card-button">Añadir</button>
-        </div>
-
-        <div class="delivery__card">
-          <div class="delivery__card-image">
-            <img src="./img/Delivery/Sopas/LevantateCriollo.png" alt="Imagen de un platillo">
-          </div>
-          <h3 class="delivery__card-title">Levántate Criollito</h3>
-          <p class="delivery__card-price">S/. 48.00</p>
-          <button type="button" class="delivery__card-button">Añadir</button>
-        </div>
-
-        <div class="delivery__card">
-          <div class="delivery__card-image">
-            <img src="./img/Delivery/Sopas/Aguadito.png" alt="Imagen de un platillo">
-          </div>
-          <h3 class="delivery__card-title">Aguadito clásica</h3>
-          <p class="delivery__card-price">S/. 43.00</p>
-          <button type="button" class="delivery__card-button">Añadir</button>
-        </div>
-
-        <div class="delivery__card">
-          <div class="delivery__card-image">
-            <img src="./img/Delivery/Sopas/LevantateCriollo.png" alt="Imagen de un platillo">
-          </div>
-          <h3 class="delivery__card-title">Levántate Criollito</h3>
-          <p class="delivery__card-price">S/. 48.00</p>
-          <button type="button" class="delivery__card-button">Añadir</button>
-        </div>
-
-        <div class="delivery__card">
-          <div class="delivery__card-image">
-            <img src="./img/Delivery/Sopas/SopaCriolla.png" alt="Imagen de un platillo">
-          </div>
-          <h3 class="delivery__card-title">Sopa criolla</h3>
-          <p class="delivery__card-price">S/. 43.00</p>
-          <button type="button" class="delivery__card-button">Añadir</button>
-        </div>
-
-        <div class="delivery__card">
-          <div class="delivery__card-image">
-            <img src="./img/Delivery/Menu/AjiDeGallina.png" alt="Imagen de un platillo">
-          </div>
-          <h3 class="delivery__card-title">Ají de gallina</h3>
-          <p class="delivery__card-price">S/. 49.00</p>
-          <button type="button" class="delivery__card-button">Añadir</button>
-        </div>
-
-        <div class="delivery__card">
-          <div class="delivery__card-image">
-            <img src="./img/Delivery/Menu/ArrozConChancho.png" alt="Imagen de un platillo">
-          </div>
-          <h3 class="delivery__card-title">Arroz con chanchito</h3>
-          <p class="delivery__card-price">S/. 78.00</p>
-          <button type="button" class="delivery__card-button">Añadir</button>
-        </div>
-
-        <div class="delivery__card">
-          <div class="delivery__card-image">
-            <img src="./img/Delivery/Menu/CauCauMondongo.png" alt="Imagen de un platillo">
-          </div>
-          <h3 class="delivery__card-title">Cau cau de mondongo</h3>
-          <p class="delivery__card-price">S/. 49.00</p>
-          <button type="button" class="delivery__card-button">Añadir</button>
-        </div>
-
-        <div class="delivery__card">
-          <div class="delivery__card-image">
-            <img src="./img/Delivery/Menu/CevicheClasico.png" alt="Imagen de un platillo">
-          </div>
-          <h3 class="delivery__card-title">Ceviche clásico</h3>
-          <p class="delivery__card-price">S/. 49.00</p>
-          <button type="button" class="delivery__card-button">Añadir</button>
-        </div>
-
-        <div class="delivery__card">
-          <div class="delivery__card-image">
-            <img src="./img/Delivery/Postres/ArrozConLeche.png" alt="Imagen de un platillo">
-          </div>
-          <h3 class="delivery__card-title">Arroz con leche</h3>
-          <p class="delivery__card-price">S/. 23.00</p>
-          <button type="button" class="delivery__card-button">Añadir</button>
-        </div>
-
-        <div class="delivery__card">
-          <div class="delivery__card-image">
-            <img src="./img/Delivery/Postres/Budin.png" alt="Imagen de un platillo">
-          </div>
-          <h3 class="delivery__card-title">Budín</h3>
-          <p class="delivery__card-price">S/. 23.00</p>
-          <button type="button" class="delivery__card-button">Añadir</button>
-        </div>
-
-        <div class="delivery__card">
-          <div class="delivery__card-image">
-            <img src="./img/Delivery/Postres/MazamorraCombinada.png" alt="Imagen de un platillo">
-          </div>
-          <h3 class="delivery__card-title">Mazamorra Combinada</h3>
-          <p class="delivery__card-price">S/. 23.00</p>
-          <button type="button" class="delivery__card-button">Añadir</button>
-        </div>
-
-        <div class="delivery__card">
-          <div class="delivery__card-image">
-            <img src="./img/Delivery/Postres/MazamorraMorada.png" alt="Imagen de un platillo">
-          </div>
-          <h3 class="delivery__card-title">Mazamorra morada</h3>
-          <p class="delivery__card-price">S/. 23.00</p>
-          <button type="button" class="delivery__card-button">Añadir</button>
-        </div>
-
-        <div class="delivery__card">
-          <div class="delivery__card-image">
-            <img src="./img/Delivery/Bebidas/MangoHuarango.png" alt="Imagen de un platillo">
-          </div>
-          <h3 class="delivery__card-title">Mango huarango</h3>
-          <p class="delivery__card-price">S/. 16.00</p>
-          <button type="button" class="delivery__card-button">Añadir</button>
-        </div>
-
-        <div class="delivery__card">
-          <div class="delivery__card-image">
-            <img src="./img/Delivery/Bebidas/LaPintona.png" alt="Imagen de un platillo">
-          </div>
-          <h3 class="delivery__card-title">La Pintona huarango</h3>
-          <p class="delivery__card-price">S/. 16.00</p>
-          <button type="button" class="delivery__card-button">Añadir</button>
-        </div>
-
-        <div class="delivery__card">
-          <div class="delivery__card-image">
-            <img src="./img/Delivery/Bebidas/LimonadaClasica.png" alt="Imagen de un platillo">
-          </div>
-          <h3 class="delivery__card-title">Limonada huarango</h3>
-          <p class="delivery__card-price">S/. 11.00</p>
-          <button type="button" class="delivery__card-button">Añadir</button>
-        </div>
-
-        <div class="delivery__card">
-          <div class="delivery__card-image">
-            <img src="./img/Delivery/Bebidas/LimonadaHierbaBuena.png" alt="Imagen de un platillo">
-          </div>
-          <h3 class="delivery__card-title">Limonada de hierba buena</h3>
-          <p class="delivery__card-price">S/. 11.00</p>
-          <button type="button" class="delivery__card-button">Añadir</button>
-        </div>
-      </main>
+      <main class="delivery__menu" id="delivery-menu"></main>
     </div>
   </section>
 
@@ -261,7 +81,7 @@
 
     <!-- Imagen principal -->
     <div class="footer__kitchen">
-      <img class="kitchen" src="img/Banners/footer3.png" alt="">
+      <img class="kitchen" src="img/banner/footer3.png" alt="">
     </div>
 
     <!-- Contenedor de la informacion -->
@@ -301,6 +121,8 @@
     </div>
 
   </footer>
+
+  <script type="module" src="js/delivery/delivery.js"></script>
 
 </body>
 

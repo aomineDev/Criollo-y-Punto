@@ -1,0 +1,34 @@
+{
+  "entradas": [
+    {
+      "name": "Boliyucas de Queso",
+      "price": 32.5,
+      "description": "Masa de yuca y quesos.",
+      "image": "entradas/BoliyucasDeQueso.png"
+    },
+    {
+      "name": "Chicharrón de Pollo",
+      "price": 43,
+      "description": "Pollo a la plancha.",
+      "image": "entradas/ChichharronDePollo.png"
+    },
+    {
+      "name": "Papa a la huancaína",
+      "price": 32,
+      "description": "Papas a la huancáina, acompañadas de salsas huancáina y ocopa.",
+      "image": "entradas/PapaHuancainaClasica.png"
+    }
+  ],
+  "bebidas": [
+
+  ],
+  "postres": [
+
+  ],
+  "sopas": [
+
+  ],
+  "criollo": [
+    
+  ]
+}
