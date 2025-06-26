@@ -1,6 +1,6 @@
 .header {
     background-color: black;
-    background-image: url(../../img/Banners/img.png);
+    background-image: url(../../img/banner/img.png);
     background-repeat: no-repeat;
     background-position: top center;
     min-height: 100vh;
@@ -219,7 +219,7 @@
     }
 }
 
-@media(max-width: 425px) {
+@media(max-width: 480px) {
 
     .header__title {
         font-size: 200%;

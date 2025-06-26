@@ -6,9 +6,8 @@
   text-align: center;
 }
 .columna {
-    width: 100%;       /* Para que ocupe el 100% del ancho de su padre (.container_columna) */
-    max-width: 400px;  /* Para que no crezca más allá de 500px */
-    /* Aquí no necesitas padding ni border, ya los tienen el iframe y el contact-form */
+    width: 100%;  
+    max-width: 400px;  
 }
 .container_columna {
   display: flex;
