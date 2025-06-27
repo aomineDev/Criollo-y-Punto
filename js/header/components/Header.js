@@ -6,10 +6,10 @@ export function Header() {
             <label for="menu" class="menu-icon">&#9776;</label>
 
             <!-- Barra de menu-->
-            <nav class="navbar">
+            <nav class="navbar" id="navbar-list">
                 <ul class="navbar__list">
                     <li class="navbar__item"><a href="index.html">Inicio</a></li>
-                    <li class="navbar__item navbar__item--active"><a href="menu.html">Menu</a></li>
+                    <li class="navbar__item"><a href="menu.html">Menu</a></li>
                     <li class="navbar__item"><a href="blog.html">Blog</a></li>
                     <li class="navbar__item"><a href="delivery.html">Delivery</a></li>
                     <li class="navbar__item"><a href="contactanos.html">Contactanos</a></li>
