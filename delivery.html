@@ -13,6 +13,7 @@
 </head>
 
 <body>
+  <div class="delivery-modal" id="delivery-modal"></div>
 
   <header class="headerBar">
 
@@ -42,32 +43,45 @@
   <section class="delivery container">
     <h1 class="delivery__title title-1">Delivery</h1>
 
-    <div class="delivery__wrapper">
-      <form action="#" class="delivery__form" id="delivery-form">
-        <input type="checkbox" name="" id="delivery__filter" class="delivery__filter-checkbox">
-        <label for="delivery__filter" class="delivery__filter-label">
+    <div class="delivery__container">
+      <form action="#" class="delivery-form" id="delivery-form">
+        <input type="checkbox" name="" id="delivery-filter" class="delivery-filter__checkbox">
+        <label for="delivery-filter" class="delivery-filter__label">
           Filtros <i class="fa-solid fa-filter"></i>
         </label>
         
-        <div class="delivery__form-wrapper">
-          <div class="delivery__form-group">
-            <label for="search" class="delivery__form-label">Buscar</label>
-            <input type="search" name="search" id="search" placeholder="Nombre del plato..."
-              class="delivery__form-search">
+        <div class="delivery-form__container">
+          <div class="delivery-form__field">
+            <label for="delyvery-form-search" class="delivery-form__label">Buscar</label>
+            <input type="search" name="search" id="delyvery-form-search" placeholder="Nombre del plato..."
+              class="delivery-form__search">
           </div>
-          <div class="delivery__form-group">
-            <label for="categories" class="delivery__form-label">Categorias</label>
-            <select name="categories" id="categories" class="delivery__form-select">
+          <div class="delivery-form__field">
+            <label for="delyvery-form-categories" class="delivery-form__label">Categorias</label>
+            <select name="categories" id="delyvery-form-categories" class="delivery-form__select">
               <option value="entradas" selected>Entradas</option>
-              <option value="sopas" selected>Sopas</option>
-              <option value="criollo" selected>Criollo</option>
-              <option value="postres" selected>Postres</option>
-              <option value="bebidas" selected>Bebidas</option>
+              <option value="sopas">Sopas</option>
+              <option value="criollo">Criollo</option>
+              <option value="postres">Postres</option>
+              <option value="bebidas">Bebidas</option>
             </select>
           </div>
-          <div class="delivery__form-group">
-            <label for="price" class="delivery__form-label">Rango de precios</label>
-            <input type="range" name="price" id="price" class="delivery__form-range">
+          <div class="delivery-form__field">
+            <label for="delivery-form-range" class="delivery-form__label">Precio Maximo</label>
+            <div class="delivery-form__range">
+              <input 
+                type="range" 
+                class="delivery-form__range-input" 
+                id="delivery-form-range"
+                min="0"
+                max="100"
+                step="1"
+                value="100"
+                name="range"
+              >
+
+              <div class="delivery-form__range-value" id="delivery-form-range-value">100</div>
+            </div>
           </div>
         </div>
       </form>

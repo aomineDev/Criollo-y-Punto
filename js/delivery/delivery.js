@@ -1,8 +1,15 @@
 import { getMenu } from '../service.js'
 import { renderDeliveryMenu } from './render.js'
-import { registerDeliveryFormEvents  } from  './events/formEvents.js'
+import registerDeliveryFormEvents from './events/formEvents.js'
+import registerDeliveryMenuEvents from './events/menuEvents.js'
+import store from '../store.js'
 
-const menu = await getMenu()
+async function init() {
+  store.menu = await getMenu()
 
-renderDeliveryMenu(menu.entradas)
-registerDeliveryFormEvents()
+  renderDeliveryMenu(store.menu.entradas)
+  registerDeliveryFormEvents()
+  registerDeliveryMenuEvents()
+}
+
+window.addEventListener('load', init)
