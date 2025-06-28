@@ -1,25 +1,74 @@
 {
   "entradas": [
-    {
+     {
       "id": 1,
       "name": "Boliyucas de Queso",
-      "price": 32.5,
-      "description": "Masa de yuca y quesos.",
+      "price": 32,
+      "description": "Masa de yuca y quesos, acompañadas de salsas huancaína y ocopa.",
       "image": "entradas/BoliyucasDeQueso.png"
     },
     {
       "id": 2,
-      "name": "Chicharrón de Pollo",
+      "name": "Causa limeña de pollo",
       "price": 43,
-      "description": "Pollo a la plancha.",
-      "image": "entradas/ChichharronDePollo.png"
+      "description": "Con abundante relleno, palta y huevo.",
+      "image": "entradas/CausaLimeñaPollo.png"
     },
     {
       "id": 3,
-      "name": "Papa a la Huancaína",
+      "name": "Chicharrón de pollo",
+      "price": 43,
+      "description": "En su jugo al ajo.",
+      "image": "entradas/ChichharronDePollo.png"
+    },
+    {
+      "id": 4,
+      "name": "Papa a la huancaína clásica",
       "price": 32,
-      "description": "Papas a la huancáina, acompañadas de salsas huancáina y ocopa.",
+      "description": "Con su huevo y aceituna.",
       "image": "entradas/PapaHuancainaClasica.png"
+    },
+    {
+      "id": 5,
+      "name": "Croquetas de ají de gallina",
+      "price": 39,
+      "description": "Con su cremita de aceituna botija.",
+      "image": "entradas/CroquetasAjiDeGallina.png"
+    },
+    {
+      "id": 6,
+      "name": "Empanada de pastel de choclo",
+      "price": 18,
+      "description": "Rellena de choclitos tiernos y carne guisada a fuego lento.",
+      "image": "entradas/EmpanadaPastelDeChoclo.png"
+    },
+    {
+      "id": 7,
+      "name": "Empanada de rocoto relleno",
+      "price": 18,
+      "description": "Al estilo Punto & Criollo, rellena de carne guisada a fuego lento, queso y rocoto.",
+      "image": "entradas/EmpanadaRocotoRelleno.png"
+    },
+    {
+      "id": 8,
+      "name": "Papa rellena",
+      "price": 32,
+      "description": "Una papa rellena acompañada de crema de rocoto y salza criolla.",
+      "image": "entradas/PapaRellena.png"
+    },
+    {
+      "id": 9,
+      "name": "Pastel de choclo",
+      "price": 56,
+      "description": "Relleno de carne guisada.",
+      "image": "entradas/PastelDeChoclo.png"
+    },
+    {
+      "id": 10,
+      "name": "Tamalito verde",
+      "price": 21,
+      "description": "Con jugo de seco y salza criolla.",
+      "image": "entradas/TamalitoVerde.png"
     }
   ],
   "sopas": [
