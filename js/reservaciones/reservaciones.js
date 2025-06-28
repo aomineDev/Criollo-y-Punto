@@ -1,4 +1,12 @@
-function validarFormularioReservaciones() {
+
+document.addEventListener("DOMContentLoaded",() =>{
+
+    const form = document.getElementById("formreservaciones");
+    form.addEventListener("submit",validarFormularioReservaciones);
+});
+
+function validarFormularioReservaciones(event) {
+event.preventDefault();    
     const nombre = document.getElementById("nombre").value.trim();
     const apellido = document.getElementById("apellido").value.trim();
     const email = document.getElementById("email").value.trim();
@@ -31,10 +39,31 @@ function validarFormularioReservaciones() {
     if (errores.length > 0) {
         errorDiv.innerHTML = errores.map(err => `<p>• ${err}</p>`).join("");
         errorDiv.style.display = "block";
-        return false;
+        return;
     } else {
         errorDiv.style.display = "none";
-        alert("Formulario enviado correctamente.");
-        return true;
+        const formData = new FormData();
+        formData.append("nombre",nombre);
+        formData.append("apellido",apellido);
+        formData.append("email", email);
+        formData.append("telefono",telefono);
+        fetch("https://formsubmit.co/leonardoelbaneado@gmail.com", {
+            method: "POST",
+            body: formData,
+         
+        })
+        .then(response => {
+            if (response.ok) {
+                alert("Formulario enviado correctamente.");
+                document.getElementById("formreservaciones").reset();
+            } else {
+                alert("Error al enviar el formulario. Intenta nuevamente.");
+                console.error("Error en la respuesta del servidor:", response);
+            }
+        })
+        .catch(error => {
+            alert("Ocurrió un error al enviar el formulario.");
+            console.error(error);
+        });
     }
 }
