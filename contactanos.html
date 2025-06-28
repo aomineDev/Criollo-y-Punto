@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/logo/logo-blanco.png" type="image/png">
     <script src="https://kit.fontawesome.com/e47c5641ca.js" crossorigin="anonymous"></script>
-    <script src="script/contactanos.js"> </script>
+    <script src="js/contactanos/contactanos.js"> </script>
 </head>
 
 <body>
@@ -31,23 +31,24 @@
 
             <div class="columna">
                 <div class="contact-form">
-                    <form name="form" action="" method="post" onsubmit="return validarFormularioContactanos()">
+                    <form name="form" id="formContactanos">
                         <div>
                             <label class="contact-form__label">Nombre</label>
-                            <input type="text" id="nombre" placeholder="Ingrese su nombre" class="contact-form__input">
+                            <input type="text" id="nombre" placeholder="Ingrese su nombre" class="contact-form__input" name="nombre">
                         </div>
                         <div>
                             <label class="contact-form__label">Email</label>
-                            <input type="email" id="email" placeholder="example@gmail.com" class="contact-form__input">
+                            <input type="email" id="email" placeholder="example@gmail.com" class="contact-form__input" name="email">
                         </div>
                         <div>
                             <label class="contact-form__label">Mensaje</label>
-                            <textarea class="contact-form__mensaje" id="mensaje" maxlength="90"></textarea>
+                            <textarea class="contact-form__mensaje" id="mensaje" maxlength="90" name="mensaje"></textarea>
                         </div>
                         <div id="errores" class="error-box" style="display: none;"></div>
                         <div class="send-buttoon">
                             <input type="submit" id="botonenvio" class="send-buttoon__input">
                         </div>
+                        <input type="hidden" name="_captcha" value="false">
                     </form>
                 </div>
             </div>
@@ -151,7 +152,6 @@
 
     </footer>
 
-    <script type="module" src="js/header/main.js"></script>
     
 </body>
 

@@ -3,6 +3,27 @@
     margin-top: 9rem;
 }
 
+.reservations__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+    padding: 2rem;
+}
+
+/* Columna izquierda (opciones) */
+.reservations__options {
+    flex: 1;
+    max-width: 500px;
+}
+
+/* Columna derecha (formulario) */
+.reservations__form {
+    flex: 1;
+    max-width: 500px;
+}
+
 /*darte estilo al nombre personas*/
 .person {
     font-size: 1.3rem;
@@ -20,7 +41,7 @@
 
 .people-selector__option {
     display: flex;
-    
+
     justify-content: center;
     gap: 1.5rem;
     padding: 1rem;
@@ -106,7 +127,7 @@
     /* 500px */
     width: 100%;
     margin-top: 3rem;
-align-items: center;
+    align-items: center;
 }
 
 .personal-information__input {
@@ -232,11 +253,6 @@ align-items: center;
         margin-bottom: 30px;
     }
 
-    /* .form-{
-        display: flex;
-        justify-content: center;
-    } */
-
     .personal-information-form {
         background-color: rgb(255, 248, 248);
         padding: 2rem;
@@ -249,8 +265,10 @@ align-items: center;
 
     .personal-information__input {
 
-        display: flex; /**/
-        flex-direction: column; /**/
+        display: flex;
+        /**/
+        flex-direction: column;
+        /**/
         width: 100%;
         padding: 0.625rem;
         border-radius: 0.75rem;
@@ -268,8 +286,9 @@ align-items: center;
 
     .send-button__input {
 
-        padding: 0.5rem 5rem; /**/
-        
+        padding: 0.5rem 5rem;
+        /**/
+
         background-color: black;
         color: white;
         font-size: 1rem;

@@ -7,7 +7,7 @@
     <meta name="description" content="Aqui podras ver el apartado de reservaciones">
     <link rel="stylesheet" href="css/styles.css">
     <title>Criollo & Punto | Reservaciones</title>
-    <script src="script/reservaciones.js"></script>
+    <script src="js/reservaciones/reservaciones.js"></script>
 </head>
 
 <body>
@@ -84,7 +84,7 @@
                 <h4 class="personal-information">Informacion personal</h4>
 
                 <div class="personal-information-form">
-                    <form class="form" action="" method="post" onsubmit="return validarFormularioReservaciones()">
+                    <form class="form" id="formreservaciones">
                         <div>
                             <label>Nombre</label>
                             <input type="text" id="nombre" placeholder="Ingrese sus nombres"
@@ -108,6 +108,7 @@
                         <div class="send-button">
                             <input type="submit" name="botonenviar" id="" value="Enviar" class="send-button__input">
                         </div>
+                        <input type="hidden" name="_captcha" value="false">
                     </form>
 
                 </div>
@@ -115,7 +116,6 @@
         </div>
     </section>
 
-    <script type="module" src="js/header/main.js"></script>
 
 </body>
 
