@@ -29,17 +29,31 @@
     top: 283px
 }
 
-.plato--1:hover {
-  transform: scale(1.1);
-}
-
 .plato--2 {
     width: 170px;
-    left: 638px;
-    top: 286px
+    left: 637px;
+    top: 288px
 }
 
-.plato--2:hover {
+.plato--3 {
+    width: 125px;
+    left: 505px;
+    top: 340px
+}
+
+.plato--4 {
+    width: 200px;
+    left: 219px;
+    top: 296px
+}
+
+.plato--5 {
+    width: 190px;
+    left: 50px;
+    top: 288px
+}
+
+.plato--1:hover, .plato--2:hover, .plato--3:hover, .plato--4:hover, .plato--5:hover {
   transform: scale(1.1);
 }
 
