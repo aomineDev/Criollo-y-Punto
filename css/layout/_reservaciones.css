@@ -12,6 +12,7 @@
 
 }
 
+
 /* darle estilo ala caja que contiene todos los botones */
 .people-selector {
     margin-top: 3rem;
@@ -105,7 +106,7 @@
     /* 500px */
     width: 100%;
     margin-top: 3rem;
-
+align-items: center;
 }
 
 .personal-information__input {
@@ -228,27 +229,22 @@
         text-align: center;
         font-weight: bold;
         margin-top: 3rem;
-
+        margin-bottom: 30px;
     }
 
-    .form-{
+    /* .form-{
         display: flex;
         justify-content: center;
-    }
+    } */
 
     .personal-information-form {
-        
         background-color: rgb(255, 248, 248);
         padding: 2rem;
-       
         border-radius: 0.625rem;
         border: solid black;
         max-width: 31.25rem;
         width: 100%;
-        margin-top: 3rem;
-        margin-right: 4rem;
-      
-
+        margin: auto;
     }
 
     .personal-information__input {
@@ -281,5 +277,4 @@
         border-radius: 0.3125rem;
 
     }
-
 }
