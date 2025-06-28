@@ -1,0 +1,1 @@
+export const  track = document.querySelector('.slider-track') 
