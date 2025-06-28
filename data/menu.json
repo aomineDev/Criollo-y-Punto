@@ -3,72 +3,23 @@
     {
       "id": 1,
       "name": "Boliyucas de Queso",
-      "price": 32,
-      "description": "Masa de yuca y quesos, acompañadas de salsas huancaína y ocopa.",
+      "price": 32.5,
+      "description": "Masa de yuca y quesos.",
       "image": "entradas/BoliyucasDeQueso.png"
     },
     {
       "id": 2,
-      "name": "Causa limeña de pollo",
+      "name": "Chicharrón de Pollo",
       "price": 43,
-      "description": "Con abundante relleno, palta y huevo.",
-      "image": "entradas/CausaLimeñaPollo.png"
-    },
-    {
-      "id": 3,
-      "name": "Chicharrón de pollo",
-      "price": 43,
-      "description": "En su jugo al ajo.",
+      "description": "Pollo a la plancha.",
       "image": "entradas/ChichharronDePollo.png"
     },
     {
-      "id": 4,
-      "name": "Papa a la huancaína clásica",
+      "id": 3,
+      "name": "Papa a la Huancaína",
       "price": 32,
-      "description": "Con su huevo y aceituna.",
+      "description": "Papas a la huancáina, acompañadas de salsas huancáina y ocopa.",
       "image": "entradas/PapaHuancainaClasica.png"
-    },
-    {
-      "id": 5,
-      "name": "Croquetas de ají de gallina",
-      "price": 39,
-      "description": "Con su cremita de aceituna botija.",
-      "image": "entradas/CroquetasAjiDeGallina.png"
-    },
-    {
-      "id": 6,
-      "name": "Empanada de pastel de choclo",
-      "price": 18,
-      "description": "Rellena de choclitos tiernos y carne guisada a fuego lento.",
-      "image": "entradas/EmpanadaPastelDeChoclo.png"
-    },
-    {
-      "id": 7,
-      "name": "Empanada de rocoto relleno",
-      "price": 18,
-      "description": "Al estilo Punto & Criollo, rellena de carne guisada a fuego lento, queso y rocoto.",
-      "image": "entradas/EmpanadaRocotoRelleno.png"
-    },
-    {
-      "id": 8,
-      "name": "Papa rellena",
-      "price": 32,
-      "description": "Una papa rellena acompañada de crema de rocoto y salza criolla.",
-      "image": "entradas/PapaRellena.png"
-    },
-    {
-      "id": 9,
-      "name": "Pastel de choclo",
-      "price": 56,
-      "description": "Relleno de carne guisada.",
-      "image": "entradas/PastelDeChoclo.png"
-    },
-    {
-      "id": 10,
-      "name": "Tamalito verde",
-      "price": 21,
-      "description": "Con jugo de seco y salza criolla.",
-      "image": "entradas/TamalitoVerde.png"
     }
   ],
   "sopas": [
@@ -104,105 +55,105 @@
   "criollo": [
 
     {
-      "id": 301,
+      "id": 201,
       "name": "Ají de gallina",
       "price": 49,
       "description": "El plato favorito de los limeños.",
       "image": "menu/AjiDeGallina.png"
     },
     {
-      "id": 302,
+      "id": 202,
       "name": "Arroz con chanchito",
       "price": 78,
       "description": "Con costillitas de chancho según receta antigua limeña.",
       "image": "menu/ArrozConChancho.png"
     },
     {
-      "id": 303,
+      "id": 203,
       "name": "Cau cau de mondongo",
       "price": 49,
       "description": "Nuestros precios están expresados en soles e incluyen impuestos de ley y recargo al consumo.",
       "image": "menu/CauCauMondongo.png"
     },
     {
-      "id": 304,
+      "id": 204,
       "name": "Ceviche clásico",
       "price": 49,
       "description": "De pesca del dia marinado en leche de tigre, con choclo, camote y ese saborcito antiguo.",
       "image": "menu/CevicheClasico.png"
     },
     {
-      "id": 305,
+      "id": 205,
       "name": "Chanfainita",
       "price": 46,
       "description": "La servimos con fideos a la criolla, mote, papa a la huancaína y rocoto bravo.",
       "image": "menu/Chanfainita.png"
     },
     {
-      "id": 306,
+      "id": 206,
       "name": "Lomo saltado",
       "price": 78,
       "description": "El clásico con papas y arroz.",
       "image": "menu/LomoSaltado.png"
     },
     {
-      "id": 307,
+      "id": 207,
       "name": "Mancha pecho",
       "price": 59,
       "description": "De carapulcra con sopa seca.",
       "image": "menu/ManchaPecho.png"
     },
     {
-      "id": 308,
+      "id": 208,
       "name": "Menestrón",
       "price": 50,
       "description": "Punta de pecho, pasta, verduras, queso fresco y crema huancaína.",
       "image": "menu/Menestron.png"
     },
     {
-      "id": 309,
+      "id": 209,
       "name": "Milanesa de pollo",
       "price": 59,
       "description": "Servida sobre nuestros tallarines verdes y su toque de huancaína.",
       "image": "menu/MilanesaPollo.png"
     },
     {
-      "id": 310,
+      "id": 210,
       "name": "Milanesa de lomo",
       "price": 79,
       "description": "Servida sobre nuestros tallarines verdes y su toque de huancaína.",
       "image": "menu/MilanesaLomo.png"
     },
     {
-      "id": 311,
+      "id": 211,
       "name": "Olluquito con charqui",
       "price": 46,
       "description": "Según receta antigua le añadimos su punto de chalona.",
       "image": "menu/OlluquitoConCharqui.png"
     },
     {
-      "id": 312,
-      "name": "Patita con maní",
+      "id": 212,
+      "name":"Patita con maní",
       "price": 39,
       "description": "Una patita con maní con mucho más que patita.",
       "image": "menu/PatitaConMani.png"
     },
     {
-      "id": 313,
+      "id": 213,
       "name": "Tallarines Limeños",
       "price": 39,
       "description": "Tallarines verdes con papa a la huancaína y huevo de corral.",
       "image": "menu/TallarinesLime%C3%B1os.png"
     },
     {
-      "id": 314,
+      "id": 214,
       "name": "Tallarín saltado de pollo",
       "price": 59,
       "description": "A la criolla saltado con cebollas, tomates y varios ajíes.",
       "image": "menu/TallarinSaltado.png"
     },
     {
-      "id": 315,
+      "id": 215,
       "name": "Tallarín saltado de lomo",
       "price": 78,
       "description": "A la criolla saltado con cebollas, tomates y varios ajíes.",
@@ -212,42 +163,42 @@
   ],
   "postres": [
     {
-      "id": 401,
+      "id": 301,
       "name": "Arroz con leche",
       "price": 23,
       "description": "Tradicional postre con arroz, leche y canela.",
       "image": "postres/ArrozConLeche.png"
     },
     {
-      "id": 401,
+      "id": 302,
       "name": "Budín",
       "price": 21,
       "description": "Amelcochado con plátano, manzana, toque de ron y bañado en crema inglesa.",
       "image": "postres/Budin.png"
     },
     {
-      "id": 401,
+      "id": 303,
       "name": "Mazamorra Combinada",
       "price": 24,
       "description": "El arroz con leche y la mazamorra morada juntos y en su punto.",
       "image": "postres/MazamorraCombinada.png"
     },
     {
-      "id": 401,
+      "id": 304,
       "name": "Mazamorra morada",
       "price": 26,
       "description": "Típico en nuestra repostería limeña con piña, durazno y guindones.",
       "image": "postres/MazamorraMorada.png"
     },
     {
-      "id": 401,
+      "id": 305,
       "name": "Picarones con miel de higos",
       "price": 23,
       "description": "Con su miel de hojas de higos y especias.",
       "image": "postres/Picarones.png"
     },
     {
-      "id": 401,
+      "id": 306,
       "name": "Torta de chocolate",
       "price": 24,
       "description": "Mojadita con abundante manjar y fudge de la casa.",
