@@ -26,9 +26,157 @@
 
   ],
   "criollo": [
-    
+
+    {
+      "id": 301,
+      "name": "Ají de gallina",
+      "price": 49,
+      "description": "El plato favorito de los limeños.",
+      "image": "menu/AjiDeGallina.png"
+    },
+    {
+      "id": 302,
+      "name": "Arroz con chanchito",
+      "price": 78,
+      "description": "Con costillitas de chancho según receta antigua limeña.",
+      "image": "menu/ArrozConChancho.png"
+    },
+    {
+      "id": 303,
+      "name": "Cau cau de mondongo",
+      "price": 49,
+      "description": "Nuestros precios están expresados en soles e incluyen impuestos de ley y recargo al consumo.",
+      "image": "menu/CauCauMondongo.png"
+    },
+    {
+      "id": 304,
+      "name": "Ceviche clásico",
+      "price": 49,
+      "description": "De pesca del dia marinado en leche de tigre, con choclo, camote y ese saborcito antiguo.",
+      "image": "menu/CevicheClasico.png"
+    },
+    {
+      "id": 305,
+      "name": "Chanfainita",
+      "price": 46,
+      "description": "La servimos con fideos a la criolla, mote, papa a la huancaína y rocoto bravo.",
+      "image": "menu/Chanfainita.png"
+    },
+    {
+      "id": 306,
+      "name": "Lomo saltado",
+      "price": 78,
+      "description": "El clásico con papas y arroz.",
+      "image": "menu/LomoSaltado.png"
+    },
+    {
+      "id": 307,
+      "name": "Mancha pecho",
+      "price": 59,
+      "description": "De carapulcra con sopa seca.",
+      "image": "menu/ManchaPecho.png"
+    },
+    {
+      "id": 308,
+      "name": "Menestrón",
+      "price": 50,
+      "description": "Punta de pecho, pasta, verduras, queso fresco y crema huancaína.",
+      "image": "menu/Menestron.png"
+    },
+    {
+      "id": 309,
+      "name": "Milanesa de pollo",
+      "price": 59,
+      "description": "Servida sobre nuestros tallarines verdes y su toque de huancaína.",
+      "image": "menu/MilanesaPollo.png"
+    },
+    {
+      "id": 310,
+      "name": "Milanesa de lomo",
+      "price": 79,
+      "description": "Servida sobre nuestros tallarines verdes y su toque de huancaína.",
+      "image": "menu/MilanesaLomo.png"
+    },
+    {
+      "id": 311,
+      "name": "Olluquito con charqui",
+      "price": 46,
+      "description": "Según receta antigua le añadimos su punto de chalona.",
+      "image": "menu/OlluquitoConCharqui.png"
+    },
+    {
+      "id": 312,
+      "name": "Patita con maní",
+      "price": 39,
+      "description": "Una patita con maní con mucho más que patita.",
+      "image": "menu/PatitaConMani.png"
+    },
+    {
+      "id": 313,
+      "name": "Tallarines Limeños",
+      "price": 39,
+      "description": "Tallarines verdes con papa a la huancaína y huevo de corral.",
+      "image": "menu/TallarinesLime%C3%B1os.png"
+    },
+    {
+      "id": 314,
+      "name": "Tallarín saltado de pollo",
+      "price": 59,
+      "description": "A la criolla saltado con cebollas, tomates y varios ajíes.",
+      "image": "menu/TallarinSaltado.png"
+    },
+    {
+      "id": 315,
+      "name": "Tallarín saltado de lomo",
+      "price": 78,
+      "description": "A la criolla saltado con cebollas, tomates y varios ajíes.",
+      "image": "menu/TallarinSaltadoLomo.png"
+    }
+
   ],
   "postres": [
+    {
+      "id": 401,
+      "name": "Arroz con leche",
+      "price": 23,
+      "description": "Tradicional postre con arroz, leche y canela.",
+      "image": "postres/ArrozConLeche.png"
+    },
+    {
+      "id": 401,
+      "name": "Budín",
+      "price": 21,
+      "description": "Amelcochado con plátano, manzana, toque de ron y bañado en crema inglesa.",
+      "image": "postres/Budin.png"
+    },
+    {
+      "id": 401,
+      "name": "Mazamorra Combinada",
+      "price": 24,
+      "description": "El arroz con leche y la mazamorra morada juntos y en su punto.",
+      "image": "postres/MazamorraCombinada.png"
+    },
+    {
+      "id": 401,
+      "name": "Mazamorra morada",
+      "price": 26,
+      "description": "Típico en nuestra repostería limeña con piña, durazno y guindones.",
+      "image": "postres/MazamorraMorada.png"
+    },
+    {
+      "id": 401,
+      "name": "Picarones con miel de higos",
+      "price": 23,
+      "description": "Con su miel de hojas de higos y especias.",
+      "image": "postres/Picarones.png"
+    },
+    {
+      "id": 401,
+      "name": "Torta de chocolate",
+      "price": 24,
+      "description": "Mojadita con abundante manjar y fudge de la casa.",
+      "image": "postres/TortaChocolate.png"
+    }
 
   ],
    "bebidas": [
