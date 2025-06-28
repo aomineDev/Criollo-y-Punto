@@ -13,7 +13,7 @@ export function Footer() {
         <div class="footer__content">
 
             <div class="content__redes footer__box">
-                <a href=""><img src="img/logo/logo-blanco.png" alt=""></a>
+                <a href="index.html"><img src="img/logo/logo-blanco.png" alt=""></a>
                 <div class="social-media">
                 <a href="https://facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
                 <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>

@@ -12,15 +12,12 @@
     padding: 2rem;
 }
 
-
-
 /*darte estilo al nombre personas*/
 .person {
     font-size: 1.3rem;
     font-weight: bold;
-    margin-top: 3rem;
+    margin-top: 10rem;
     text-align: center;
-
 }
 
 
@@ -175,10 +172,7 @@
     .person {
         font-size: 1.3rem;
         font-weight: bold;
-        margin-top: 1rem;
         margin-right: 12px;
-
-
     }
 
     /* darle estilo ala caja que contiene todos los botones */
