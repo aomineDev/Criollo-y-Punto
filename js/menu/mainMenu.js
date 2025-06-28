@@ -4,6 +4,7 @@ import { getMenu } from "../service.js";
 import store from "../store.js";
 
 async function init() {
+
   store.menu = await getMenu()
 
   renderMenuTable(store.menu.entradas, menuTableEntradas)
@@ -11,6 +12,7 @@ async function init() {
   renderMenuTable(store.menu.criollo, menuTableCriollo)
   renderMenuTable(store.menu.postres, menuTablePostres)
   renderMenuTable(store.menu.bebidas, menuTableBebidas)
+
 }
 
 window.addEventListener('load', init)
