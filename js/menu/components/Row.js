@@ -1,4 +1,4 @@
-export function Row({ id, image, name, price, description }) {
+export function Row({ image, name, price, description }) {
 
     return /*html*/ `
         <tr class="table__row">
@@ -14,5 +14,4 @@ export function Row({ id, image, name, price, description }) {
             </td>
         </tr>
     `
-
 }

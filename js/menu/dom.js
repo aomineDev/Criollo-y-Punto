@@ -1,0 +1,5 @@
+export const menuTableEntradas = document.getElementById('menu-table-entradas')
+export const menuTableSopas = document.getElementById('menu-table-sopas')
+export const menuTableCriollo = document.getElementById('menu-table-criollo')
+export const menuTablePostres = document.getElementById('menu-table-postres')
+export const menuTableBebidas = document.getElementById('menu-table-bebidas')
