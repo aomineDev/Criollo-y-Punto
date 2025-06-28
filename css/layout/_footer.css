@@ -6,8 +6,41 @@
     position: relative;
 }
 
-.kitchen {
-    margin: 0 auto;
+.footer__kitchen {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.kitchen-base {
+  width: 100%;
+  display: block;
+}
+
+.plato {
+  position: absolute;
+  transition: transform 0.3s ease;
+}
+
+.plato--1 {
+    width: 140px;
+    left: 811px;
+    top: 283px
+}
+
+.plato--1:hover {
+  transform: scale(1.1);
+}
+
+.plato--2 {
+    width: 170px;
+    left: 638px;
+    top: 286px
+}
+
+.plato--2:hover {
+  transform: scale(1.1);
 }
 
 .content__redes img {
@@ -50,6 +83,14 @@
     .footer__box {
         text-align: center;
         margin: 50px;
+    }
+
+}
+
+@media (max-width: 1023px) {
+
+    .plato {
+        display: none;
     }
 
 }
