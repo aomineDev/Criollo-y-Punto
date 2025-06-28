@@ -1,7 +1,7 @@
 import store from '../../store.js'
 import { deliveryMenu, deliveryForm, deliveryModal } from '../dom.js'
 
-const selectedMenu = {}
+let selectedMenu = {}
 
 function handleChooseToCartClick(evt) {
   if (evt.target.classList.contains('delivery-card__button')) {
@@ -11,7 +11,7 @@ function handleChooseToCartClick(evt) {
 
     selectedMenu = item;
 
-    
+
 
     deliveryModal.classList.toggle('active')
   }
