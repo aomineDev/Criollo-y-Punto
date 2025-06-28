@@ -12,17 +12,7 @@
     padding: 2rem;
 }
 
-/* Columna izquierda (opciones) */
-.reservations__options {
-    flex: 1;
-    max-width: 500px;
-}
 
-/* Columna derecha (formulario) */
-.reservations__form {
-    flex: 1;
-    max-width: 500px;
-}
 
 /*darte estilo al nombre personas*/
 .person {
@@ -41,22 +31,30 @@
 
 .people-selector__option {
     display: flex;
-
     justify-content: center;
     gap: 1.5rem;
     padding: 1rem;
 }
 
 .people-selector__input {
-    transform: scale(1.5);
+    display: none;
 }
 
 .people-selector__label {
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-    transition: 0.2s;
+    margin: 10px 20px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px 50px;
+    transition: all 0.5s ease;
+    display: inline-block;
+}
 
+.people-selector__input:checked+.people-selector__label {
+    background-color: black;
+    color: aliceblue;
+    transform: scale(1.2);
+    border-color: black;
 }
 
 .date {
@@ -90,10 +88,20 @@
 }
 
 .shedules_selection__label {
-    border: none;
-    padding: 8px 12px;
+    margin: 10px 20px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px 50px;
+    transition: all 0.5s ease;
+    display: inline-block;
+}
+
+.schedules-selector-option__input:checked+.shedules_selection__label {
+    background-color: black;
+    color: aliceblue;
     cursor: pointer;
-    transition: 0.2s
+    transform: scale(1.2);
 }
 
 .schedules-selector-option {
@@ -104,7 +112,8 @@
 }
 
 .schedules-selector-option__input {
-    transform: scale(1.7);
+
+    display: none;
 }
 
 .personal-information {
@@ -161,7 +170,7 @@
 
 }
 
-@media (min-width:600px) {
+@media (min-width:900px) {
 
     .person {
         font-size: 1.3rem;
@@ -186,15 +195,24 @@
 
 
     .people-selector__input {
-        transform: scale(1.5);
+        display: none;
     }
 
     .people-selector__label {
-        border: none;
-        padding: 8px 12px;
-        cursor: pointer;
-        transition: 0.2s;
+        margin: 10px 20px;
+        color: black;
+        border: 2px solid black;
+        border-radius: 25px;
+        padding: 10px 50px;
+        transition: all 0.5s ease;
+        display: inline-block;
+    }
 
+    .people-selector__label:hover {
+        background-color: black;
+        color: aliceblue;
+        cursor: pointer;
+        transform: scale(1.2);
     }
 
     .date {
@@ -230,10 +248,20 @@
     }
 
     .shedules_selection__label {
-        border: none;
-        padding: 8px 12px;
+        margin: 10px 20px;
+        color: black;
+        border: 2px solid black;
+        border-radius: 25px;
+        padding: 10px 50px;
+        transition: all 0.5s ease;
+        display: inline-block;
+    }
+
+    .shedules_selection__label:hover {
+        background-color: black;
+        color: aliceblue;
         cursor: pointer;
-        transition: 0.2s
+        transform: scale(1.2);
     }
 
     .schedules-selector-option {
@@ -242,7 +270,8 @@
 
 
     .schedules-selector-option__input {
-        transform: scale(1.7);
+
+        display: none;
     }
 
     .personal-information {
