@@ -21,31 +21,35 @@
 }
 
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-contenido {
-  background-color: white;
-  padding: 20px;
-  margin: 15% auto;
-  width: 80%;
-  max-width: 400px;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    background-color: white;
+    padding: 20px;
+    margin: 15% auto;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .cerrar-modal {
-  position: absolute;
-  right: 20px; top: 10px;
-  font-size: 24px;
-  cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
 }
+
 /* darle estilo ala caja que contiene todos los botones */
 .people-selector {
     margin-top: 3rem;
@@ -84,13 +88,17 @@
     font-weight: bold;
     margin-top: 3rem;
     text-align: center;
-
+    margin-bottom: 20px;
 }
 
 .date-selector {
     text-align: center;
-    margin-top: 3rem;
-
+    margin-top: 5rem;
+    width: 50%;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 20px;
 }
 
 .date-selector__input {
@@ -146,8 +154,6 @@
 }
 
 .personal-information-form {
-
-
     background-color: rgb(255, 248, 248);
     padding: 2rem;
     /* 50px */
@@ -159,6 +165,7 @@
     width: 100%;
     margin-top: 3rem;
     align-items: center;
+    margin: auto;
 }
 
 .personal-information__input {
@@ -205,6 +212,7 @@
         margin-top: 3rem;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .people-selector__option {
@@ -239,19 +247,20 @@
         font-weight: bold;
         margin-top: 3rem;
         text-align: center;
-
+        margin-bottom: 25px;
     }
 
     .date-selector {
 
-        margin-top: 3rem;
-
+        margin-top: 5rem;
+        width: 30%;
+        margin: auto;
+        border: 2px solid black;
+        border-radius: 25px;
+        padding: 19px;
     }
 
-    .date-selector__input {
-        transform: scale(1.5);
-
-    }
+    .date-selector__input {}
 
     .schedules {
         font-size: 1.3rem;
@@ -264,6 +273,7 @@
         margin-top: 3rem;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .shedules_selection__label {
