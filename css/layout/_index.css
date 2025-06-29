@@ -76,7 +76,7 @@
 
 .section__content {
     margin-top: 60px;
-    height: 55vh;
+    /* min-height: 55vh; */
     position: relative;
 }
 
@@ -89,29 +89,14 @@
     transition: all 0.5s ease;
 }
 
-.menubar__radio1:checked~.section__content .content__entrada {
-    visibility: visible;
-    opacity: 1;
-}
-
-.menubar__radio2:checked~.section__content .content__sopa {
-    visibility: visible;
-    opacity: 1;
-}
-
-.menubar__radio3:checked~.section__content .content__criollo {
-    visibility: visible;
-    opacity: 1;
-}
-
-.menubar__radio4:checked~.section__content .content__postre {
-    visibility: visible;
-    opacity: 1;
-}
-
+.menubar__radio1:checked~.section__content .content__entrada, 
+.menubar__radio2:checked~.section__content .content__sopa,
+.menubar__radio3:checked~.section__content .content__criollo,
+.menubar__radio4:checked~.section__content .content__postre,
 .menubar__radio5:checked~.section__content .content__bebida {
     visibility: visible;
     opacity: 1;
+    position: relative;
 }
 
 .menu-radio {
