@@ -52,8 +52,8 @@
 }
 
 .section__menubar {
-    text-align: center;
     margin-top: 25px;
+    text-align: center;
 }
 
 
@@ -67,21 +67,15 @@
     display: inline-block;
 }
 
-.menubar__label:hover {
-    background-color: black;
-    color: aliceblue;
-    cursor: pointer;
-    transform: scale(1.2);
-}
-
 .section__content {
     margin-top: 60px;
-    height: 55vh;
     position: relative;
 }
 
 .menu {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     visibility: hidden;
@@ -89,29 +83,25 @@
     transition: all 0.5s ease;
 }
 
-.menubar__radio1:checked~.section__content .content__entrada {
-    visibility: visible;
-    opacity: 1;
-}
-
-.menubar__radio2:checked~.section__content .content__sopa {
-    visibility: visible;
-    opacity: 1;
-}
-
-.menubar__radio3:checked~.section__content .content__criollo {
-    visibility: visible;
-    opacity: 1;
-}
-
-.menubar__radio4:checked~.section__content .content__postre {
-    visibility: visible;
-    opacity: 1;
-}
-
+.menubar__radio1:checked~.section__content .content__entrada, 
+.menubar__radio2:checked~.section__content .content__sopa,
+.menubar__radio3:checked~.section__content .content__criollo,
+.menubar__radio4:checked~.section__content .content__postre,
 .menubar__radio5:checked~.section__content .content__bebida {
+    position: static;
     visibility: visible;
     opacity: 1;
+}
+.menubar__radio1:checked+.menubar__label,
+.menubar__radio2:checked+.menubar__label,
+.menubar__radio3:checked+.menubar__label,
+.menubar__radio4:checked+.menubar__label,
+.menubar__radio5:checked+.menubar__label,
+.menubar__label:hover  {
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .menu-radio {
@@ -151,49 +141,42 @@
 }
 
 .box__img {
-    height: 100%;
+    width: 40%;
 }
 
 .box__text {
-    padding: 0px 15px;
+    padding: 20px;
 }
 
 .box__text h3 {
     margin-bottom: 5px;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .box__p {
-    padding: 0px 15px;
+    font-weight: bold;
 }
 
 .menu__inner {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 20px;
-    height: 100%;
 }
 
 .content__box {
     border: 2px dashed black;
-    text-align: left;
-    overflow: hidden;
     background-color: rgba(255, 255, 255, .5);
     backdrop-filter: blur(30px);
     display: flex;
-    align-items: center;
+    text-align: left;
 }
 
 .section__btn {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin-top: 40px;
     margin-bottom: 10px;
     transition: all 0.5s ease;
-}
-
-.section__btn:hover {
-    transform: scale(1.2);
 }
 
 .btn__1 {
@@ -202,12 +185,12 @@
     border: 2px solid black;
     border-radius: 25px;
     padding: 7px 25px;
+    transition: all 0.5s ease;
 }
 
 .btn__1:hover {
     background-color: black;
     color: aliceblue;
-    transition: all 0.5s ease;
 }
 
 @keyframes plato-rotacion {
@@ -228,46 +211,15 @@
 }
 
 @media(max-width: 768px) {
-
     .header {
         background-size: 150%;
         background-position: center;
     }
 
     .menubar__label {
-        display: flex;
-        flex-direction: column;
-        border-radius: 25px;
+        display: block;
         padding: 15px 0px;
         margin-bottom: 20px;
-    }
-
-    .menu__inner {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        gap: 1rem;
-        padding-bottom: 1rem;
-    }
-
-    .content__box {
-        flex-direction: column;
-        flex: 0 0 100%;
-        scroll-snap-align: start;
-        height: 50vh;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .box__img {
-        width: 100%;
-        height: 65%;
-    }
-
-    .box__text, .box__text p {
-        margin-top: 20px;
     }
 
     .section__img1,
@@ -277,26 +229,23 @@
 }
 
 @media (max-width: 1024px) {
-        .menu__inner {
-            display: flex;
-            flex-wrap: nowrap;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            scroll-behavior: smooth;
-            gap: 1rem;
-            padding-bottom: 1rem;
-        }
+    .menu__inner {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        gap: 1rem;
+    }
+    
   .content__box {
         flex-direction: column;
-        flex: 0 0 100%;
+        flex-shrink: 0;
+        flex-basis: 100%;
         scroll-snap-align: start;
-        height: 50vh;
         text-align: center;
-        padding: 20px;
     }
-       .box__img {
+    .box__img {
         width: 100%;
-        height: 65%;
     }
 
     .box__text, .box__text p {

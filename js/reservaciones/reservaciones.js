@@ -50,7 +50,7 @@ function validarFormularioReservaciones(event) {
         formData.append("_captcha", "false");
 
 
-        fetch("https://formsubmit.co/leonardoelbaneado@gmail.com", {
+        fetch("https://formsubmit.co/calixto4211@gmail.com", {
             method: "POST",
             body: formData,
 

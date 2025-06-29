@@ -6,8 +6,8 @@ export function MenuCard({ image, name, price, description }) {
             <div class="box__text">
                 <h3>${name}</h3>
                 <p>${description}</p>
+                <p class="box__p">S/${price.toFixed(2)}</p>
             </div>
-            <p class="box__p">S/${price}</p>
         </article>
     `
 }
