@@ -1,12 +1,11 @@
-
-document.addEventListener("DOMContentLoaded",() =>{
+document.addEventListener("DOMContentLoaded", () => {
 
     const form = document.getElementById("formreservaciones");
-    form.addEventListener("submit",validarFormularioReservaciones);
-});
+    form.addEventListener("submit", validarFormularioReservaciones);
 
+});
 function validarFormularioReservaciones(event) {
-event.preventDefault();    
+    event.preventDefault();
     const nombre = document.getElementById("nombre").value.trim();
     const apellido = document.getElementById("apellido").value.trim();
     const email = document.getElementById("email").value.trim();
@@ -42,28 +41,35 @@ event.preventDefault();
         return;
     } else {
         errorDiv.style.display = "none";
+        
         const formData = new FormData();
-        formData.append("nombre",nombre);
-        formData.append("apellido",apellido);
+        formData.append("nombre", nombre);
+        formData.append("apellido", apellido);
         formData.append("email", email);
-        formData.append("telefono",telefono);
+        formData.append("telefono", telefono);
+        formData.append("_captcha", "false");
+
+
         fetch("https://formsubmit.co/leonardoelbaneado@gmail.com", {
             method: "POST",
             body: formData,
-         
+
         })
-        .then(response => {
-            if (response.ok) {
-                alert("Formulario enviado correctamente.");
-                document.getElementById("formreservaciones").reset();
-            } else {
-                alert("Error al enviar el formulario. Intenta nuevamente.");
-                console.error("Error en la respuesta del servidor:", response);
-            }
-        })
-        .catch(error => {
-            alert("Ocurrió un error al enviar el formulario.");
-            console.error(error);
-        });
+            .then(response => {
+                if (response.ok) {
+                    document.getElementById("modalExito").style.display = "block";
+                    document.getElementById("formreservaciones").reset();
+                    setTimeout(() => {
+                        document.getElementById("modalExito").style.display = "none";
+                    }, 4000);
+                } else {
+                    alert("Error al enviar el formulario. Intenta nuevamente.");
+                    console.error("Error en la respuesta del servidor:", response);
+                }
+            })
+            .catch(error => {
+                alert("Ocurrió un error al enviar el formulario.");
+                console.error(error);
+            });
     }
 }

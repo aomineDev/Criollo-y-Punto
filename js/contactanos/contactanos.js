@@ -93,7 +93,7 @@ function validarFormularioContactanos(event) {
     if (errores.length > 0) {
         errorDiv.innerHTML = errores.map(err => `<p>• ${err}</p>`).join("");
         errorDiv.style.display = "block";
-        return ;
+        return;
     } else {
         errorDiv.style.display = "none";
 
@@ -106,21 +106,24 @@ function validarFormularioContactanos(event) {
         fetch("https://formsubmit.co/leonardoelbaneado@gmail.com", {
             method: "POST",
             body: formData,
-         
+
         })
-        .then(response => {
-            if (response.ok) {
-                alert("Formulario enviado correctamente.");
-                document.getElementById("formContactanos").reset();
-            } else {
-                alert("Error al enviar el formulario. Intenta nuevamente.");
-                console.error("Error en la respuesta del servidor:", response);
-            }
-        })
-        .catch(error => {
-            alert("Ocurrió un error al enviar el formulario.");
-            console.error(error);
-        });
+            .then(response => {
+                if (response.ok) {
+                    document.getElementById("modalExito").style.display = "block";
+                    document.getElementById("formContactanos").reset();
+                    setTimeout(() => {
+                        document.getElementById("modalExito").style.display = "none";
+                    }, 4000);
+                } else {
+                    alert("Error al enviar el formulario. Intenta nuevamente.");
+                    console.error("Error en la respuesta del servidor:", response);
+                }
+            })
+            .catch(error => {
+                alert("Ocurrió un error al enviar el formulario.");
+                console.error(error);
+            });
 
     }
 }

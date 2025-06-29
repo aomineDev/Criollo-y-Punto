@@ -20,7 +20,32 @@
     text-align: center;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
+.modal-contenido {
+  background-color: white;
+  padding: 20px;
+  margin: 15% auto;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.cerrar-modal {
+  position: absolute;
+  right: 20px; top: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
 /* darle estilo ala caja que contiene todos los botones */
 .people-selector {
     margin-top: 3rem;
