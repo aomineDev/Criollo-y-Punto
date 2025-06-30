@@ -34,6 +34,24 @@ function validarFormularioReservaciones(event) {
     } else if (telefonoSoloDigitos.length !== 9) {
         errores.push("El teléfono debe tener exactamente 9 dígitos numéricos.");
     }
+    const opcionPersonaSeleccionada = document.querySelector('input[name="cantidad-personas"]:checked');
+    if (!opcionPersonaSeleccionada) {
+        errores.push("Debes seleccionar la cantidad de personas.");
+    }
+    const opcionFechaSeleccionada = document.getElementById("fecha-evento").value;
+    const hoy = new Date();
+    const fechaSeleccionada = new Date(opcionFechaSeleccionada);
+    hoy.setHours(0, 0, 0, 0); // Para comparar solo fechas, no horas
+
+    if (opcionFechaSeleccionada === "") {
+        errores.push("Debes seleccionar una fecha para el evento.");
+    } else if (fechaSeleccionada < hoy) {
+        errores.push("La fecha del evento no puede ser anterior a hoy.");
+    }
+    const opcionHorarioSeleccionada = document.querySelector('input[name="horario-seleccionada"]:checked');
+    if (!opcionHorarioSeleccionada) {
+        errores.push("Debe seleccionar el horario de la reservacion")
+    }
     const errorDiv = document.getElementById("errores");
     if (errores.length > 0) {
         errorDiv.innerHTML = errores.map(err => `<p>• ${err}</p>`).join("");
@@ -41,7 +59,7 @@ function validarFormularioReservaciones(event) {
         return;
     } else {
         errorDiv.style.display = "none";
-        
+
         const formData = new FormData();
         formData.append("nombre", nombre);
         formData.append("apellido", apellido);
