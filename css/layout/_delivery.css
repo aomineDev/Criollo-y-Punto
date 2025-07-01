@@ -302,7 +302,7 @@
   border-radius: 20px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 600px;
+  max-width: 750px;
 }
 
 .delivery-cart__title {
@@ -310,6 +310,22 @@
   font-weight: bold;
   margin-bottom: 12px;
   text-align: center;
+}
+
+.delivery-cart__remove-btn {
+  background-color: rgba(0, 0, 0, 0);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: background-color .5s ease;
+}
+
+.delivery-cart__remove-btn:hover {
+  background-color: rgba(0, 0, 0, .05);
+}
+
+.delivery-cart__remove-btn * {
+  pointer-events: none;
 }
 
 .delivery-cart__wrapper {

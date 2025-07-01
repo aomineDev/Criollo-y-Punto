@@ -21,7 +21,11 @@ function handleSubmitForm (evt) {
   else
     store.cart.push({ quantity, details, selectedMenu })
 
+  localStorage.setItem('cart', JSON.stringify(store.cart))
+  
   toggleDeliveryOverlay()
+
+
 }
 
 function getTotal (input) {

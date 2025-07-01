@@ -6,9 +6,21 @@ import store from '../../store.js'
 
 
 function handleOpenCartClick(evt) {
-  renderDeliveryCart(store.cart)
+  renderDeliveryCart(store.cart, handleRemoveItem)
 
   toggleDeliveryOverlay()
+}
+
+function handleRemoveItem(evt) {
+  console.log(evt.target)
+  console.log(store.cart)
+  const id = parseInt(this.dataset.id)
+  console.log(id)
+  store.cart = store.cart.filter(item => item.selectedMenu.id !== id)
+  
+  localStorage.setItem('cart', JSON.stringify(store.cart))
+
+  renderDeliveryCart(store.cart, handleRemoveItem)
 }
 
 export default function registerDeliveryCartEvents() {

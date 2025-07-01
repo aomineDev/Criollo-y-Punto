@@ -12,7 +12,7 @@ export default function DeliveryCart(cart) {
         <td>${item.selectedMenu.name}</td>
         <td>${item.quantity}</td>
         <td>S/. ${total}</td>
-        <td>asd</td>
+        <td><button class="delivery-cart__remove-btn" data-id="${item.selectedMenu.id}"><i class="fa-regular fa-trash-can"></i></button></td>
       </tr>
     `
   })

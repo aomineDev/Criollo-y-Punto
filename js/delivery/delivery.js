@@ -8,6 +8,10 @@ import store from '../store.js'
 async function init() {
   store.menu = await getMenu()
 
+  if (localStorage.getItem('cart'))
+    store.cart = JSON.parse(localStorage.getItem('cart'))
+  
+
   renderDeliveryMenu(store.menu.entradas)
   registerDeliveryFormEvents()
   registerDeliveryMenuEvents()
