@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("formContactanos");
     form.addEventListener("submit", validarFormularioContactanos);
 });
+
 function validarFormularioContactanos(event) {
     event.preventDefault(); // evita recarga
 
@@ -43,7 +44,7 @@ function validarFormularioContactanos(event) {
         formData.append("mensaje", mensaje);
         formData.append("_captcha", "false");
 
-        fetch("https://formsubmit.co/leonardoelbaneado@gmail.com", {
+        fetch("https://formsubmit.co/leonardomurillo1906@gmail.com", {
             method: "POST",
             body: formData,
 
