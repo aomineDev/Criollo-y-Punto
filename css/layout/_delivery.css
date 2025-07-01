@@ -355,6 +355,21 @@
   border-radius: 8px;
 }
 
+.delivery-cart__quantity {
+  padding: 0 4px;
+}
+.delivery-cart__quantity-btn {
+  background-color: rgba(0, 0, 0, 0);
+  width: 30px;
+  height: 30px;
+  transition: background-color .5s ease;
+  border-radius: 50%;
+}
+
+.delivery-cart__quantity-btn:hover {
+  background-color: rgba(0, 0, 0, .05);
+}
+
 .delivery-cart__actions {
   margin-top: 20px;
   text-align: right;

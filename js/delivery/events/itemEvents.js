@@ -24,8 +24,6 @@ function handleSubmitForm (evt) {
   localStorage.setItem('cart', JSON.stringify(store.cart))
   
   toggleDeliveryOverlay()
-
-
 }
 
 function getTotal (input) {

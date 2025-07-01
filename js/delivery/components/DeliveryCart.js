@@ -10,7 +10,7 @@ export default function DeliveryCart(cart) {
       <tr>
         <td><img src="./img/delivery/${item.selectedMenu.image}" alt="Imagen de un platillo" class="delivery-cart__image"></td>
         <td>${item.selectedMenu.name}</td>
-        <td>${item.quantity}</td>
+        <td><button class="delivery-cart__quantity-btn delivery-cart-quantity-btn-minus" data-id="${item.selectedMenu.id}">-</button> <span class="delivery-cart__quantity" id="delivery-cart-quantity-${item.selectedMenu.id}" data-id="${item.selectedMenu.id}">${item.quantity}</span> <button class="delivery-cart__quantity-btn delivery-cart-quantity-btn-plus" data-id="${item.selectedMenu.id}">+</button></td>
         <td>S/. ${total}</td>
         <td><button class="delivery-cart__remove-btn" data-id="${item.selectedMenu.id}"><i class="fa-regular fa-trash-can"></i></button></td>
       </tr>
