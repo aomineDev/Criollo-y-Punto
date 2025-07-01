@@ -10,7 +10,7 @@ export function Row({ image, name, price, description }) {
                 <p>${description}</p>
             </td>
             <td>
-                <p>S/. ${price}</p>
+                <p>S/. ${price.toFixed(2)}</p>
             </td>
         </tr>
     `

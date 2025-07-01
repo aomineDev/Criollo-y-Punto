@@ -5,9 +5,12 @@
   --small-text: 14px;
   --x-small-text: 12px;
 
-  
   /* Colores */
-  --primary: #c59d5f;
-  --primary-darken: #b89158;
-  --text-color: #212121;
+  --primary: rgb(197, 157, 95);
+  --primary-darken: rgb(184, 145, 88);
+  --primary-lighten: rgba(197, 157, 95, .1);
+
+
+  --dark: #262626;
+  --light: #ffffff;
 }

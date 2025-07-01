@@ -54,7 +54,7 @@
 }
 
 .table__row:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
 .table__row td {
@@ -63,6 +63,7 @@
 
 .section__wrapper {
     overflow-x: auto;
+    overflow-y: hidden;
     width: 100%;
 }
 

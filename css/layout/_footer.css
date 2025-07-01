@@ -72,7 +72,8 @@
     margin-top: -40px;
 }
 
-.footer__box .title-4, p {
+.footer__box .title-4, 
+.footer__box p {
     margin-bottom: 19px;
 }
 

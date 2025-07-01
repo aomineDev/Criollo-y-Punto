@@ -1,5 +1,6 @@
 const store = {
   menu: {},
+  selectedMenu: {},
   cart: []
 }
 

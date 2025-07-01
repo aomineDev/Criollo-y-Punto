@@ -1,7 +1,7 @@
 import store from '../../store.js'
 import { deliveryMenu, deliveryForm, deliveryModal } from '../dom.js'
-
-let selectedMenu = {}
+import { renderDeliveryItem } from '../render.js'
+import registerDeliveryItemEvents from './itemEvents.js'
 
 function handleChooseToCartClick(evt) {
   if (evt.target.classList.contains('delivery-card__button')) {
@@ -9,20 +9,26 @@ function handleChooseToCartClick(evt) {
     const id = parseInt(evt.target.dataset.id)
     const item = store.menu[deliveryForm.categories.value].find(item => item.id === id)
 
-    selectedMenu = item;
+    store.selectedMenu = item;
 
+    renderDeliveryItem(item)
 
+    registerDeliveryItemEvents(document.getElementById('delivery-modal-form'))
 
-    deliveryModal.classList.toggle('active')
+    toggleDeliveryOverlay()
   }
 }
 
 function handleOverlayClick(evt) {
-  if (evt.target.id === 'delivery-modal') 
-    deliveryModal.classList.toggle('active')
+  if (evt.target.id === 'delivery-modal' || evt.target.id === 'delivery-modal-close') 
+    toggleDeliveryOverlay()
 }
 
-export default function menuEvents() {
+export function toggleDeliveryOverlay() {
+  deliveryModal.classList.toggle('active')
+}
+
+export default function registerDeliveryMenuEvents() {
   deliveryMenu.addEventListener('click', handleChooseToCartClick)
   deliveryModal.addEventListener('click', handleOverlayClick)
 }
