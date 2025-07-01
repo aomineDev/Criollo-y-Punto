@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 function validarFormularioReservaciones(event) {
+    
     event.preventDefault();
 
     // OBTENER LOS CAMPOS DEL HTML PARA LA VALIDACION
@@ -77,7 +78,7 @@ function validarFormularioReservaciones(event) {
         formData.append("_captcha", "false");
 
 
-        fetch("https://formsubmit.co/calixto4211@gmail.com", {
+        fetch("https://formsubmit.co/leonardomurillo1906@gmail.com", {
             method: "POST",
             body: formData,
 
@@ -100,10 +101,9 @@ function validarFormularioReservaciones(event) {
                     //un timer para quitar el modal
                     setTimeout(() => {
                         document.getElementById("modalExito").style.display = "none";
-                    }, 4000);
+                    }, 3000);
                 } else {
                     alert("Error al enviar el formulario. Intenta nuevamente.");
-                    console.error("Error en la respuesta del servidor:", response);
                 }
             })
             .catch(error => {
