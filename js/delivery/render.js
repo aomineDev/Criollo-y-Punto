@@ -1,6 +1,7 @@
 import { deliveryMenu, deliveryModal } from './dom.js'
 import DeliveryCard from './components/DeliveryCard.js'
-import DeliveryModal from './components/DeliveryModal.js'
+import DeliveryItem from './components/DeliveryItem.js'
+import DeliveryCart from './components/DeliveryCart.js'
 
 export function renderDeliveryMenu (menu) {
   deliveryMenu.innerHTML = ''
@@ -10,6 +11,10 @@ export function renderDeliveryMenu (menu) {
   })
 }
 
-export function renderDeliveryModal (selectedMenu) {
-  deliveryModal.innerHTML = DeliveryModal(selectedMenu)
+export function renderDeliveryItem (selectedMenu) {
+  deliveryModal.innerHTML = DeliveryItem(selectedMenu)
 } 
+
+export function  renderDeliveryCart (cart) {
+  deliveryModal.innerHTML = DeliveryCart(cart)
+}

@@ -124,6 +124,5 @@ function validarFormularioContactanos(event) {
                 alert("Ocurrió un error al enviar el formulario.");
                 console.error(error);
             });
-
     }
 }
