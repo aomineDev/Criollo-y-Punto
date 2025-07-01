@@ -54,11 +54,7 @@
 }
 
 .table__row:hover {
-<<<<<<< HEAD
-    transform: scale(1.02);
-=======
     transform: scale(1.03);
->>>>>>> 5d5ee22a922cbc34d5cf1ce8f44f32a84a591289
 }
 
 .table__row td {

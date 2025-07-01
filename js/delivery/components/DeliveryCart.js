@@ -12,6 +12,7 @@ export default function DeliveryCart(cart) {
         <td>${item.selectedMenu.name}</td>
         <td>${item.quantity}</td>
         <td>S/. ${total}</td>
+        <td>asd</td>
       </tr>
     `
   })
@@ -27,13 +28,14 @@ export default function DeliveryCart(cart) {
               <th>Platillo</th>
               <th>Cantidad</th>
               <th>Total</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>${rows}</tbody>
           <tfoot>
             <tr>
               <td colspan="3">Total:</td>
-              <td>S/. ${cartTotal.toFixed(2)}</td>
+              <td colspan="2">S/. ${cartTotal.toFixed(2)}</td>
             </tr>
           </tfoot>
         </table>
