@@ -23,7 +23,7 @@ function handleRangeInput(evt) {
 
 function handleRangeDisplay(range, percentage) {
     range.style.setProperty('--range-value', percentage + '%');
-    deliveryFormRangeValue.style.left = `${percentage >= 90 ? 90 : percentage}%`
+    deliveryFormRangeValue.style.left = `${percentage <= 5 ? 5 : percentage}%`
     deliveryFormRangeValue.innerHTML = range.value
 }
 

@@ -1,6 +1,5 @@
 import store from '../../store.js'
-import { deliveryModal } from '../dom.js'
-import { toggleDeliveryOverlay } from './menuEvents.js'
+import { toggleDeliveryOverlay } from './modalEvents.js'
 
 function handleQuantityInput (evt) {
   const total = getTotal(this)
@@ -32,7 +31,6 @@ function getTotal (input) {
 
   return (quantity * price).toFixed(2)
 }
-
 
 export default function registerDeliveryItemEvents (form) {
   form.quantity.addEventListener('input', handleQuantityInput)

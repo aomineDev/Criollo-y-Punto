@@ -1,12 +1,12 @@
 import { deliveryCartButton } from  '../dom.js'
-import  { toggleDeliveryOverlay } from './menuEvents.js'
+import  { toggleDeliveryOverlay } from './modalEvents.js'
 import { renderDeliveryCart } from '../render.js' 
 
 import store from '../../store.js'
 
 
 function handleOpenCartClick(evt) {
-  renderDeliveryCart(store.cart, handleRemoveItem, handleQuantityMinus, handleQuantityPlus)
+  renderDeliveryCart(store.cart)
 
   toggleDeliveryOverlay()
 }
@@ -18,7 +18,7 @@ function handleRemoveItem(evt) {
   
   localStorage.setItem('cart', JSON.stringify(store.cart))
 
-  renderDeliveryCart(store.cart, handleRemoveItem, handleQuantityMinus, handleQuantityPlus)
+  renderDeliveryCart(store.cart)
 }
 
 function handleQuantityMinus (evt) {
@@ -34,7 +34,7 @@ function handleQuantityMinus (evt) {
 
   localStorage.setItem('cart', JSON.stringify(store.cart))
 
-  renderDeliveryCart(store.cart, handleRemoveItem, handleQuantityMinus, handleQuantityPlus)
+  renderDeliveryCart(store.cart)
 }
 
 function handleQuantityPlus (evt) {
@@ -48,9 +48,15 @@ function handleQuantityPlus (evt) {
 
   localStorage.setItem('cart', JSON.stringify(store.cart))
 
-  renderDeliveryCart(store.cart, handleRemoveItem, handleQuantityMinus, handleQuantityPlus)
+  renderDeliveryCart(store.cart)
 }
 
 export default function registerDeliveryCartEvents() {
   deliveryCartButton.addEventListener('click', handleOpenCartClick)
+}
+
+export function registerDynamicDeliveryCartEvents() {
+  document.querySelectorAll('.delivery-cart__remove-btn').forEach(btn => btn.addEventListener('click', handleRemoveItem))
+  document.querySelectorAll('.delivery-cart-quantity-btn-minus').forEach(btn => btn.addEventListener('click', handleQuantityMinus))
+  document.querySelectorAll('.delivery-cart-quantity-btn-plus').forEach(btn => btn.addEventListener('click', handleQuantityPlus))
 }

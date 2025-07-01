@@ -1,8 +1,8 @@
 import { getMenu } from '../service.js'
 import { renderDeliveryMenu } from './render.js'
 import registerDeliveryFormEvents from './events/formEvents.js'
-import registerDeliveryMenuEvents from './events/menuEvents.js'
 import registerDeliveryCartEvents from './events/cartEvents.js'
+import registerDeliveryModalEvents from './events/modalEvents.js'
 import store from '../store.js'
 
 async function init() {
@@ -13,7 +13,7 @@ async function init() {
   
   renderDeliveryMenu(store.menu.entradas)
   registerDeliveryFormEvents()
-  registerDeliveryMenuEvents()
+  registerDeliveryModalEvents()
   registerDeliveryCartEvents()
 }
 
