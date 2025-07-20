@@ -195,7 +195,6 @@ iframe {
   color: #555;
 }
 
-/* ======== MEDIA QUERIES: ADAPTACIÓN PARA MÓVILES Y TABLETS ======== */
 
 @media (max-width: 1023px) {
   .container_columna {
