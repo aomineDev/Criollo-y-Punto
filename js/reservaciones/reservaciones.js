@@ -101,7 +101,7 @@ function validarFormularioReservaciones(event) {
                     //un timer para quitar el modal
                     setTimeout(() => {
                         document.getElementById("modalExito").style.display = "none";
-                    }, 3000);
+                    }, 4000);
                 } else {
                     alert("Error al enviar el formulario. Intenta nuevamente.");
                 }

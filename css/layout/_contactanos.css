@@ -4,12 +4,29 @@
   margin-bottom: 3rem;
   text-align: center;
 }
+
+.title-column {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 35px;
+  text-align: center;
+}
+
+.message {
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
 .modal {
   display: none;
   position: fixed;
   z-index: 999;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -21,51 +38,69 @@
   max-width: 400px;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .cerrar-modal {
   position: absolute;
-  right: 20px; top: 10px;
+  right: 20px;
+  top: 10px;
   font-size: 24px;
   cursor: pointer;
-}
-.columna {
-  width: 100%;
-  /* Para que ocupe el 100% del ancho de su padre (.container_columna) */
-  max-width: 400px;
-  /* Para que no crezca más allá de 500px */
-  /* Aquí no necesitas padding ni border, ya los tienen el iframe y el contact-form */
 }
 
 .container_columna {
   display: flex;
-  flex-direction: column;
-  gap: 3.5rem;
-  align-items: center;
-  /**/
-
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 150px;
 }
 
+.columna {
+  width: 100%;
+  max-width: 800px;
+}
 
 iframe {
+  width: 130%;
+  height: 600px;
+  max-width: 800px;
+  border: solid rgb(255, 255, 255);
+}
 
+.contact-form {
   width: 100%;
-  height: 25rem;
-  border: solid black;
+  margin: 0 auto;
+  background-color: rgb(255, 248, 248);
   border-radius: 0.625rem;
-  max-width: 500px;
+  border: solid white;
+}
 
+.contact-form__input {
+  width: 100%;
+  padding: 3px;
+  margin-bottom: 45px;
+  border: solid rgb(241, 241, 241);
+  height: 55px;
+  border-width: 2px;
+}
+
+.contact-form__input:focus {
+  border-color: black;
 
 }
 
-/*caja del formulario*/
-.contact-form {
+.contact-form__mensaje {
   width: 100%;
-  background-color: rgb(255, 248, 248);
-  padding: 2.5rem;
-  border-radius: 0.625rem;
-  border: solid black;
+  border: solid rgb(241, 241, 241);
+  height: 250px;
+  border-width: 2px;
+
+}
+
+.contact-form__mensaje:focus {
+  border-color: black;
 }
 
 .error-box {
@@ -76,34 +111,28 @@ iframe {
   text-align: center;
 }
 
-.contact-form__input {
-  width: 100%;
-  padding: 0.625rem;
-  border-radius: 0.75rem;
-  margin-bottom: 2rem;
-  border: 0.125rem solid;
-  font-size: 1rem;
-}
-
-.contact-form__mensaje {
-  width: 100%;
-  border: 0.125rem solid;
-  border-radius: 0.75rem;
-  font-size: 1rem;
-}
-
 .send-buttoon {
-  margin-top: 1rem;
-  text-align: center;
+  margin-top: 32px;
 }
 
 .send-buttoon__input {
   padding: 0.4rem 4rem;
-  background-color: black;
-  color: white;
+  color: black;
   font-size: 1rem;
   cursor: pointer;
-  border-radius: 0.3125rem;
+  height: 50px;
+  margin-left: 220px;
+  border: solid black;
+  border-width: 4px;
+  transition: background-color 0.5s ease-in-out,
+    color 0.5s ease-in-out,
+    border-color 0.5s ease-in-out;
+}
+
+.send-buttoon__input:hover {
+  background-color: rgb(29, 172, 207);
+  color: white;
+  border-color: rgb(29, 172, 207);
 }
 
 .premises {
@@ -119,9 +148,12 @@ iframe {
 
 .premises-option {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
   gap: 3rem;
   margin-top: 4rem;
+  margin-bottom: 20px;
 }
 
 .premises-option>div {
@@ -163,7 +195,33 @@ iframe {
   color: #555;
 }
 
+/* ======== MEDIA QUERIES: ADAPTACIÓN PARA MÓVILES Y TABLETS ======== */
 
+@media (max-width: 1023px) {
+  .container_columna {
+    flex-direction: column;
+    gap: 3.5rem;
+    align-items: center;
+  }
+
+  .send-buttoon__input {
+    margin-left: 0;
+  }
+
+  iframe {
+    width: 100%;
+    height: 600px;
+    max-width: 800px;
+    border: solid rgb(255, 255, 255);
+  }
+}
+
+@media (max-width: 720px) {
+  .send-buttoon__input {
+    padding: 0.6rem 5rem;
+    font-size: 1.1rem;
+  }
+}
 
 @media (max-width: 374px) {
   .title-1 {
@@ -176,70 +234,5 @@ iframe {
 
   .send-buttoon__input {
     padding: 0.5rem 2rem;
-  }
-
-}
-
-@media (min-width: 720px) {
-  .container_columna {
-    gap: 3.5rem;
-  }
-
-
-  .contact-form {
-    padding: 2.5rem;
-  }
-
-  .contact-form__input {
-    font-size: 1rem;
-    padding: 0.625rem;
-  }
-
-  .send-buttoon__input {
-    padding: 0.6rem 5rem;
-    font-size: 1.1rem;
-  }
-
-}
-
-@media (min-width: 1024px) {
-  .container_columna {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 40px;
-  }
-
-  iframe {
-    width: 100%;
-
-    height: 25rem;
-    border: solid black;
-  }
-
-  .contact-form {
-    background-color: rgb(255, 248, 248);
-    padding: 2.5rem;
-    border-radius: 0.625rem;
-    border: solid black;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .contact-form__input {
-    width: 100%;
-    padding: 0.625rem;
-    border-radius: 0.75rem;
-    margin-bottom: 2rem;
-    border: 0.125rem solid;
-    font-size: 1rem;
-  }
-
-  .premises-option {
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 3rem;
-    margin-bottom: 20px;
   }
 }
