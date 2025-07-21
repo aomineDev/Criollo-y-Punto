@@ -42,6 +42,7 @@ export default function DeliveryCart(cart) {
       </div>
       <div class="delivery-cart__actions">
         <button type="button" class="delivery-modal-form__button" id="delivery-modal-close">Cerrar</button>
+        <a href="./delivery-informacion.html" class="delivery-modal-form__button delivery-modal-form__button delivery-modal-form__button--primary">Continuar</a>
       </div>
     </div>
   `

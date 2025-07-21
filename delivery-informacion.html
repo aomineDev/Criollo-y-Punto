@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Disfruta lo mejor de la cocina criolla gourmet en casa con el servicio de delivery de Criollo y Punto. Rápido, seguro y con el auténtico sabor peruano.">
+  <title>Criollo & Punto | Delivery</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/logo/logo-blanco.png" type="image/png">
+  <script src="https://kit.fontawesome.com/e47c5641ca.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="headerBar"></header>
+
+  <div class="delivery-final container">
+    <div class="delivery-steps">
+      <div class="delivery-step active">
+        <div class="delivery-step__icon">1</div>
+        <p class="delivery-step__text">Información</p>
+      </div>
+      <div class="delivery-step">
+        <div class="delivery-step__icon">2</div>
+        <p class="delivery-step__text">Ubicacion</p>
+      </div>
+      <div class="delivery-step">
+        <div class="delivery-step__icon">3</div>
+        <p class="delivery-step__text">Pago</p>
+      </div>
+    </div>
+
+    <section class="delivery-final-container">
+      <form class="delivery-final-form" autocomplete="off" id="delivery-information-form">
+        <h3 class="delivery-final-form__title title-3">Información Personal</h3>
+        <div class="delivery-final-form__field">
+          <input type="text" placeholder=" " name="name" id="name" class="delivery-final-form__text">
+          <label for="name" class="delivery-final-form__label">Nombres</label>
+        </div>
+        <div class="delivery-final-form__field">
+          <input type="text" placeholder=" " name="lastname" id="last-name" class="delivery-final-form__text">
+          <label for="last-name" class="delivery-final-form__label">Apellidos</label>
+        </div>
+        <div class="delivery-final-form__field">
+          <input type="tel" placeholder=" " name="phone" id="phone" class="delivery-final-form__text">
+          <label for="phone" class="delivery-final-form__label">Telefono</label>
+        </div>
+        <div class="delivery-final-form__field">
+          <input type="email" placeholder=" " name="email" id="email" class="delivery-final-form__text">
+          <label for="email" class="delivery-final-form__label">Email</label>
+        </div>
+
+        <button type="submit" class="delivery-final-form__button">Continuar </button>
+      </form>
+
+      <div class="delivery-resume" id="delivery-resume"></div>
+    </section>
+  </div>
+
+  <footer class="footer"></footer>
+  <script type="module" src="js/header/main.js"></script>
+  <script type="module" src="js/footer/main.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="js/delivery-information/mask.js"></script>
+  <script type="module" src="js/delivery-information/main.js"></script>
+</body>
+
+</html>

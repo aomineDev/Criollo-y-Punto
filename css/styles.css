@@ -18,7 +18,12 @@
 @import './layout/_testimonios.css';
 @import './layout/_reservaciones.css';
 @import './layout/_blog.css';
+
 @import './layout/_delivery.css';
+@import './layout/_delivery-final.css';
+@import './layout/_delivery-ubicacion.css';
+@import './layout/_delivery-pago.css';
+
 @import './layout/_menu.css';
 @import './layout/_contactanos.css';
 

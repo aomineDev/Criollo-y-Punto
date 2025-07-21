@@ -1,4 +1,4 @@
-import { getMenu } from '../service.js'
+import { getMenu, getCart } from '../service.js'
 import { renderDeliveryMenu } from './render.js'
 import registerDeliveryFormEvents from './events/formEvents.js'
 import registerDeliveryCartEvents from './events/cartEvents.js'
@@ -8,8 +8,7 @@ import store from '../store.js'
 async function init() {
   store.menu = await getMenu()
 
-  if (localStorage.getItem('cart'))
-    store.cart = JSON.parse(localStorage.getItem('cart'))
+  store.cart = getCart()
   
   renderDeliveryMenu(store.menu.entradas)
   registerDeliveryFormEvents()

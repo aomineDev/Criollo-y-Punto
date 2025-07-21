@@ -1,0 +1,12 @@
+.delivery-pago-form {
+  grid-template-columns: repeat(3, 1fr)
+}
+
+.delivery-pago-form .delivery-final-form__title,
+.delivery-pago-form .delivery-final-form__button {
+  grid-column: span 3;
+}
+
+.delivery-pago-form .delivery-final-form__field:nth-of-type(1) {
+  grid-column: span 3;
+}

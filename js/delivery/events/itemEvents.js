@@ -1,5 +1,6 @@
 import store from '../../store.js'
 import { toggleDeliveryOverlay } from './modalEvents.js'
+import { saveCart } from '../../service.js'
 
 function handleQuantityInput (evt) {
   const total = getTotal(this)
@@ -20,7 +21,7 @@ function handleSubmitForm (evt) {
   else
     store.cart.push({ quantity, details, selectedMenu })
 
-  localStorage.setItem('cart', JSON.stringify(store.cart))
+  saveCart(store.cart)
   
   toggleDeliveryOverlay()
 }

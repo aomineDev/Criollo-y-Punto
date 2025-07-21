@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Disfruta lo mejor de la cocina criolla gourmet en casa con el servicio de delivery de Criollo y Punto. Rápido, seguro y con el auténtico sabor peruano.">
+  <title>Criollo & Punto | Delivery</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/logo/logo-blanco.png" type="image/png">
+  <script src="https://kit.fontawesome.com/e47c5641ca.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header class="headerBar"></header>
+
+  <div class="delivery-final container">
+    <div class="delivery-steps delivery-steps__pago">
+      <div class="delivery-step active">
+        <div class="delivery-step__icon"><i class="fa-solid fa-check"></i></div>
+        <p class="delivery-step__text">Información</p>
+      </div>
+      <div class="delivery-step active">
+        <div class="delivery-step__icon"><i class="fa-solid fa-check"></i></div>
+        <p class="delivery-step__text">Ubicacion</p>
+      </div>
+      <div class="delivery-step active">
+        <div class="delivery-step__icon">3</div>
+        <p class="delivery-step__text">Pago</p>
+      </div>
+    </div>
+
+    <section class="delivery-final-container">
+      <form class="delivery-final-form delivery-pago-form" autocomplete="off" id="delivery-pago-form">
+        <h3 class="delivery-final-form__title title-3">Realizar pago</h3>
+        <div class="delivery-final-form__field">
+          <input type="text" placeholder=" " name="card" id="card" class="delivery-final-form__text" >
+          <label for="card" class="delivery-final-form__label">Número de tarjeta</label>
+        </div>
+
+         <div class="delivery-final-form__field">
+          <input type="text" placeholder=" " name="month" id="month" class="delivery-final-form__text" >
+          <label for="month" class="delivery-final-form__label">Mes</label>
+        </div>
+
+         <div class="delivery-final-form__field">
+          <input type="text" placeholder=" " name="year" id="year" class="delivery-final-form__text" >
+          <label for="year" class="delivery-final-form__label">Año</label>
+        </div>
+
+         <div class="delivery-final-form__field">
+          <input type="text" placeholder=" " name="cvv" id="cvv" class="delivery-final-form__text" >
+          <label for="cvv" class="delivery-final-form__label">Codigo CVV</label>
+        </div>
+
+        <button type="submit" class="delivery-final-form__button">Finalizar</button>
+      </form>
+
+      <div class="delivery-resume" id="delivery-resume"></div>
+    </section>
+  </div>
+
+  <footer class="footer"></footer>
+  <script type="module" src="js/header/main.js"></script>
+  <script type="module" src="js/footer/main.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="js/delivery-pago/mask.js"></script>
+  <script type="module" src="js/delivery-pago/main.js"></script>
+</body>
+
+</html>

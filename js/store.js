@@ -1,7 +1,9 @@
 const store = {
   menu: {},
   selectedMenu: {},
-  cart: []
+  cart: [],
+  orders: [],
+  currentOrder: {}
 }
 
 export default store

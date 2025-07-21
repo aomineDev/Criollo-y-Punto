@@ -1,0 +1,36 @@
+#delivery-ubicacion-form .delivery-final-form__field {
+  grid-column: span 2;
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+  grid-column: span 2;
+  margin-bottom: 12px;
+}
+
+.delivery-ubicacion-form {
+  flex: 50%;
+}
+
+.delivery-final-form__field {
+  display: flex;
+  column-gap: 12px;
+}
+
+.delivery-ubicacion-form__current-location {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  color: white;
+  display: block;
+  flex-shrink: 0;
+}
+
+
+@media (max-width: 1024px) {
+  .delivery-ubicacion-form {
+    width: 100%;
+  }
+}

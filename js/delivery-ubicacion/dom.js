@@ -1,0 +1,1 @@
+export const deliveryUbicacionForm = document.getElementById('delivery-ubicacion-form')

@@ -1,6 +1,8 @@
 import { deliveryCartButton } from  '../dom.js'
 import  { toggleDeliveryOverlay } from './modalEvents.js'
-import { renderDeliveryCart } from '../render.js' 
+import { renderDeliveryCart } from '../render.js'
+
+import { saveCart } from '../../service.js'
 
 import store from '../../store.js'
 
@@ -16,7 +18,7 @@ function handleRemoveItem(evt) {
 
   store.cart = store.cart.filter(item => item.selectedMenu.id !== id)
   
-  localStorage.setItem('cart', JSON.stringify(store.cart))
+  saveCart(store.cart)
 
   renderDeliveryCart(store.cart)
 }
@@ -32,7 +34,7 @@ function handleQuantityMinus (evt) {
     return item
   })
 
-  localStorage.setItem('cart', JSON.stringify(store.cart))
+  saveCart(store.cart)
 
   renderDeliveryCart(store.cart)
 }
@@ -46,7 +48,7 @@ function handleQuantityPlus (evt) {
     return item
   })
 
-  localStorage.setItem('cart', JSON.stringify(store.cart))
+  saveCart(store.cart)
 
   renderDeliveryCart(store.cart)
 }
