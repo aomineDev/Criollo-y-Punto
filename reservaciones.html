@@ -12,18 +12,19 @@
 <body>
     <header class="headerBar"></header>
 
-    <h2 class="title-1">Reservaciones</h2>
 
     <div class="reservas container">
+        <h2 class="titulo title-1">Reservaciones</h2>
+
         <div class="fila">
             <!-- Columna izquierda -->
             <div class="columna izquierda">
                 <!-- Selección de locales -->
                 <div class="locales active" id="locales">
                     <p class="parrafo_reserva title-3">SELECCIONE UN LOCAL</p>
-                    <button class="op-local" onclick="mostrarFormulario('miraflores')">Miraflores</button>
-                    <button class="op-local" onclick="mostrarFormulario('sanisidro')">San Isidro</button>
-                    <button class="op-local " onclick="mostrarFormulario('surco')">Surco</button>
+                    <button class="op-local" onclick="mostrarFormulario('Miraflores')">Miraflores</button>
+                    <button class="op-local" onclick="mostrarFormulario('Sanisidro')">San Isidro</button>
+                    <button class="op-local " onclick="mostrarFormulario('Surco')">Surco</button>
                 </div>
 
                 <!-- Formulario de reservas -->
@@ -36,6 +37,8 @@
                         <option>2</option>
                         <option>3</option>
                         <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
                     </select>
 
                     <h3 class="titulo_hora title-3">Día</h3>
@@ -59,21 +62,59 @@
                         style="display: none;">Confirmar</button>
 
                 </div>
+                <div class="confirmacion" id="confirmacion">
+                    <h2 class="confirmacion_reserva">Confirmación de Reserva</h2>
+                    <p><strong class="confirmacion_text">Local:</strong> <span id="conf-local"
+                            class="local-text"></span></p>
+                    <p><strong class="confirmacion_text">Personas:</strong> <span id="conf-personas"
+                            class="local-text"></span></p>
+                    <p><strong class="confirmacion_text">Fecha:</strong> <span id="conf-fecha"
+                            class="local-text"></span></p>
+                    <p><strong class="confirmacion_text">Hora:</strong> <span id="conf-hora" class="local-text"></span>
+                    </p>
+
+                </div>
+                <div class="formu" id="form">
+                    <form name="form" id="formContactanos" onsubmit="return validarFormularioDatos()">
+                        <div>
+                            <label class="formu_label">Nombre</label>
+                            <input type="text" id="nombre" class="formu_input" name="nombre">
+                        </div>
+                        <div>
+                            <label class="formu_label">Apellido</label>
+                            <input type="text" name="apellido" id="apellido" class="formu_input">
+                        </div>
+                        <div>
+                            <label class="formu_label">Email</label>
+                            <input type="email" id="email" class="formu_input" name="email">
+                        </div>
+                        <div>
+                            <label class="formu_label">Telefono</label>
+                            <input type="tel" maxlength="9" class="formu_input" id="telefono" name="telefono">
+                        </div>
+
+                        <div id="errores" class="error-box" style="display: none;"></div>
+                        <button class="input_btn" type="submit">Enviar Reserva</button>
+
+
+                    </form>
+                </div>
+                <div id="modal-confirmacion" class="modal">
+                    <div class="modal-contenido-reservaciones">
+                        <h2> Reserva hecha exitosamente</h2>
+                        <p>Nos pondremos en contacto contigo pronto</p>
+                        <button onclick="cerrarModal()">Cerrar</button>
+                    </div>
+                </div>
             </div>
 
-            <div class="confirmacion" id="confirmacion">
-                <h2>Confirmación de Reserva</h2>
-                <p><strong>Local:</strong> <span id="conf-local"></span></p>
-                <p><strong>Personas:</strong> <span id="conf-personas"></span></p>
-                <p><strong>Fecha:</strong> <span id="conf-fecha"></span></p>
-                <p><strong>Hora:</strong> <span id="conf-hora"></span></p>
-                <button onclick="enviarReserva()">Enviar Reserva</button>
-            </div>
+
 
             <!-- Columna derecha -->
             <div class="columna derecha">
                 <img src="img/Delivery/Postres/MazamorraMorada.png" alt="Plato" />
             </div>
+
         </div>
     </div>
 

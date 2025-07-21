@@ -7,16 +7,16 @@
 
 .title-column {
   margin-top: 50px;
-  margin-bottom: 30px;
-  font-size: 35px;
+  margin-bottom: 60px;
+  font-size: 40px;
   text-align: center;
 }
 
 .message {
-  margin-bottom: 60px;
+  margin-bottom: 65px;
   text-align: center;
-  font-size: inherit;
-  font-weight: inherit;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .modal {
@@ -30,7 +30,7 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal-contenido {
+.modal-contenido-contactanos {
   background-color: white;
   padding: 20px;
   margin: 15% auto;
@@ -38,7 +38,13 @@
   max-width: 400px;
   text-align: center;
   border-radius: 10px;
+  height: 7%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-contenido-contactanos h2 {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .cerrar-modal {
@@ -72,7 +78,7 @@ iframe {
 .contact-form {
   width: 100%;
   margin: 0 auto;
-  background-color: rgb(255, 248, 248);
+  background-color: white;
   border-radius: 0.625rem;
   border: solid white;
 }
@@ -81,7 +87,7 @@ iframe {
   width: 100%;
   padding: 3px;
   margin-bottom: 45px;
-  border: solid rgb(241, 241, 241);
+  border: solid rgb(207, 205, 205);
   height: 55px;
   border-width: 2px;
 }
@@ -93,7 +99,7 @@ iframe {
 
 .contact-form__mensaje {
   width: 100%;
-  border: solid rgb(241, 241, 241);
+  border: solid rgb(207, 205, 205);
   height: 250px;
   border-width: 2px;
 
@@ -121,8 +127,8 @@ iframe {
   font-size: 1rem;
   cursor: pointer;
   height: 50px;
-  margin-left: 220px;
-  border: solid black;
+  margin-left: auto;
+  border: solid rgb(207, 205, 205);
   border-width: 4px;
   transition: background-color 0.5s ease-in-out,
     color 0.5s ease-in-out,
@@ -130,9 +136,9 @@ iframe {
 }
 
 .send-buttoon__input:hover {
-  background-color: rgb(29, 172, 207);
+  background-color: rgb(3, 3, 3);
   color: white;
-  border-color: rgb(29, 172, 207);
+  border-color: rgb(0, 0, 0);
 }
 
 .premises {
@@ -195,8 +201,14 @@ iframe {
   color: #555;
 }
 
+@media (max-width:1280px) {
+  iframe {
+    width: 100%;
+  }
 
-@media (max-width: 1023px) {
+}
+
+@media (max-width:1194px) {
   .container_columna {
     flex-direction: column;
     gap: 3.5rem;

@@ -1,10 +1,16 @@
 /* Estructura general */
+.reservas .titulo {
+    font-size: 48px;
+}
+
 .fila {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 90px;
     align-items: flex-start;
+    margin-bottom: 250px;
+    margin-top: 150px;
 }
 
 .columna {
@@ -69,7 +75,7 @@
 }
 
 .opciones:focus {
-    background-color: #5ac95a;
+    background-color: #8e3b17;
 }
 
 
@@ -88,8 +94,8 @@
 }
 
 .confirmar {
-    background-color: #5ac95a;
-    color: white;
+    background-color: rgb(222, 185, 39);
+    color: black;
     border: none;
     padding: 15px;
     margin: 10px 0;
@@ -104,15 +110,115 @@
 
 .confirmacion {
     display: none;
-    margin-top: 40px;
     padding: 20px;
-    background-color: #f3f3f3;
     border-radius: 8px;
+    border: solid black;
+}
+
+.confirmacion_reserva {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 25px;
+}
+
+.confirmacion .confirmacion_text {
+    font-size: 20px;
+}
+
+.confirmacion .local-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #680505;
 }
 
 .confirmacion p {
     font-size: 18px;
     margin: 10px 0;
+}
+
+.formu {
+    display: none;
+    margin-top: 30px;
+    width: 100%;
+    padding: 50px;
+    border: solid black;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.formu_input {
+    width: 100%;
+    border: solid black;
+    border-radius: 10px;
+    margin: 5px;
+    height: 40px;
+}
+
+.input_btn {
+    border: solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 8px;
+}
+
+.error-box {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #ffe6e6;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: red;
+}
+
+.modal {
+    display: none;
+    /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    /* Fondo oscuro */
+}
+
+.modal-contenido-reservaciones {
+    background-color: white;
+    margin: 15% auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    height: 250px;
+}
+
+.modal-contenido-reservaciones h2 {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.modal-contenido-reservaciones p {
+    font-size: 20px;
+}
+
+.modal-contenido-reservaciones button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(222, 185, 39);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 50px;
+    font-size: 20px;
 }
 
 /* Horarios */
@@ -131,4 +237,42 @@
 .locales.active,
 .formulario.active {
     display: flex;
+}
+
+@media(max-width:1280px) {
+    .derecha img {
+        width: 105%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .fila {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        margin-top: 0px;
+    }
+
+    .derecha img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+    .fila {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 539px) {
+    .fila {
+        display: flex;
+        align-items: center;
+    }
+
+    .reservas .titulo {
+        font-size: 35px;
+    }
 }
