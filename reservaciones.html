@@ -7,127 +7,123 @@
     <meta name="description" content="Aqui podras ver el apartado de reservaciones">
     <link rel="stylesheet" href="css/styles.css">
     <title>Criollo & Punto | Reservaciones</title>
-    <script src="js/reservaciones/reservaciones.js"></script>
 </head>
 
 <body>
-
-
     <header class="headerBar"></header>
 
-    <section>
-        <div class="section">
-            <div class="section__cotented container">
-                <h4 class="person">Personas</h4>
 
-                <div class="people-selector">
-                    <div class="people-selector__option" >
-                        <input type="radio" name="cantidad-personas" id="person-1" value="1"
-                            class="people-selector__input"c>
-                        <label for="person-1" class="people-selector__label">1</label>
-                    </div>
-                    <div class="people-selector__option">
-                        <input type="radio" name="cantidad-personas" id="person-2" value="2"
-                            class="people-selector__input">
-                        <label for="person-2" class="people-selector__label">2</label>
-                    </div>
-                    <div class="people-selector__option">
-                        <input type="radio" name="cantidad-personas" id="person-3" value="3"
-                            class="people-selector__input">
-                        <label for="person-3" class="people-selector__label">3</label>
-                    </div>
-                    <div class="people-selector__option">
-                        <input type="radio" name="cantidad-personas" id="person-4" value="4"
-                            class="people-selector__input">
-                        <label for="person-4" class="people-selector__label">4</label>
-                    </div>
-                    <div class="people-selector__option">
-                        <input type="radio" name="cantidad-personas" id="person-5" value="5"
-                            class="people-selector__input">
-                        <label for="person-5" class="people-selector__label">5</label>
-                    </div>
-                    <div class="people-selector__option">
-                        <input type="radio" name="cantidad-personas" id="person-6" value="6"
-                            class="people-selector__input">
-                        <label for="person-6" class="people-selector__label">6</label>
-                    </div>
+    <div class="reservas container">
+        <h2 class="titulo title-1">Reservaciones</h2>
+
+        <div class="fila">
+            <!-- Columna izquierda -->
+            <div class="columna izquierda">
+                <!-- Selección de locales -->
+                <div class="locales active" id="locales">
+                    <p class="parrafo_reserva title-3">SELECCIONE UN LOCAL</p>
+                    <button class="op-local" onclick="mostrarFormulario('Miraflores')">Miraflores</button>
+                    <button class="op-local" onclick="mostrarFormulario('Sanisidro')">San Isidro</button>
+                    <button class="op-local " onclick="mostrarFormulario('Surco')">Surco</button>
                 </div>
 
-                <h4 class="date">Fecha</h4>
+                <!-- Formulario de reservas -->
+                <div class="formulario" id="formulario">
+                    <h2 id="titulo-local" class="titulo_local title-4"></h2>
 
-                <div class="date-selector">
-                    <input type="date" id="fecha-evento" name="fecha-evento" class="date-selector__input">
-                </div>
-                <h4 class="schedules">Horas disponibles</h4>
-                <div class="schedules-selector">
-                    <div class="schedules-selector-option">
-                        <input type="radio" name="horarios" id="10:20" class="schedules-selector-option__input" name="horario-seleccionada">
-                        <label for="10:20" class="shedules_selection__label">10:30</label>
-                    </div>
-                    <div class="schedules-selector-option">
-                        <input type="radio"  id="11:30" class="schedules-selector-option__input"name="horario-seleccionada">
-                        <label for="11:30" class="shedules_selection__label">11:30</label>
-                    </div>
-                    <div class="schedules-selector-option">
-                        <input type="radio"  id="12:30" class="schedules-selector-option__input" name="horario-seleccionada">
-                        <label for="12:30" class="shedules_selection__label">12:30</label>
-                    </div>
-                    <div class="schedules-selector-option">
-                        <input type="radio"  id="1:30" class="schedules-selector-option__input" name="horario-seleccionada">
-                        <label for="1:30" class="shedules_selection__label">1:30</label>
-                    </div>
-                    <div class="schedules-selector-option">
-                        <input type="radio" id="2:30" class="schedules-selector-option__input" name="horario-seleccionada">
-                        <label for="2:30" class="shedules_selection__label">2:30</label>
-                    </div>
-                </div>
-                <h4 class="personal-information">Informacion personal</h4>
+                    <h3 class="titulo_persona title-3">Personas</h3>
+                    <select id="personas" class="imput-opc">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                    </select>
 
-                <div class="personal-information-form">
-                    <form class="form" id="formreservaciones">
+                    <h3 class="titulo_hora title-3">Día</h3>
+                    <input type="date" id="fecha" class="imput-opc" />
+
+                    <h3 class="titulo_fecha title-3">Selecciona la hora</h3>
+                    <div class="horarios">
+                        <button class="opciones">12:30 PM</button>
+                        <button class="opciones">1:00 PM</button>
+                        <button class="opciones">1:30 PM</button>
+                        <button class="opciones">2:00 PM</button>
+                        <button class="opciones">2:30 PM</button>
+                        <button class="opciones">3:00 PM</button>
+                        <button class="opciones">3:30 PM</button>
+                        <button class="opciones">4:00 PM</button>
+                        <button class="opciones">4:30 PM</button>
+                    </div>
+
+                    <button class="volver" onclick="volver()">Volver</button>
+                    <button id="btn-confirmar" class="confirmar" onclick="irAConfirmacion()"
+                        style="display: none;">Confirmar</button>
+
+                </div>
+                <div class="confirmacion" id="confirmacion">
+                    <h2 class="confirmacion_reserva">Confirmación de Reserva</h2>
+                    <p><strong class="confirmacion_text">Local:</strong> <span id="conf-local"
+                            class="local-text"></span></p>
+                    <p><strong class="confirmacion_text">Personas:</strong> <span id="conf-personas"
+                            class="local-text"></span></p>
+                    <p><strong class="confirmacion_text">Fecha:</strong> <span id="conf-fecha"
+                            class="local-text"></span></p>
+                    <p><strong class="confirmacion_text">Hora:</strong> <span id="conf-hora" class="local-text"></span>
+                    </p>
+
+                </div>
+                <div class="formu" id="form">
+                    <form name="form" id="formContactanos" onsubmit="return validarFormularioDatos()">
                         <div>
-                            <label>Nombre</label>
-                            <input type="text" id="nombre" placeholder="Ingrese sus nombres"
-                                class="personal-information__input">
+                            <label class="formu_label">Nombre</label>
+                            <input type="text" id="nombre" class="formu_input" name="nombre">
                         </div>
                         <div>
-                            <label>Apellidos</label>
-                            <input type="text" id="apellido" placeholder="Ingrese su apellido"
-                                class="personal-information__input">
+                            <label class="formu_label">Apellido</label>
+                            <input type="text" name="apellido" id="apellido" class="formu_input">
                         </div>
                         <div>
-                            <label>Email</label>
-                            <input type="email" id="email" placeholder="example@gmail.com"
-                                class="personal-information__input">
+                            <label class="formu_label">Email</label>
+                            <input type="email" id="email" class="formu_input" name="email">
                         </div>
                         <div>
-                            <label>Telefono</label>
-                            <input type="text" maxlength="9" id="telefono" class="personal-information__input">
+                            <label class="formu_label">Telefono</label>
+                            <input type="tel" maxlength="9" class="formu_input" id="telefono" name="telefono">
                         </div>
+
                         <div id="errores" class="error-box" style="display: none;"></div>
-                        <div class="send-button">
-                            <input type="submit" name="botonenviar" id="btnEnviar" value="Enviar"
-                                class="send-button__input">
-                        </div>
-                        <input type="hidden" name="_captcha" value="false">
+                        <button class="input_btn" type="submit">Enviar Reserva</button>
+
+
                     </form>
-                    <div id="modalExito" class="modal">
-                        <div class="modal-contenido">
-                            <h2>¡Formulario enviado!</h2>
-                            <p>Gracias por tu reservacion. Nos pondremos en contacto contigo pronto.</p>
-                        </div>
+                </div>
+                <div id="modal-confirmacion" class="modal">
+                    <div class="modal-contenido-reservaciones">
+                        <h2> Reserva hecha exitosamente</h2>
+                        <p>Nos pondremos en contacto contigo pronto</p>
+                        <button onclick="cerrarModal()">Cerrar</button>
                     </div>
                 </div>
             </div>
-        </div>
 
-    </section>
+
+
+            <!-- Columna derecha -->
+            <div class="columna derecha">
+                <img src="img/Delivery/Postres/MazamorraMorada.png" alt="Plato" />
+            </div>
+
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer"></footer>
 
     <script type="module" src="js/header/main.js"></script>
     <script type="module" src="js/footer/main.js"></script>
+    <script src="js/reservaciones/reservaciones.js"></script>
 
 </body>
 

@@ -1,357 +1,278 @@
-.reservations {
-    text-align: center;
-    margin-top: 9rem;
+/* Estructura general */
+.reservas .titulo {
+    font-size: 48px;
 }
 
-.reservations__container {
+.fila {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 90px;
     align-items: flex-start;
-    gap: 4rem;
-    padding: 2rem;
+    margin-bottom: 250px;
+    margin-top: 150px;
 }
 
-/*darte estilo al nombre personas*/
-.person {
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-top: 10rem;
+.columna {
+    flex: 1;
+}
+
+.izquierda {
+    width: 100%;
+}
+
+.derecha img {
+    width: 130%;
+    height: 650px;
+    max-width: 800px;
+}
+
+.locales {
+    margin-top: 100px;
+}
+
+/* Encabezados y textos */
+.titulo_reserva,
+.parrafo_reserva,
+.titulo_local,
+.titulo_fecha,
+.titulo_hora,
+.titulo_persona {
     text-align: center;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.imput-opc {
+    height: 40px;
+}
+
+/* Botones */
+.op-local {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.opciones {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.opciones:focus {
+    background-color: #8e3b17;
+}
+
+
+.volver {
+    background-color: #680505;
+    color: white;
+    border: none;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.confirmar {
+    background-color: rgb(222, 185, 39);
+    color: black;
+    border: none;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 25px;
+    display: none;
+}
+
+.confirmacion {
+    display: none;
+    padding: 20px;
+    border-radius: 8px;
+    border: solid black;
+}
+
+.confirmacion_reserva {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 25px;
+}
+
+.confirmacion .confirmacion_text {
+    font-size: 20px;
+}
+
+.confirmacion .local-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #680505;
+}
+
+.confirmacion p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.formu {
+    display: none;
+    margin-top: 30px;
+    width: 100%;
+    padding: 50px;
+    border: solid black;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.formu_input {
+    width: 100%;
+    border: solid black;
+    border-radius: 10px;
+    margin: 5px;
+    height: 40px;
+}
+
+.input_btn {
+    border: solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 8px;
+}
+
+.error-box {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #ffe6e6;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: red;
 }
 
 .modal {
     display: none;
+    /* Oculto por defecto */
     position: fixed;
-    z-index: 999;
+    z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
+    overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
+
+    /* Fondo oscuro */
 }
 
-.modal-contenido {
+.modal-contenido-reservaciones {
     background-color: white;
-    padding: 20px;
     margin: 15% auto;
-    width: 80%;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
     max-width: 400px;
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    height: 250px;
 }
 
-.cerrar-modal {
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-/* darle estilo ala caja que contiene todos los botones */
-.people-selector {
-    margin-top: 3rem;
-}
-
-.people-selector__option {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 1rem;
-}
-
-.people-selector__input {
-    display: none;
-}
-
-.people-selector__label {
-    margin: 10px 20px;
-    color: black;
-    border: 2px solid black;
-    border-radius: 25px;
-    padding: 10px 50px;
-    transition: all 0.5s ease;
-    display: inline-block;
-}
-
-.people-selector__input:checked+.people-selector__label {
-    background-color: black;
-    color: aliceblue;
-    transform: scale(1.2);
-    border-color: black;
-}
-
-.date {
-    font-size: 1.3rem;
+.modal-contenido-reservaciones h2 {
+    color: rgb(0, 0, 0);
     font-weight: bold;
-    margin-top: 3rem;
-    text-align: center;
+    font-size: 25px;
     margin-bottom: 20px;
 }
 
-.date-selector {
-    text-align: center;
-    margin-top: 5rem;
-    width: 50%;
-    margin: auto;
-    border: 2px solid black;
-    border-radius: 25px;
-    padding: 20px;
+.modal-contenido-reservaciones p {
+    font-size: 20px;
 }
 
-.date-selector__input {
-    transform: scale(1.5);
-
-}
-
-.schedules {
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-top: 3rem;
-    text-align: center;
-}
-
-.schedules-selector {
-    margin-top: 3rem;
-}
-
-.shedules_selection__label {
-    margin: 10px 20px;
-    color: black;
-    border: 2px solid black;
-    border-radius: 25px;
-    padding: 10px 50px;
-    transition: all 0.5s ease;
-    display: inline-block;
-}
-
-.schedules-selector-option__input:checked+.shedules_selection__label {
-    background-color: black;
-    color: aliceblue;
-    cursor: pointer;
-    transform: scale(1.2);
-}
-
-.schedules-selector-option {
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    gap: 1.5rem;
-}
-
-.schedules-selector-option__input {
-
-    display: none;
-}
-
-.personal-information {
-    font-size: 1.3rem;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 3rem;
-}
-
-.personal-information-form {
-    background-color: rgb(255, 248, 248);
-    padding: 2rem;
-    /* 50px */
-    border-radius: 0.625rem;
-    /* 10px */
-    border: solid black;
-    max-width: 31.25rem;
-    /* 500px */
-    width: 100%;
-    margin-top: 3rem;
-    align-items: center;
-    margin: auto;
-}
-
-.personal-information__input {
-
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0.625rem;
-    border-radius: 0.75rem;
-    margin-bottom: 1.875rem;
-    border: 0.125rem solid;
-    font-size: 1rem;
-
-}
-
-.send-button {
-
-    margin-top: 2.5rem;
-    text-align: center;
-}
-
-.send-button__input {
-
-    padding: 0.4rem 2rem;
-
-    background-color: black;
+.modal-contenido-reservaciones button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(222, 185, 39);
     color: white;
-    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 0.3125rem;
-
+    height: 50px;
+    font-size: 20px;
 }
 
-@media (min-width:900px) {
+/* Horarios */
+.horarios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
 
-    .person {
-        font-size: 1.3rem;
-        font-weight: bold;
-        margin-right: 12px;
+.locales,
+.formulario {
+    display: none;
+    flex-direction: column;
+}
+
+.locales.active,
+.formulario.active {
+    display: flex;
+}
+
+@media(max-width:1280px) {
+    .derecha img {
+        width: 105%;
     }
+}
 
-    /* darle estilo ala caja que contiene todos los botones */
-    .people-selector {
-        margin-top: 3rem;
+@media (max-width: 1200px) {
+    .fila {
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .people-selector__option {
-        display: inline-block;
-
-    }
-
-
-    .people-selector__input {
-        display: none;
-    }
-
-    .people-selector__label {
-        margin: 10px 20px;
-        color: black;
-        border: 2px solid black;
-        border-radius: 25px;
-        padding: 10px 50px;
-        transition: all 0.5s ease;
-        display: inline-block;
-    }
-
-    .people-selector__label:hover {
-        background-color: black;
-        color: aliceblue;
-        cursor: pointer;
-        transform: scale(1.2);
-    }
-
-    .date {
-        font-size: 1.3rem;
-        font-weight: bold;
-        margin-top: 3rem;
-        text-align: center;
-        margin-bottom: 25px;
-    }
-
-    .date-selector {
-
-        margin-top: 5rem;
-        width: 30%;
-        margin: auto;
-        border: 2px solid black;
-        border-radius: 25px;
-        padding: 19px;
-    }
-
-    .date-selector__input {}
-
-    .schedules {
-        font-size: 1.3rem;
-        font-weight: bold;
-        margin-top: 3rem;
-        text-align: center;
-    }
-
-    .schedules-selector {
-        margin-top: 3rem;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .shedules_selection__label {
-        margin: 10px 20px;
-        color: black;
-        border: 2px solid black;
-        border-radius: 25px;
-        padding: 10px 50px;
-        transition: all 0.5s ease;
-        display: inline-block;
-    }
-
-    .shedules_selection__label:hover {
-        background-color: black;
-        color: aliceblue;
-        cursor: pointer;
-        transform: scale(1.2);
-    }
-
-    .schedules-selector-option {
-        display: inline-block;
-    }
-
-
-    .schedules-selector-option__input {
-
-        display: none;
-    }
-
-    .personal-information {
-        font-size: 1.3rem;
-        text-align: center;
-        font-weight: bold;
-        margin-top: 3rem;
-        margin-bottom: 30px;
-    }
-
-    .personal-information-form {
-        background-color: rgb(255, 248, 248);
-        padding: 2rem;
-        border-radius: 0.625rem;
-        border: solid black;
-        max-width: 31.25rem;
-        width: 100%;
-        margin: auto;
-    }
-
-    .personal-information__input {
-
-        display: flex;
-        /**/
         flex-direction: column;
-        /**/
+        align-items: center;
+        gap: 25px;
+        margin-top: 0px;
+    }
+
+    .derecha img {
         width: 100%;
-        padding: 0.625rem;
-        border-radius: 0.75rem;
-        margin-bottom: 1.875rem;
-        border: 0.125rem solid;
-        font-size: 1rem;
+    }
+}
 
+@media (max-width: 720px) {
+    .fila {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 539px) {
+    .fila {
+        display: flex;
+        align-items: center;
     }
 
-    .send-button {
-
-        margin-top: 2.5rem;
-        text-align: center;
-    }
-
-    .send-button__input {
-
-        padding: 0.5rem 5rem;
-        /**/
-
-        background-color: black;
-        color: white;
-        font-size: 1rem;
-        cursor: pointer;
-        border-radius: 0.3125rem;
-
+    .reservas .titulo {
+        font-size: 35px;
     }
 }
