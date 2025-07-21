@@ -72,7 +72,8 @@ iframe {
   width: 130%;
   height: 600px;
   max-width: 800px;
-  border: solid rgb(255, 255, 255);
+  border: solid rgb(207, 205, 205);
+  border-radius: 9px;
 }
 
 .contact-form {
