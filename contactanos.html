@@ -26,41 +26,51 @@
 
             <!-- primerac columna -->
             <div class="columna">
+
                 <div class="title-column title-2">
                     <h3>Contactanos</h3>
                 </div>
+
                 <div class="message">
                     <h4>¡Si tiene alguna duda o recomendacion no dude en comunicarse con nosotros!</h4>
                 </div>
+
                 <div class="contact-form"> <!--contenedor del formulario -->
                     <form name="form" id="formContactanos">
                         <div>
                             <label class="contact-form__label">Nombre</label>
                             <input type="text" id="nombre" class="contact-form__input" name="nombre">
                         </div>
+
                         <div>
                             <label class="contact-form__label">Email</label>
                             <input type="email" id="email" class="contact-form__input" name="email">
                         </div>
+
                         <div>
                             <label class="contact-form__label">Mensaje</label>
                             <textarea class="contact-form__mensaje" id="mensaje" maxlength="90"
                                 name="mensaje"></textarea>
                         </div>
+                        <!-- caja para ver los errores  -->
                         <div id="errores" class="error-box" style="display: none;"></div>
+                        <!-- boton para enviar el formulario -->
                         <div class="send-buttoon">
                             <input type="submit" id="botonenvio" class="send-buttoon__input">
                         </div>
+                        <!-- quitar el captcha del envio del formulario -->
                         <input type="hidden" name="_captcha" value="false">
+
                     </form>
+
                     <!-- modal de confirmacion del envio del formulario -->
                     <div id="modalExito" class="modal">
                         <div class="modal-contenido-contactanos">
                             <span class="cerrar-modal" id="cerrarModal">&times;</span>
                             <h2>¡Formulario enviado!</h2>
                         </div>
-
                     </div>
+
                 </div>
             </div>
             <!-- segunda columna -->
@@ -69,8 +79,8 @@
                     <h3>Ubiquenos</h3>
                 </div>
                 <div class="message">
-                    <h4>Lunes - Viernes: 10 AM - 11 PM</h4>
-                    <h4>Sabado - Domingo: 9 AM - 5 PM</h4>
+                    <h4>Lunes - Viernes: 3PM - 10 PM</h4>
+                    <h4>Sabado - Domingo: 1PM - 5 PM</h4>
                 </div>
                 <iframe class="mapa"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62433.19035467788!2d-76.98305891611334!3d-12.03839914203564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c4278da26259%3A0x5e4f469b726f30fa!2sRestaurante%20El%20Huarique%20Criollo!5e0!3m2!1ses-419!2spe!4v1747491569781!5m2!1ses-419!2spe"

@@ -12,7 +12,6 @@
 <body>
     <header class="headerBar"></header>
 
-
     <div class="reservas container">
         <h2 class="titulo title-1">Reservaciones</h2>
 
@@ -29,10 +28,11 @@
 
                 <!-- Formulario de reservas -->
                 <div class="formulario" id="formulario">
-                    <h2 id="titulo-local" class="titulo_local title-4"></h2>
 
+                    <h2 id="titulo-local" class="titulo_local title-4"></h2>
                     <h3 class="titulo_persona title-3">Personas</h3>
                     <select id="personas" class="imput-opc">
+                        <option></option>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -62,6 +62,7 @@
                         style="display: none;">Confirmar</button>
 
                 </div>
+
                 <div class="confirmacion" id="confirmacion">
                     <h2 class="confirmacion_reserva">Confirmación de Reserva</h2>
                     <p><strong class="confirmacion_text">Local:</strong> <span id="conf-local"
@@ -72,8 +73,8 @@
                             class="local-text"></span></p>
                     <p><strong class="confirmacion_text">Hora:</strong> <span id="conf-hora" class="local-text"></span>
                     </p>
-
                 </div>
+
                 <div class="formu" id="form">
                     <form name="form" id="formContactanos" onsubmit="return validarFormularioDatos()">
                         <div>
@@ -95,10 +96,9 @@
 
                         <div id="errores" class="error-box" style="display: none;"></div>
                         <button class="input_btn" type="submit">Enviar Reserva</button>
-
-
                     </form>
                 </div>
+
                 <div id="modal-confirmacion" class="modal">
                     <div class="modal-contenido-reservaciones">
                         <h2> Reserva hecha exitosamente</h2>
