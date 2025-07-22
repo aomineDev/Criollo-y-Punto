@@ -22,9 +22,9 @@ function handleRangeInput(evt) {
 }
 
 function handleRangeDisplay(range, percentage) {
-    range.style.setProperty('--range-value', percentage + '%');
-    deliveryFormRangeValue.style.left = `${percentage <= 5 ? 5 : percentage}%`
-    deliveryFormRangeValue.innerHTML = range.value
+  range.style.setProperty('--range-value', percentage + '%')
+  deliveryFormRangeValue.style.left = `${percentage <= 5 ? 5 : percentage}%`
+  deliveryFormRangeValue.innerHTML = range.value
 }
 
 function filterCondition(item, name, price) {
