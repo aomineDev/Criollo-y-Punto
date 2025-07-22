@@ -32,7 +32,7 @@ function validarFormularioContactanos(event) {
     const errorDiv = document.getElementById("errores");
 
     if (errores.length > 0) {
-        errorDiv.innerHTML = errores.map(err => `<p>• ${err}</p>`).join("");
+        errorDiv.innerHTML = errores.map(err => `<p> ${err}</p>`).join("");
         errorDiv.style.display = "block";
         return;
     } else {
