@@ -31,7 +31,7 @@ function handleSubmitForm(evt) {
   clearCart()
   clearCurrentOrder()
 
-  window.location.href = 'pedidos.html'
+  window.location.href = 'delivery.html'
 }
 
 function handleInput(evt) {

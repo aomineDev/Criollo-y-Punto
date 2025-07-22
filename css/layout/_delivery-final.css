@@ -177,7 +177,7 @@
 }
 
 .delivery-resume__content {
-  padding: 24px;
+  padding: 20px;
 }
 
 .delivery-resume__product {
@@ -185,7 +185,7 @@
   justify-content: start;
   align-items: center;
   column-gap: 12px;
-  border-bottom: 1px solid #9b9b9b;
+  border-bottom: 1px solid #acacac;
   padding-bottom: 12px;
   margin-bottom: 12px;
 }
@@ -203,8 +203,8 @@
 
 .delivery-resume__product-title {
   margin: 0 0 4px 0;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .delivery-resume__product-details {
@@ -224,7 +224,7 @@
 
 .separator {
   height: 1px;
-  background-color: #535353;
+  background-color: #303030;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -240,10 +240,11 @@
   display: flex;
   justify-content: space-between;
   color: #5e5e5e;
+  font-size: 14px;
 }
 
 .delivery-resume__total-price {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--primary);
 }
